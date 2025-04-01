@@ -1,0 +1,51 @@
+Cleaning Robot Components & Cost Breakdown
+Robot Base & Mobility
+
+Robot chassis/platform: $30-150 (depending on size/quality)
+DC motors (2-4): $5-15 each
+Wheels: $10-30
+Motor controllers: $15-30
+Battery pack (LiPo recommended): $20-50
+
+Object Detection & Manipulation
+
+Camera/vision sensor: $15-60 (Raspberry Pi Camera or equivalent)
+Distance sensors (ultrasonic/infrared): $3-8 each (need 3-5)
+Robotic arm with gripper: $40-150 (or DIY with servos)
+Servo motors (for arm joints): $5-15 each (need 3-6)
+
+Vacuum System
+
+Small vacuum motor: $15-40
+Dust collection container: $5-15 (or repurposed container)
+Filter system: $5-15
+
+Control System & Electronics
+
+Microcontroller (Arduino): $20-30
+Single-board computer (Raspberry Pi 4): $45-80
+Motor drivers: $10-20
+Power distribution board: $10-25
+Wires, connectors, breadboard: $15-30
+
+Software & Programming
+
+Programming software: Free (Arduino IDE, Python)
+Computer vision libraries: Free (OpenCV)
+Robot control software: Free (ROS or custom)
+
+Additional Materials
+
+Frame materials (aluminum, plastic, 3D printed parts): $20-50
+Fasteners, screws, nuts: $10-20
+3D printing filament (if using 3D printed parts): $20-30
+Miscellaneous components: $20-50
+
+Total Estimated Cost
+
+Budget version: $250-400
+Mid-range version: $400-600
+Advanced version: $600-900+
+
+
+Note: Costs can be reduced by salvaging parts from old electronics, using second-hand components, or simplifying certain aspects of the design.
