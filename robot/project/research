@@ -1,0 +1,142 @@
+# DIY Cleaning Robot - Learning Resources & Project Roadmap
+
+## Step 1: Learn the Basics of Robotics & Electronics
+### Articles
+- [Sparkfun's Introduction to Robotics](https://learn.sparkfun.com/tutorials/tags/robotics)
+- [Arduino Getting Started Guide](https://www.arduino.cc/en/Guide)
+- [Introduction to Motors for Robotics](https://www.seeedstudio.com/blog/2019/05/16/different-types-of-motors-and-their-use-in-robotics/)
+
+### YouTube Tutorials
+- [Paul McWhorter's Arduino Tutorials](https://www.youtube.com/watch?v=fJWR7dBuc18&list=PLGs0VKk2DiYw-L-RibttcvK-WBZm8WLEP)
+- [DroneBot Workshop](https://www.youtube.com/c/Dronebotworkshop)
+- [Jeremy Blum's Arduino Tutorials](https://www.youtube.com/watch?v=fCxzA9_kg6s&list=PLA567CE235D39FA84)
+
+## Step 2: Robot Base & Mobility
+### Articles
+- [Robot Chassis Design Considerations](https://www.robotshop.com/community/blog/show/how-to-make-a-robot-lesson-3-chassis-motor-wheels)
+- [DC Motors vs Servo Motors](https://www.arrow.com/en/research-and-events/articles/servo-motors-vs-dc-motors-differences-and-applications)
+
+### YouTube Tutorials
+- [How to Build a Robot Chassis](https://www.youtube.com/watch?v=aP3SN21x_p4)
+- [DIY Robot Platform](https://www.youtube.com/watch?v=LBcOWoSr2Vk)
+- [James Bruton's Robot Building](https://www.youtube.com/c/jamesbruton)
+
+## Step 3: Object Detection Systems
+### Articles
+- [Introduction to Computer Vision with OpenCV](https://opencv.org/courses/)
+- [Object Detection for Robotics](https://www.pyimagesearch.com/2020/02/10/opencv-tutorial-learn-opencv-fast-in-one-day/)
+- [Ultrasonic Sensors for Robotics](https://www.maxbotix.com/ultrasonic-sensor-operation.htm)
+
+### YouTube Tutorials
+- [OpenCV Python Tutorial](https://www.youtube.com/watch?v=WQeoO7MI0Bs)
+- [Object Detection with Raspberry Pi](https://www.youtube.com/watch?v=HXDD7-EnGBY)
+- [Sentdex Computer Vision Series](https://www.youtube.com/playlist?list=PLQVvvaa0QuDdttJXlLtAJxJetJcqmqlQq)
+
+## Step 4: Robotic Arm & Gripper
+### Articles
+- [DIY Robotic Arm Principles](https://www.instructables.com/DIY-Robotic-Arm-3D-Printed-Part-1/)
+- [Gripper Design for Robots](https://blog.robotiq.com/bid/33127/10-Robotic-Gripper-Types-What-They-Are-and-Where-They-re-Used)
+
+### YouTube Tutorials
+- [How to Build a Robotic Arm](https://www.youtube.com/watch?v=_B3gWd3A_SI)
+- [Servo-Controlled Robotic Gripper](https://www.youtube.com/watch?v=l3CerI5_SZk)
+- [3D Printed Robot Arm](https://www.youtube.com/watch?v=0BcXW_wQvSI)
+
+## Step 5: Vacuum System Integration
+### Articles
+- [DIY Vacuum System Design](https://www.instructables.com/DIY-Vacuum-Cleaner/)
+- [Robot Vacuum Technology](https://www.ifixit.com/News/11643/how-do-robot-vacuums-work)
+
+### YouTube Tutorials
+- [Make Your Own Vacuum System](https://www.youtube.com/watch?v=TtrJ1G5-Jw8)
+- [DIY Mini Vacuum Cleaner](https://www.youtube.com/watch?v=57IoQcuKFmY)
+
+## Step 6: Integration & Programming
+### Articles
+- [ROS (Robot Operating System) Tutorials](http://wiki.ros.org/ROS/Tutorials)
+- [Integrating Sensors with Arduino](https://www.circuitbasics.com/arduino-basics-using-sensors/)
+- [Machine Vision Integration Guide](https://www.pyimagesearch.com/start-here/)
+
+### YouTube Tutorials
+- [The Construct - ROS Tutorials](https://www.youtube.com/c/TheConstructSim)
+- [Programming a Robot with Python](https://www.youtube.com/watch?v=BLvN7U8LsH0)
+- [Complete Robot Programming Course](https://www.youtube.com/watch?v=_LXBeA0OU5E)
+
+## Advanced Learning
+### Courses
+- [Coursera's Robotics Specialization](https://www.coursera.org/specializations/robotics)
+- [EdX's Robotics MicroMasters](https://www.edx.org/micromasters/pennx-robotics)
+- [Udacity's Robotics Software Engineer](https://www.udacity.com/course/robotics-software-engineer--nd209)
+
+### Books
+- "Make: Electronics" by Charles Platt
+- "Robot Building for Beginners" by David Cook
+- "Learning OpenCV" by Gary Bradski
+- "Learning Robotics using Python" by Lentin Joseph
+
+### Communities
+- [Robot Builder's Club](https://www.robotbuilder.co.uk/)
+- [Robotics Stack Exchange](https://robotics.stackexchange.com/)
+- [Arduino Forum - Robotics Section](https://forum.arduino.cc/c/robots/)
+- [ROS Community](https://discourse.ros.org/)
+
+## Project Implementation Path
+
+### Phase 1: Foundation
+- Setup development environment (Arduino IDE, Python)
+- Build basic chassis and test motor control
+- Implement simple obstacle avoidance
+
+### Phase 2: Object Detection
+- Install and configure camera
+- Implement basic computer vision for object recognition
+- Test detection reliability for target objects
+
+### Phase 3: Object Manipulation
+- Build gripper mechanism
+- Test object pickup and placement accuracy
+- Integrate with detection system
+
+### Phase 4: Vacuum Integration
+- Install vacuum motor and collection system
+- Design power management for dual functions
+- Test combined operations
+
+### Phase 5: Full Integration
+- Develop state machine for operational logic
+- Optimize power consumption
+- Fine-tune and test full prototype
+
+### Phase 6: Refinement
+- Add remote control/monitoring capability
+- Improve autonomous navigation
+- Enhance error handling and recovery
+
+## GitHub Repository Structure Suggestion
+
+```
+.
+├── README.md
+├── docs/
+│   ├── build_instructions.md
+│   ├── components_list.md
+│   ├── wiring_diagrams/
+│   └── photos/
+├── src/
+│   ├── arduino/
+│   │   ├── motor_control/
+│   │   ├── sensor_integration/
+│   │   └── vacuum_control/
+│   ├── raspberry_pi/
+│   │   ├── computer_vision/
+│   │   ├── main_controller/
+│   │   └── web_interface/
+│   └── 3d_models/
+│       ├── chassis/
+│       ├── gripper/
+│       └── brackets/
+└── tests/
+    ├── vision_tests/
+    ├── motor_tests/
+    └── integration_tests/
+```
