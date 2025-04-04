@@ -1,0 +1,36 @@
+To create a comprehensive point system for predicting when an MLB batter is unlikely to hit a double, we'll consider the categories you've listed and add a few more. Each category will have weights assigned based on their perceived impact on a batter's ability to hit a double. The categories and their initial weights (subject to adjustment based on further analysis or data) are as follows:
+Current Streak (Weight: 15) - A batter's current hitting streak or slump can significantly affect their performance.
+On a hitting streak: +3 points for each game hit
+In a slump (0 hits in last 3 games): -3 points for each game without a hit
+Average Streak (Weight: 10) - The batter's average performance over a longer period.
+Batting average above .300: +5 points
+Batting average below .250: -5 points
+Stadium (Weight: 10) - Different stadiums have varying dimensions and atmospheric conditions that can affect hitting.
+Hitter-friendly park: +2 points
+Pitcher-friendly park: -2 points
+Time of Day (Weight: 5) - Performance can vary based on the time of day due to factors like daylight, crowd energy, and pitcher fatigue.
+Day game: +1 point
+Night game: -1 point
+Starting Pitcher (Weight: 15) - The quality and type of pitcher can greatly influence a batter's chances.
+Facing a top-tier pitcher (ERA < 3.00): -5 points
+Facing a lower-tier pitcher (ERA > 4.00): +5 points
+Average Doubles per Bat (Weight: 20) - A batter's historical ability to hit doubles.
+Above .100 doubles per at-bat: +10 points
+Below .050 doubles per at-bat: -10 points
+Opponent Team's Defense (Weight: 10) - The defensive capabilities of the opposing team, particularly in the outfield.
+Against a team with a strong outfield defense: -3 points
+Against a team with a weak outfield defense: +3 points
+Weather Conditions (Weight: 5) - Weather can affect the ball's movement and distance.
+Wind blowing out: +2 points
+Wind blowing in: -2 points
+Batter's Recent Power Performance (Weight: 10) - Recent ability to hit for power, including doubles, triples, and home runs.
+2+ extra-base hits in last 5 games: +5 points
+0 extra-base hits in last 5 games: -5 points
+Calculating the Score:
+Assign points for each category based on the criteria above.
+Multiply the points by the category's weight.
+Sum the weighted points for all categories.
+Interpretation:
+A lower score indicates a lower likelihood of hitting a double.
+Adjust the weights and categories as necessary based on data analysis and performance tracking.
+This system provides a comprehensive approach to evaluating a batter's chances of hitting a double, considering both situational factors and the batter's inherent abilities. Adjustments can be made as more data becomes available to refine the predictions.
