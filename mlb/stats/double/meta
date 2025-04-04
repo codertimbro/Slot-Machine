@@ -1,3 +1,108 @@
+# Define a function to calculate the score
+function Calculate-DoubleScore {
+    param (
+        [int]$CurrentStreak,
+        [double]$AverageStreak,
+        [string]$Stadium,
+        [string]$TimeOfDay,
+        [string]$StartingPitcher,
+        [double]$AverageDoublesPerBat,
+        [string]$OpponentDefense,
+        [string]$WeatherConditions,
+        [int]$RecentPowerPerformance
+    )
+
+    # Initialize score
+    $score = 0
+
+    # Current Streak (Weight: 15)
+    if ($CurrentStreak -gt 0) {
+        $score += $CurrentStreak * 3 * 15
+    } else {
+        $score -= ($CurrentStreak * -1) * 3 * 15
+    }
+
+    # Average Streak (Weight: 10)
+    if ($AverageStreak -gt 0.300) {
+        $score += 5 * 10
+    } elseif ($AverageStreak -lt 0.250) {
+        $score -= 5 * 10
+    }
+
+    # Stadium (Weight: 10)
+    if ($Stadium -eq "Hitter-friendly") {
+        $score += 2 * 10
+    } elseif ($Stadium -eq "Pitcher-friendly") {
+        $score -= 2 * 10
+    }
+
+    # Time of Day (Weight: 5)
+    if ($TimeOfDay -eq "Day") {
+        $score += 1 * 5
+    } elseif ($TimeOfDay -eq "Night") {
+        $score -= 1 * 5
+    }
+
+    # Starting Pitcher (Weight: 15)
+    if ($StartingPitcher -eq "Top-tier") {
+        $score -= 5 * 15
+    } elseif ($StartingPitcher -eq "Lower-tier") {
+        $score += 5 * 15
+    }
+
+    # Average Doubles per Bat (Weight: 20)
+    if ($AverageDoublesPerBat -gt 0.100) {
+        $score += 10 * 20
+    } elseif ($AverageDoublesPerBat -lt 0.050) {
+        $score -= 10 * 20
+    }
+
+    # Opponent Team's Defense (Weight: 10)
+    if ($OpponentDefense -eq "Strong") {
+        $score -= 3 * 10
+    } elseif ($OpponentDefense -eq "Weak") {
+        $score += 3 * 10
+    }
+
+    # Weather Conditions (Weight: 5)
+    if ($WeatherConditions -eq "Wind blowing out") {
+        $score += 2 * 5
+    } elseif ($WeatherConditions -eq "Wind blowing in") {
+        $score -= 2 * 5
+    }
+
+    # Batter's Recent Power Performance (Weight: 10)
+    if ($RecentPowerPerformance -ge 2) {
+        $score += 5 * 10
+    } elseif ($RecentPowerPerformance -eq 0) {
+        $score -= 5 * 10
+    }
+
+    return $score
+}
+
+# Main script
+Clear-Host
+
+# Input batter's statistics and game conditions
+$CurrentStreak = Read-Host "Enter current streak (positive for hits, negative for misses)"
+$AverageStreak = [double](Read-Host "Enter average streak (e.g., 0.300)")
+$Stadium = Read-Host "Enter stadium type (Hitter-friendly/Pitcher-friendly)"
+$TimeOfDay = Read-Host "Enter time of day (Day/Night)"
+$StartingPitcher = Read-Host "Enter starting pitcher quality (Top-tier/Lower-tier)"
+$AverageDoublesPerBat = [double](Read-Host "Enter average doubles per bat (e.g., 0.100)")
+$OpponentDefense = Read-Host "Enter opponent defense (Strong/Weak)"
+$WeatherConditions = Read-Host "Enter weather conditions (Wind blowing out/Wind blowing in)"
+$RecentPowerPerformance = [int](Read-Host "Enter recent power performance (number of extra-base hits in last 5 games)")
+
+# Calculate and display score
+$score = Calculate-DoubleScore -CurrentStreak $CurrentStreak -AverageStreak $AverageStreak -Stadium $Stadium -TimeOfDay $TimeOfDay -StartingPitcher $StartingPitcher -AverageDoublesPerBat $AverageDoublesPerBat -OpponentDefense $OpponentDefense -WeatherConditions $WeatherConditions -RecentPowerPerformance $RecentPowerPerformance
+
+Write-Host "The batter's score is: $score"
+if ($score -lt 0) {
+    Write
+
+
 To create a comprehensive point system for predicting when an MLB batter is unlikely to hit a double, we'll consider the categories you've listed and add a few more. Each category will have weights assigned based on their perceived impact on a batter's ability to hit a double. The categories and their initial weights (subject to adjustment based on further analysis or data) are as follows:
 Current Streak (Weight: 15) - A batter's current hitting streak or slump can significantly affect their performance.
 On a hitting streak: +3 points for each game hit
