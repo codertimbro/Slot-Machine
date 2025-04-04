@@ -1,0 +1,104 @@
+# Weighted RBI Avoidance Score Calculator for MLB Batters
+# ------------------------------------------------------
+# Lower total score = Higher probability of NOT getting an RBI
+
+# Define Weights for Each Category (Adjust as Needed)
+$weights = @{
+    CurrentHitlessStreak = 8      # Higher weight for recent struggles
+    AvgHitlessStreak     = 6      # Historical consistency of hitlessness
+    StadiumFactor        = 7      # Pitcher-friendly parks get higher weight
+    TimeOfDay            = 4      # Day/Night performance differences
+    PitcherDominance     = 9      # Quality of starting pitcher (most impactful)
+    AvgDoublesPerAB      = 5      # Fewer doubles = less RBI opportunities
+    RBIsPerGame          = 7      # Direct historical RBI performance
+    BullpenStrength      = 6      # Opponent's bullpen ERA
+}
+
+function Get-RBIAvoidanceScore {
+    param(
+        [int]$CurrentHitlessStreak,
+        [double]$AvgHitlessStreak,
+        [string]$Stadium,
+        [ValidateSet("Day","Night")][string]$TimeOfDay,
+        [double]$PitcherERA,          # Lower ERA = better pitcher
+        [double]$AvgDoublesPerAB,
+        [double]$RBIsPerGame,
+        [double]$BullpenERA
+    )
+
+    # Category 1: Current Hitless Streak
+    $currentStreakScore = switch ($CurrentHitlessStreak) {
+        {$_ -ge 10} { 4 }  # Severe slump
+        {$_ -ge 5}  { 3 }  # Significant slump
+        {$_ -ge 3}  { 2 }  # Mild slump
+        default      { 1 }  # Neutral
+    } * $weights.CurrentHitlessStreak
+
+    # Category 2: Average Hitless Streak
+    $avgStreakScore = if ($AvgHitlessStreak -ge 5) { 3 } else { 2 } * $weights.AvgHitlessStreak
+
+    # Category 3: Stadium Factor
+    $stadiumScore = switch ($Stadium) {
+        "Oracle Park"       { 5 }  # Pitcher-friendly
+        "Comerica Park"     { 4 }
+        "Yankee Stadium"    { 3 }
+        "Coors Field"       { 1 }  # Hitter-friendly
+        default             { 2 }
+    } * $weights.StadiumFactor
+
+    # Category 4: Time of Day
+    $timeScore = if ($TimeOfDay -eq "Day") { 3 } else { 2 } * $weights.TimeOfDay
+
+    # Category 5: Starting Pitcher Dominance
+    $pitcherScore = switch ($PitcherERA) {
+        {$_ -lt 3.00} { 5 }  # Elite pitcher
+        {$_ -lt 3.50} { 4 }
+        {$_ -lt 4.00} { 3 }
+        default       { 2 }
+    } * $weights.PitcherDominance
+
+    # Category 6: Doubles Frequency
+    $doublesScore = if ($AvgDoublesPerAB -lt 0.05) { 4 } else { 2 } * $weights.AvgDoublesPerAB
+
+    # Category 7: Historical RBI Production
+    $rbiScore = if ($RBIsPerGame -lt 0.3) { 5 } else { 2 } * $weights.RBIsPerGame
+
+    # Category 8: Bullpen Strength
+    $bullpenScore = switch ($BullpenERA) {
+        {$_ -lt 3.30} { 4 }  # Strong bullpen
+        {$_ -lt 3.80} { 3 }
+        default        { 2 }
+    } * $weights.BullpenStrength
+
+    # Calculate Total Score
+    $totalScore = $currentStreakScore + $avgStreakScore + $stadiumScore + 
+                  $timeScore + $pitcherScore + $doublesScore + 
+                  $rbiScore + $bullpenScore
+
+    return $totalScore
+}
+
+# Example Usage
+$batterScore = Get-RBIAvoidanceScore -CurrentHitlessStreak 7 `
+                                      -AvgHitlessStreak 4.2 `
+                                      -Stadium "Oracle Park" `
+                                      -TimeOfDay "Night" `
+                                      -PitcherERA 2.89 `
+                                      -AvgDoublesPerAB 0.03 `
+                                      -RBIsPerGame 0.25 `
+                                      -BullpenERA 3.45
+
+Write-Output "RBI Avoidance Score: $batterScore (Lower = Higher Avoidance Probability)"
+
+
+  Custom Categories:
+
+Pitcher quality (ERA-based)
+
+Stadium hitter-friendliness
+
+Historical RBI production
+
+Bullpen strength
+
+Recent/long-term hitting slumps
