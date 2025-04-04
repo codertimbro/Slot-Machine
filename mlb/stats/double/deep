@@ -1,0 +1,134 @@
+<#
+.SYNOPSIS
+    Calculates the "No Double Probability Score" with non-linear stadium rank adjustments.
+.DESCRIPTION
+    Stadium ranks (1-28) are converted to a 1-5 scale where rank 28 has 50% more impact than ranks 1-4.
+#>
+
+param (
+    [string]$InputFile = "batter_data.csv",
+    [string]$OutputFile = "results.csv"
+)
+
+# Category weights (unchanged)
+$weights = @{
+    "AverageDoublesPerPA"      = 25
+    "StartingPitcher"          = 20
+    "StadiumDimensions"        = 15  # Weight adjusted dynamically
+    "CurrentStreak"            = 10
+    "OutfieldDefense"          = 10
+    "WeatherConditions"        = 10
+    "TimeOfDay"                = 5
+    "SprintSpeed"              = 5
+    "PitcherBatterHistory"     = 10
+    "BullpenStrength"          = 10
+    "PitchTypeMatchup"         = 10
+}
+
+# Function to convert stadium rank (1-28) to a 1-5 score with non-linear scaling
+function Get-StadiumScore {
+    param ([int]$Rank)
+    # Linear mapping: 1=1, 28=5
+    $linearScore = [math]::Round(1 + ($Rank - 1) * (4 / 27), 2)
+    
+    # Apply non-linear multipliers:
+    # - Rank 28: 50% higher than ranks 1-4 (1.0 → 1.5)
+    # - Rank 28: 25% higher than median (14-15 → ~3.0 → 3.75)
+    if ($Rank -ge 25) { $linearScore *= 1.50 }     # Top 4 ranks (25-28)
+    elseif ($Rank -ge 20) { $linearScore *= 1.25 } # Above median (20-24)
+    elseif ($Rank -le 5) { $linearScore *= 0.75 }  # Bottom 5 ranks (1-5)
+    
+    # Cap at 5 and round
+    [math]::Min([math]::Round($linearScore, 2), 5)
+}
+
+# Load and process data
+$batters = Import-Csv -Path $InputFile
+$results = foreach ($batter in $batters) {
+    # Calculate stadium score dynamically
+    $stadiumRank = [int]$batter.StadiumRank  # Assume CSV has "StadiumRank" (1-28)
+    $stadiumScore = Get-StadiumScore -Rank $stadiumRank
+
+    # Calculate total score (replace static StadiumDimensions with dynamic $stadiumScore)
+    $score = 0
+    $score += [int]$batter.AverageDoublesPerPA * $weights.AverageDoublesPerPA
+    $score += [int]$batter.StartingPitcher * $weights.StartingPitcher
+    $score += $stadiumScore * $weights.StadiumDimensions  # Use dynamic score
+    $score += [int]$batter.CurrentStreak * $weights.CurrentStreak
+    $score += [int]$batter.OutfieldDefense * $weights.OutfieldDefense
+    $score += [int]$batter.WeatherConditions * $weights.WeatherConditions
+    $score += [int]$batter.TimeOfDay * $weights.TimeOfDay
+    $score += [int]$batter.SprintSpeed * $weights.SprintSpeed
+    $score += [int]$batter.PitcherBatterHistory * $weights.PitcherBatterHistory
+    $score += [int]$batter.BullpenStrength * $weights.BullpenStrength
+    $score += [int]$batter.PitchTypeMatchup * $weights.PitchTypeMatchup
+
+    # Risk level
+    $risk = if ($score -lt 250) { "Low" } elseif ($score -le 400) { "Moderate" } else { "High" }
+
+    # Output
+    [PSCustomObject]@{
+        BatterName          = $batter.BatterName
+        StadiumRank         = $stadiumRank
+        StadiumScore        = $stadiumScore
+        TotalScore          = $score
+        RiskLevel           = $risk
+    }
+}
+
+# Export results
+$results | Export-Csv -Path $OutputFile -NoTypeInformation
+Write-Host "Results saved to $OutputFile" -ForegroundColor Green
+
+
+  Categories, Weights, and Scoring Rubrics
+(Scale: 1 = Low chance of a double, 5 = High chance)
+
+Category	Weight	Scoring Rubric (1–5)
+Average Doubles per PA	25	1: ≤0.05/PA	3: 0.06–0.10/PA	5: ≥0.11/PA (e.g., elite gap hitters)
+Starting Pitcher	20	1: High GB%, low XBH%	3: Neutral	5: Fly-ball pitcher, high XBH%
+Stadium Dimensions	15	1: Large gaps (e.g., Oracle Park)	3: Neutral	5: Small gaps (e.g., Fenway)
+Current Streak	10	1: 0 doubles in last 10 games	3: 1–2 doubles	5: 3+ doubles
+Opposing Outfield Defense	10	1: Elite arms (e.g., Judge)	3: Average	5: Weak arms/slow reactions
+Weather Conditions	10	1: Rain/wind blowing in	3: Neutral	5: Wind blowing out/dry/hot
+Time of Day	5	1: Twilight (visibility issues)	3: Day	5: Night (batter-friendly temps)
+Batter’s Sprint Speed	5	1: Slow (25th percentile)	3: Average	5: Fast (75th+ percentile)
+Additional Categories
+Category	Weight	Scoring Rubric (1–5)
+Pitcher-Batter History	10	1: Batter struggles (≤.200 BA)	3: Neutral	5: Dominates (≥.350 BA)
+Bullpen Strength	10	1: Elite bullpen (low XBH%)	3: Average	5: Weak bullpen (prone to XBH)
+Pitch Type Matchup	10	1: Pitcher throws batter’s weak spots	3: Neutral	5: Pitcher feeds batter’s strengths
+Example Calculation
+A batter with:
+
+Avg Doubles/PA: 0.08 → 3 ×25 = 75
+
+Starting Pitcher: Fly-ball pitcher → 5 ×20 = 100
+
+Stadium: Fenway Park → 5 ×15 = 75
+
+Current Streak: 0 doubles in 10 games → 1 ×10 = 10
+
+Outfield Defense: Weak → 5 ×10 = 50
+
+Weather: Wind blowing out → 5 ×10 = 50
+
+Time: Night game → 5 ×5 = 25
+
+Sprint Speed: Slow → 1 ×5 = 5
+
+Pitcher-Batter History: Dominates → 5 ×10 = 50
+
+Bullpen: Weak → 5 ×10 = 50
+
+Pitch Matchup: Feeds strengths → 5 ×10 = 50
+
+Total Score = 75 + 100 + 75 + 10 + 50 + 50 + 25 + 5 + 50 + 50 = 490
+(Higher score = higher double risk)
+
+Interpretation
+<250: Very low chance of a double.
+
+250–400: Moderate risk.
+
+>400: High risk (adjust betting/strategy).
