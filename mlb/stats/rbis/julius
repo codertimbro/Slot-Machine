@@ -1,0 +1,47 @@
+'ve created a point system for evaluating the probability of a baseball player getting an RBI in a game. The system considers 12 factors:
+
+Normalized Category Weights (Total: 100 points):
+
+Current RBI Streak: 11 points
+
+Average RBI Streak: 8 points
+
+Stadium Factors: 8 points
+
+Time of Day: 5 points
+
+Starting Pitcher Quality: 14 points
+
+Avg Doubles per At-Bat: 5 points
+
+Batting Order Position: 8 points
+
+Recent Performance: 11 points
+
+Matchup History: 8 points
+
+Team Offensive Context: 8 points
+
+Weather Conditions: 5 points
+
+Injury Status: 8 points
+
+ 
+
+Each factor has a detailed scoring breakdown, and the total score (out of 100) indicates the probability of a player not getting an RBI.
+
+Total possible points: 100
+
+0-20 points: Very high probability of NO RBIs (>90% chance)
+
+21-40 points: High probability of NO RBIs (70-90% chance)
+
+41-60 points: Moderate probability of NO RBIs (50-70% chance)
+
+61-80 points: Low probability of NO RBIs (30-50% chance)
+
+81-100 points: Very low probability of NO RBIs (<30% chance)
+
+ 
+
+What would you like to do next? I can explain any factor in more detail, apply this system to a specific player, or modify the scoring system.
