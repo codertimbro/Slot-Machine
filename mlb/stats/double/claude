@@ -1,0 +1,664 @@
+# MLB Batter Double Probability Calculator
+# This script calculates the probability of an MLB batter NOT hitting a double in a game
+
+function Get-DoubleProbabilityScore {
+    [CmdletBinding()]
+    param (
+        [Parameter(Mandatory=$true)]
+        [string]$PlayerName,
+        
+        # Player Hitting Profile
+        [Parameter(Mandatory=$true)]
+        [double]$AverageDoublesPerGame,
+        
+        [Parameter(Mandatory=$true)]
+        [double]$DoubleRatePercentage,
+        
+        [Parameter(Mandatory=$true)]
+        [ValidateSet("Declining", "Same", "Above")]
+        [string]$SeasonDoubleTrend,
+        
+        # Current Form
+        [Parameter(Mandatory=$true)]
+        [int]$CurrentStreakWithoutDoubles,
+        
+        [Parameter(Mandatory=$true)]
+        [double]$BattingAverageLast7Games,
+        
+        # Matchup Factors
+        [Parameter(Mandatory=$true)]
+        [ValidateSet("Top10Percent", "AboveAverage", "Average", "BelowAverage")]
+        [string]$PitcherDoublePreventionLevel,
+        
+        [Parameter(Mandatory=$true)]
+        [ValidateSet("Unfavorable", "Neutral", "Favorable")]
+        [string]$PitcherHandednessMatchup,
+        
+        [Parameter(Mandatory=$true)]
+        [ValidateSet("Top10", "MiddleThird", "BottomThird")]
+        [string]$BullpenQuality,
+        
+        [Parameter(Mandatory=$true)]
+        [ValidateSet("Elite", "AboveAverage", "Average", "Poor")]
+        [string]$OpposingDefenseQuality,
+        
+        # Venue Factors
+        [Parameter(Mandatory=$true)]
+        [ValidateSet("Bottom5", "BottomThird", "MiddleThird", "TopThird", "Top5")]
+        [string]$StadiumDoubleFactor,
+        
+        [Parameter(Mandatory=$true)]
+        [ValidateSet("WindIn", "Neutral", "WindOut")]
+        [string]$WeatherConditions,
+        
+        # Game Context
+        [Parameter(Mandatory=$true)]
+        [ValidateSet("Night", "Twilight", "Day")]
+        [string]$TimeOfDay,
+        
+        [Parameter(Mandatory=$true)]
+        [ValidateSet("LowImportance", "RegularSeason", "HighStakes")]
+        [string]$GameImportance
+    )
+    
+    # Initialize total score
+    $totalScore = 0
+    $scoreBreakdown = @{}
+    
+    # 1. Player Hitting Profile (25 points total)
+    
+    # Average Doubles per Game (0-10 points)
+    $doublesPerGamePoints = switch ($AverageDoublesPerGame) {
+        {$_ -le 0.10} {0; break}
+        {$_ -le 0.20} {2; break}
+        {$_ -le 0.30} {5; break}
+        {$_ -le 0.40} {7; break}
+        default {10}
+    }
+    $totalScore += $doublesPerGamePoints
+    $scoreBreakdown.Add("Average Doubles Per Game", $doublesPerGamePoints)
+    
+    # Double Rate (Doubles per At-Bat) (0-10 points)
+    $doubleRatePoints = switch ($DoubleRatePercentage) {
+        {$_ -lt 3} {0; break}
+        {$_ -lt 5} {3; break}
+        {$_ -lt 7} {6; break}
+        default {10}
+    }
+    $totalScore += $doubleRatePoints
+    $scoreBreakdown.Add("Double Rate Per AB", $doubleRatePoints)
+    
+    # Current Season Double Trend (0-5 points)
+    $trendPoints = switch ($SeasonDoubleTrend) {
+        "Declining" {0; break}
+        "Same" {3; break}
+        "Above" {5; break}
+    }
+    $totalScore += $trendPoints
+    $scoreBreakdown.Add("Season Double Trend", $trendPoints)
+    
+    # 2. Current Form (20 points total)
+    
+    # Current Streak without Doubles (0-10 points)
+    $streakPoints = switch ($CurrentStreakWithoutDoubles) {
+        {$_ -ge 5} {0; break}
+        {$_ -ge 3} {3; break}
+        {$_ -ge 1} {6; break}
+        default {10}
+    }
+    $totalScore += $streakPoints
+    $scoreBreakdown.Add("Current Streak Without Doubles", $streakPoints)
+    
+    # Overall Hitting in Last 7 Games (0-10 points)
+    $recentBattingPoints = switch ($BattingAverageLast7Games) {
+        {$_ -le 0.200} {0; break}
+        {$_ -le 0.250} {3; break}
+        {$_ -le 0.300} {6; break}
+        default {10}
+    }
+    $totalScore += $recentBattingPoints
+    $scoreBreakdown.Add("Recent Batting Average", $recentBattingPoints)
+    
+    # 3. Matchup Factors (30 points total)
+    
+    # Starting Pitcher Double Prevention (0-10 points)
+    $pitcherPoints = switch ($PitcherDoublePreventionLevel) {
+        "Top10Percent" {0; break}
+        "AboveAverage" {3; break}
+        "Average" {6; break}
+        "BelowAverage" {10; break}
+    }
+    $totalScore += $pitcherPoints
+    $scoreBreakdown.Add("Pitcher Double Prevention", $pitcherPoints)
+    
+    # Pitcher Handedness vs. Batter (0-5 points)
+    $handednessPoints = switch ($PitcherHandednessMatchup) {
+        "Unfavorable" {0; break}
+        "Neutral" {3; break}
+        "Favorable" {5; break}
+    }
+    $totalScore += $handednessPoints
+    $scoreBreakdown.Add("Pitcher Handedness Matchup", $handednessPoints)
+    
+    # Bullpen Quality (0-5 points)
+    $bullpenPoints = switch ($BullpenQuality) {
+        "Top10" {0; break}
+        "MiddleThird" {3; break}
+        "BottomThird" {5; break}
+    }
+    $totalScore += $bullpenPoints
+    $scoreBreakdown.Add("Bullpen Quality", $bullpenPoints)
+    
+    # Opposing Defense Quality (0-10 points)
+    $defensePoints = switch ($OpposingDefenseQuality) {
+        "Elite" {0; break}
+        "AboveAverage" {3; break}
+        "Average" {6; break}
+        "Poor" {10; break}
+    }
+    $totalScore += $defensePoints
+    $scoreBreakdown.Add("Opposing Defense Quality", $defensePoints)
+    
+    # 4. Venue Factors (15 points total)
+    
+    # Stadium Double Factor (0-10 points)
+    $stadiumPoints = switch ($StadiumDoubleFactor) {
+        "Bottom5" {0; break}
+        "BottomThird" {3; break}
+        "MiddleThird" {5; break}
+        "TopThird" {8; break}
+        "Top5" {10; break}
+    }
+    $totalScore += $stadiumPoints
+    $scoreBreakdown.Add("Stadium Double Factor", $stadiumPoints)
+    
+    # Weather Conditions (0-5 points)
+    $weatherPoints = switch ($WeatherConditions) {
+        "WindIn" {0; break}
+        "Neutral" {3; break}
+        "WindOut" {5; break}
+    }
+    $totalScore += $weatherPoints
+    $scoreBreakdown.Add("Weather Conditions", $weatherPoints)
+    
+    # 5. Game Context (10 points total)
+    
+    # Time of Day (0-5 points)
+    $timePoints = switch ($TimeOfDay) {
+        "Night" {0; break}
+        "Twilight" {3; break}
+        "Day" {5; break}
+    }
+    $totalScore += $timePoints
+    $scoreBreakdown.Add("Time of Day", $timePoints)
+    
+    # Game Importance (0-5 points)
+    $importancePoints = switch ($GameImportance) {
+        "LowImportance" {0; break}
+        "RegularSeason" {3; break}
+        "HighStakes" {5; break}
+    }
+    $totalScore += $importancePoints
+    $scoreBreakdown.Add("Game Importance", $importancePoints)
+    
+    # Determine probability category
+    $probabilityCategory = switch ($totalScore) {
+        {$_ -le 20} {"Very high probability of no doubles (>90%)"; break}
+        {$_ -le 40} {"High probability of no doubles (70-90%)"; break}
+        {$_ -le 60} {"Moderate probability of no doubles (50-70%)"; break}
+        {$_ -le 80} {"Low probability of no doubles (30-50%)"; break}
+        default {"Very low probability of no doubles (<30%)"}
+    }
+    
+    # Create result object
+    $result = [PSCustomObject]@{
+        PlayerName = $PlayerName
+        TotalScore = $totalScore
+        ProbabilityCategory = $probabilityCategory
+        ScoreBreakdown = $scoreBreakdown
+    }
+    
+    return $result
+}
+
+# Function to get formatted report
+function Get-FormattedDoubleReport {
+    param (
+        [Parameter(Mandatory=$true)]
+        [PSCustomObject]$Result
+    )
+    
+    $report = @"
+===========================================================
+MLB BATTER DOUBLE PROBABILITY REPORT
+===========================================================
+Player: $($Result.PlayerName)
+Total Score: $($Result.TotalScore)
+Probability Assessment: $($Result.ProbabilityCategory)
+-----------------------------------------------------------
+SCORE BREAKDOWN:
+"@
+
+    foreach ($category in $Result.ScoreBreakdown.Keys) {
+        $report += "`n$category`: $($Result.ScoreBreakdown[$category])"
+    }
+    
+    $report += @"
+
+===========================================================
+SCORING INTERPRETATION:
+0-20 points: Very high probability of no doubles (>90%)
+21-40 points: High probability of no doubles (70-90%)
+41-60 points: Moderate probability of no doubles (50-70%)
+61-80 points: Low probability of no doubles (30-50%)
+81-100 points: Very low probability of no doubles (<30%)
+===========================================================
+"@
+
+    return $report
+}
+
+# Example usage
+function Show-ExampleUsage {
+    # Example for a player unlikely to hit a double
+    $unlikelyExample = Get-DoubleProbabilityScore -PlayerName "John Smith" `
+        -AverageDoublesPerGame 0.15 `
+        -DoubleRatePercentage 4 `
+        -SeasonDoubleTrend "Declining" `
+        -CurrentStreakWithoutDoubles 3 `
+        -BattingAverageLast7Games 0.220 `
+        -PitcherDoublePreventionLevel "Top10Percent" `
+        -PitcherHandednessMatchup "Unfavorable" `
+        -BullpenQuality "Top10" `
+        -OpposingDefenseQuality "AboveAverage" `
+        -StadiumDoubleFactor "BottomThird" `
+        -WeatherConditions "Neutral" `
+        -TimeOfDay "Night" `
+        -GameImportance "RegularSeason"
+    
+    Write-Host (Get-FormattedDoubleReport -Result $unlikelyExample)
+    
+    # Example for a player likely to hit a double
+    $likelyExample = Get-DoubleProbabilityScore -PlayerName "Mike Jones" `
+        -AverageDoublesPerGame 0.45 `
+        -DoubleRatePercentage 8 `
+        -SeasonDoubleTrend "Above" `
+        -CurrentStreakWithoutDoubles 0 `
+        -BattingAverageLast7Games 0.350 `
+        -PitcherDoublePreventionLevel "BelowAverage" `
+        -PitcherHandednessMatchup "Favorable" `
+        -BullpenQuality "BottomThird" `
+        -OpposingDefenseQuality "Poor" `
+        -StadiumDoubleFactor "Top5" `
+        -WeatherConditions "WindOut" `
+        -TimeOfDay "Day" `
+        -GameImportance "HighStakes"
+    
+    Write-Host (Get-FormattedDoubleReport -Result $likelyExample)
+}
+
+# Interactive scoring function
+function Start-InteractiveScoring {
+    Write-Host "MLB BATTER DOUBLE PROBABILITY CALCULATOR" -ForegroundColor Cyan
+    Write-Host "--------------------------------------" -ForegroundColor Cyan
+    
+    $playerName = Read-Host "Enter player name"
+    
+    # Player Hitting Profile
+    Write-Host "`nPLAYER HITTING PROFILE" -ForegroundColor Yellow
+    $doublesPerGame = [double](Read-Host "Average doubles per game (e.g. 0.25)")
+    $doubleRate = [double](Read-Host "Double rate percentage (e.g. 5.2 for 5.2%)")
+    
+    Write-Host "Season double trend compared to career average:"
+    Write-Host "1. Declining"
+    Write-Host "2. Same"
+    Write-Host "3. Above"
+    $trendChoice = Read-Host "Enter choice (1-3)"
+    $trendMap = @{
+        "1" = "Declining"
+        "2" = "Same"
+        "3" = "Above"
+    }
+    $trend = $trendMap[$trendChoice]
+    
+    # Current Form
+    Write-Host "`nCURRENT FORM" -ForegroundColor Yellow
+    $streakWithoutDoubles = [int](Read-Host "Current games without a double")
+    $recentBatting = [double](Read-Host "Batting average last 7 games (e.g. 0.275)")
+    
+    # Matchup Factors
+    Write-Host "`nMATCHUP FACTORS" -ForegroundColor Yellow
+    
+    Write-Host "Starting pitcher double prevention level:"
+    Write-Host "1. Top 10% in preventing doubles"
+    Write-Host "2. Above average at preventing doubles"
+    Write-Host "3. Average at preventing doubles"
+    Write-Host "4. Below average at preventing doubles"
+    $pitcherChoice = Read-Host "Enter choice (1-4)"
+    $pitcherMap = @{
+        "1" = "Top10Percent"
+        "2" = "AboveAverage"
+        "3" = "Average"
+        "4" = "BelowAverage"
+    }
+    $pitcherLevel = $pitcherMap[$pitcherChoice]
+    
+    Write-Host "Pitcher handedness matchup:"
+    Write-Host "1. Unfavorable for batter"
+    Write-Host "2. Neutral"
+    Write-Host "3. Favorable for batter"
+    $handednessChoice = Read-Host "Enter choice (1-3)"
+    $handednessMap = @{
+        "1" = "Unfavorable"
+        "2" = "Neutral"
+        "3" = "Favorable"
+    }
+    $handedness = $handednessMap[$handednessChoice]
+    
+    Write-Host "Bullpen quality:"
+    Write-Host "1. Top 10 bullpen"
+    Write-Host "2. Middle third bullpen"
+    Write-Host "3. Bottom third bullpen"
+    $bullpenChoice = Read-Host "Enter choice (1-3)"
+    $bullpenMap = @{
+        "1" = "Top10"
+        "2" = "MiddleThird"
+        "3" = "BottomThird"
+    }
+    $bullpen = $bullpenMap[$bullpenChoice]
+    
+    Write-Host "Opposing defense quality:"
+    Write-Host "1. Elite defense (top 5)"
+    Write-Host "2. Above average defense"
+    Write-Host "3. Average defense"
+    Write-Host "4. Poor defense (bottom 5)"
+    $defenseChoice = Read-Host "Enter choice (1-4)"
+    $defenseMap = @{
+        "1" = "Elite"
+        "2" = "AboveAverage"
+        "3" = "Average"
+        "4" = "Poor"
+    }
+    $defense = $defenseMap[$defenseChoice]
+    
+    # Venue Factors
+    Write-Host "`nVENUE FACTORS" -ForegroundColor Yellow
+    
+    Write-Host "Stadium double factor:"
+    Write-Host "1. Bottom 5 stadium for doubles"
+    Write-Host "2. Bottom third for doubles"
+    Write-Host "3. Middle third for doubles"
+    Write-Host "4. Top third for doubles"
+    Write-Host "5. Top 5 stadium for doubles"
+    $stadiumChoice = Read-Host "Enter choice (1-5)"
+    $stadiumMap = @{
+        "1" = "Bottom5"
+        "2" = "BottomThird"
+        "3" = "MiddleThird"
+        "4" = "TopThird"
+        "5" = "Top5"
+    }
+    $stadium = $stadiumMap[$stadiumChoice]
+    
+    Write-Host "Weather conditions:"
+    Write-Host "1. Strong winds blowing in"
+    Write-Host "2. Neutral conditions"
+    Write-Host "3. Strong winds blowing out"
+    $weatherChoice = Read-Host "Enter choice (1-3)"
+    $weatherMap = @{
+        "1" = "WindIn"
+        "2" = "Neutral"
+        "3" = "WindOut"
+    }
+    $weather = $weatherMap[$weatherChoice]
+    
+    # Game Context
+    Write-Host "`nGAME CONTEXT" -ForegroundColor Yellow
+    
+    Write-Host "Time of day:"
+    Write-Host "1. Night game"
+    Write-Host "2. Twilight game"
+    Write-Host "3. Day game"
+    $timeChoice = Read-Host "Enter choice (1-3)"
+    $timeMap = @{
+        "1" = "Night"
+        "2" = "Twilight"
+        "3" = "Day"
+    }
+    $time = $timeMap[$timeChoice]
+    
+    Write-Host "Game importance:"
+    Write-Host "1. Low importance game"
+    Write-Host "2. Regular season meaningful game"
+    Write-Host "3. High stakes game (playoffs, rivalry)"
+    $importanceChoice = Read-Host "Enter choice (1-3)"
+    $importanceMap = @{
+        "1" = "LowImportance"
+        "2" = "RegularSeason"
+        "3" = "HighStakes"
+    }
+    $importance = $importanceMap[$importanceChoice]
+    
+    # Calculate result
+    $result = Get-DoubleProbabilityScore -PlayerName $playerName `
+        -AverageDoublesPerGame $doublesPerGame `
+        -DoubleRatePercentage $doubleRate `
+        -SeasonDoubleTrend $trend `
+        -CurrentStreakWithoutDoubles $streakWithoutDoubles `
+        -BattingAverageLast7Games $recentBatting `
+        -PitcherDoublePreventionLevel $pitcherLevel `
+        -PitcherHandednessMatchup $handedness `
+        -BullpenQuality $bullpen `
+        -OpposingDefenseQuality $defense `
+        -StadiumDoubleFactor $stadium `
+        -WeatherConditions $weather `
+        -TimeOfDay $time `
+        -GameImportance $importance
+    
+    # Display result
+    Write-Host "`n`n"
+    Write-Host (Get-FormattedDoubleReport -Result $result) -ForegroundColor Green
+    
+    # Export option
+    $export = Read-Host "Would you like to export this report to a file? (Y/N)"
+    if ($export -eq "Y" -or $export -eq "y") {
+        $filePath = "$HOME\Desktop\$($playerName.Replace(' ', ''))_Double_Report.txt"
+        Get-FormattedDoubleReport -Result $result | Out-File -FilePath $filePath
+        Write-Host "Report exported to: $filePath" -ForegroundColor Cyan
+    }
+}
+
+# Main menu
+function Show-MainMenu {
+    Clear-Host
+    Write-Host "MLB BATTER DOUBLE PROBABILITY CALCULATOR" -ForegroundColor Cyan
+    Write-Host "=======================================" -ForegroundColor Cyan
+    Write-Host "1. Run interactive calculator"
+    Write-Host "2. Show examples"
+    Write-Host "3. Exit"
+    
+    $choice = Read-Host "Enter your choice"
+    
+    switch ($choice) {
+        "1" { 
+            Clear-Host
+            Start-InteractiveScoring
+            Read-Host "`nPress Enter to return to main menu"
+            Show-MainMenu
+        }
+        "2" {
+            Clear-Host
+            Show-ExampleUsage
+            Read-Host "`nPress Enter to return to main menu"
+            Show-MainMenu
+        }
+        "3" {
+            Write-Host "Exiting..."
+            return
+        }
+        default {
+            Write-Host "Invalid choice. Please try again."
+            Start-Sleep -Seconds 2
+            Show-MainMenu
+        }
+    }
+}
+
+# Start the script
+Show-MainMenu
+
+
+
+MLB Batter Double Probability Scoring System
+Overview
+This scoring system evaluates the likelihood of an MLB batter NOT hitting a double in a game. Lower total points indicate a higher probability of the batter going without a double.
+Scoring Categories and Weights
+1. Player Hitting Profile (25 points total)
+
+Average Doubles per Game (0-10 points)
+
+0.00-0.10: 0 points
+0.11-0.20: 2 points
+0.21-0.30: 5 points
+0.31-0.40: 7 points
+
+
+0.40: 10 points
+
+
+
+
+Double Rate (Doubles per At-Bat) (0-10 points)
+
+<3%: 0 points
+3-5%: 3 points
+5-7%: 6 points
+
+
+7%: 10 points
+
+
+
+
+Current Season Double Trend (0-5 points)
+
+Declining from career average: 0 points
+Same as career average: 3 points
+Above career average: 5 points
+
+
+
+2. Current Form (20 points total)
+
+Current Streak without Doubles (0-10 points)
+
+5+ games: 0 points
+3-4 games: 3 points
+1-2 games: 6 points
+0 games (hit double in last game): 10 points
+
+
+Overall Hitting in Last 7 Games (0-10 points)
+
+Batting below .200: 0 points
+Batting .200-.250: 3 points
+Batting .251-.300: 6 points
+Batting above .300: 10 points
+
+
+
+3. Matchup Factors (30 points total)
+
+Starting Pitcher Double Prevention (0-10 points)
+
+Among top 10% in preventing doubles: 0 points
+Above average at preventing doubles: 3 points
+Average at preventing doubles: 6 points
+Below average at preventing doubles: 10 points
+
+
+Pitcher Handedness vs. Batter (0-5 points)
+
+Unfavorable matchup for batter: 0 points
+Neutral matchup: 3 points
+Favorable matchup for batter: 5 points
+
+
+Bullpen Quality (0-5 points)
+
+Top 10 bullpen: 0 points
+Middle third bullpen: 3 points
+Bottom third bullpen: 5 points
+
+
+Opposing Defense Quality (0-10 points)
+
+Elite defense (top 5): 0 points
+Above average defense: 3 points
+Average defense: 6 points
+Poor defense (bottom 5): 10 points
+
+
+
+4. Venue Factors (15 points total)
+
+Stadium Double Factor (0-10 points)
+
+Bottom 5 stadium for doubles: 0 points
+Bottom third for doubles: 3 points
+Middle third for doubles: 5 points
+Top third for doubles: 8 points
+Top 5 stadium for doubles: 10 points
+
+
+Weather Conditions (0-5 points)
+
+Strong winds blowing in: 0 points
+Neutral conditions: 3 points
+Strong winds blowing out: 5 points
+
+
+
+5. Game Context (10 points total)
+
+Time of Day (0-5 points)
+
+Night game: 0 points
+Twilight game: 3 points
+Day game: 5 points
+
+
+Game Importance (0-5 points)
+
+Low importance game: 0 points
+Regular season meaningful game: 3 points
+High stakes game (playoffs, rivalry): 5 points
+
+
+
+Scoring Interpretation
+
+0-20 points: Very high probability of no doubles (>90%)
+21-40 points: High probability of no doubles (70-90%)
+41-60 points: Moderate probability of no doubles (50-70%)
+61-80 points: Low probability of no doubles (30-50%)
+81-100 points: Very low probability of no doubles (<30%)
+
+Example Calculation
+Player X has:
+
+0.15 doubles per game (2 points)
+4% double rate (3 points)
+Declining season trend (0 points)
+3 games without a double (3 points)
+Batting .220 in last 7 games (3 points)
+Facing a top double-preventing pitcher (0 points)
+Unfavorable handedness matchup (0 points)
+Top 10 opponent bullpen (0 points)
+Above average defense (3 points)
+Playing in a bottom-third doubles park (3 points)
+Neutral weather (3 points)
+Night game (0 points)
+Regular season game (3 points)
+
+Total: 23 points → High probability (70-90%) of not hitting a double
