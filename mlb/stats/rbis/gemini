@@ -1,0 +1,162 @@
+# PowerShell script to calculate the likelihood of an MLB batter NOT getting an RBI
+
+# Function to get categorical user input
+function Get-CategoricalInput {
+    param(
+        [Parameter(Mandatory=$true)]
+        [string]$Prompt,
+        [hashtable]$Options
+    )
+    Write-Host $Prompt
+    foreach ($key in $Options.Keys) {
+        Write-Host "$key. $($Options[$key])"
+    }
+    do {
+        $choice = Read-Host "Enter the number corresponding to your choice"
+    } while (-not $Options.ContainsKey($choice))
+    return $choice
+}
+
+# Initialize total weighted points
+$TotalWeightedPoints = 0
+
+Write-Host "Enter information to calculate the likelihood of a batter NOT getting an RBI:"
+Write-Host "-------------------------------------------------------------------------"
+
+# 1. Current Streak (vs. RBI) - Weight: 3
+$CurrentStreakChoice = Get-CategoricalInput -Prompt "Current Streak (consecutive games without an RBI):" -Options @{
+    "1" = "0-2 games (5 points)"
+    "2" = "3-5 games (3 points)"
+    "3" = "6+ games (1 point)"
+}
+switch ($CurrentStreakChoice) {
+    "1" {$TotalWeightedPoints += 5 * 3}
+    "2" {$TotalWeightedPoints += 3 * 3}
+    "3" {$TotalWeightedPoints += 1 * 3}
+}
+
+# 2. Average Streak (vs. RBI) - Weight: 2
+$AverageStreakChoice = Get-CategoricalInput -Prompt "Average Streak (batter's historical average streak without RBI):" -Options @{
+    "1" = "Below league average (4 points)"
+    "2" = "League average (3 points)"
+    "3" = "Above league average (2 points)"
+    "4" = "Significantly above league average (1 point)"
+}
+switch ($AverageStreakChoice) {
+    "1" {$TotalWeightedPoints += 4 * 2}
+    "2" {$TotalWeightedPoints += 3 * 2}
+    "3" {$TotalWeightedPoints += 2 * 2}
+    "4" {$TotalWeightedPoints += 1 * 2}
+}
+
+# 3. Stadium (RBI Friendliness) - Weight: 2
+$StadiumChoice = Get-CategoricalInput -Prompt "Stadium Type (RBI Friendliness):" -Options @{
+    "1" = "RBI-friendly stadium (4 points)"
+    "2" = "Neutral stadium (2 points)"
+    "3" = "RBI-unfriendly stadium (1 point)"
+}
+switch ($StadiumChoice) {
+    "1" {$TotalWeightedPoints += 4 * 2}
+    "2" {$TotalWeightedPoints += 2 * 2}
+    "3" {$TotalWeightedPoints += 1 * 2}
+}
+
+# 4. Time of Day - Weight: 1
+$TimeOfDayChoice = Get-CategoricalInput -Prompt "Time of Day:" -Options @{
+    "1" = "Day game (2 points)"
+    "2" = "Night game (1 point)"
+}
+switch ($TimeOfDayChoice) {
+    "1" {$TotalWeightedPoints += 2 * 1}
+    "2" {$TotalWeightedPoints += 1 * 1}
+}
+
+# 5. Starting Pitcher (RBI Allowed) - Weight: 2
+$PitcherChoice = Get-CategoricalInput -Prompt "Starting Pitcher's tendency to allow RBI:" -Options @{
+    "1" = "High RBI rate allowed (4 points)"
+    "2" = "Average RBI rate allowed (2 points)"
+    "3" = "Low RBI rate allowed (1 point)"
+}
+switch ($PitcherChoice) {
+    "1" {$TotalWeightedPoints += 4 * 2}
+    "2" {$TotalWeightedPoints += 2 * 2}
+    "3" {$TotalWeightedPoints += 1 * 2}
+}
+
+# 6. Average RBI per At-Bat - Weight: 3
+$RBIsPerABChoice = Get-CategoricalInput -Prompt "Batter's Average RBI per At-Bat:" -Options @{
+    "1" = "High RBI per at-bat (5 points)"
+    "2" = "Above average (3 points)"
+    "3" = "Average (2 points)"
+    "4" = "Below average (1 point)"
+}
+switch ($RBIsPerABChoice) {
+    "1" {$TotalWeightedPoints += 5 * 3}
+    "2" {$TotalWeightedPoints += 3 * 3}
+    "3" {$TotalWeightedPoints += 2 * 3}
+    "4" {$TotalWeightedPoints += 1 * 3}
+}
+
+# 7. Runners in Scoring Position (RISP) Average - Weight 3
+$RISPAverageChoice = Get-CategoricalInput -Prompt "Batter's RISP Average:" -Options @{
+    "1" = "High RISP average (4 points)"
+    "2" = "Average RISP average (2 points)"
+    "3" = "Low RISP average (1 point)"
+}
+switch ($RISPAverageChoice) {
+    "1" {$TotalWeightedPoints += 4 * 3}
+    "2" {$TotalWeightedPoints += 2 * 3}
+    "3" {$TotalWeightedPoints += 1 * 3}
+}
+
+# 8. Opposing Pitcher's WHIP (Walks and Hits per Inning Pitched) - Weight 2
+$PitcherWHIPChoice = Get-CategoricalInput -Prompt "Opposing Pitcher's WHIP:" -Options @{
+    "1" = "High WHIP (4 points)"
+    "2" = "Average WHIP (2 points)"
+    "3" = "Low WHIP (1 point)"
+}
+switch ($PitcherWHIPChoice) {
+    "1" {$TotalWeightedPoints += 4 * 2}
+    "2" {$TotalWeightedPoints += 2 * 2}
+    "3" {$TotalWeightedPoints += 1 * 2}
+}
+
+# 9. Batting Order Position - Weight 2
+$BattingOrderChoice = Get-CategoricalInput -Prompt "Batting Order Position:" -Options @{
+    "1" = "Top of lineup (1-2) (2 points)"
+    "2" = "Middle of lineup (3-6) (4 points)"
+    "3" = "Bottom of lineup (7-9) (1 point)"
+}
+switch ($BattingOrderChoice) {
+    "1" {$TotalWeightedPoints += 2 * 2}
+    "2" {$TotalWeightedPoints += 4 * 2}
+    "3" {$TotalWeightedPoints += 1 * 2}
+}
+
+# 10. Team's Overall Offensive Performance - Weight 1
+$TeamOffenseChoice = Get-CategoricalInput -Prompt "Team's Overall Offensive Performance:" -Options @{
+    "1" = "High scoring team (4 points)"
+    "2" = "Average scoring team (2 points)"
+    "3" = "Low scoring team (1 point)"
+}
+switch ($TeamOffenseChoice) {
+    "1" {$TotalWeightedPoints += 4 * 1}
+    "2" {$TotalWeightedPoints += 2 * 1}
+    "3" {$TotalWeightedPoints += 1 * 1}
+}
+
+# Output the total weighted points and interpretation
+Write-Host "-------------------------------------------------------------------------"
+Write-Host "Total Weighted Points: $TotalWeightedPoints"
+Write-Host "-------------------------------------------------------------------------"
+
+if ($TotalWeightedPoints -le 35) {
+    Write-Host "Interpretation: Low point total (<= 35) suggests a higher probability that the batter will NOT get an RBI in this game."
+} elseif ($TotalWeightedPoints -le 60) {
+    Write-Host "Interpretation: Moderate point total (36-60) suggests an average probability of the batter NOT getting an RBI in this game."
+} else {
+    Write-Host "Interpretation: High point total (> 60) suggests a lower probability that the batter will NOT get an RBI in this game (i.e., a higher probability of getting an RBI)."
+}
+
+Write-Host "-------------------------------------------------------------------------"
+Write-Host "Remember this is a simplified model and baseball outcomes are complex and unpredictable."
