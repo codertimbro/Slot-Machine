@@ -1,3 +1,37 @@
+$sourceFolder = "F:\recording_chat"
+$destinationFolder = "F:\recording_chat\duplicates"
+
+# Create destination folder if it doesn't exist
+if (-not (Test-Path $destinationFolder)) {
+    New-Item -Path $destinationFolder -ItemType Directory
+}
+
+# Get all .mp4 files recursively
+$files = Get-ChildItem -Path $sourceFolder -Filter *.mp4 -Recurse
+
+# Group files by name before first space or first dash if no space exists
+$grouped = $files | Group-Object {
+    $name = $_.BaseName
+    if ($name -match "^(.*?)[\s-]") {
+        $matches[1]
+    } else {
+        $name
+    }
+}
+
+# Move files only if there is more than one file in the group
+foreach ($group in $grouped) {
+    if ($group.Count -gt 1) {
+        foreach ($file in $group.Group) {
+            $destPath = Join-Path $destinationFolder $file.Name
+            Write-Host "Moving: $($file.FullName) -> $destPath"
+            Move-Item -Path $file.FullName -Destination $destPath -Force
+        }
+    }
+}
+
+
+
 Creating a point system to predict the likelihood of an MLB batter not hitting a double in a game involves evaluating various factors that influence double-hitting probabilities. You've identified several key categories:
 
 Current Streak: The batter's recent performance, particularly their streak of games with or without doubles.​
