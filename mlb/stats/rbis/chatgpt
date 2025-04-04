@@ -1,0 +1,74 @@
+Creating a PowerShell script to predict the likelihood of an MLB batter not recording a run batted in (RBI) in a game involves several steps:
+
+Identify Relevant Factors: Determine the variables that influence RBI occurrences, such as the batter's current performance streaks, the stadium's characteristics, time of day, opposing pitcher, and more.​
+
+Collect Data: Gather historical and current data for these factors from reliable sources.​
+
+Assign Weights: Establish the impact of each factor on the likelihood of achieving an RBI.​
+
+Calculate a Score: Combine the weighted factors to generate a score indicating the probability of the batter not recording an RBI.​
+
+Key Factors to Consider:
+
+Current Streak: The batter's recent games with or without RBIs.​
+
+Average Streak: Typical length of consecutive games with or without RBIs.​
+
+Stadium (Park Factors): How the ballpark influences offensive statistics. ​
+Wikipedia
+
+Time of Day: Day vs. night games and their impact on performance.​
+
+Starting Pitcher: The opposing pitcher's statistics and performance.​
+
+Average RBIs per At-Bat: The batter's historical RBI rate per at-bat.​
+
+Lineup Position: The batter's spot in the batting order, affecting RBI opportunities. ​
+c-keyes.github.io
+
+Team's Offensive Strength: Overall performance of the batter's team.​
+
+Opposing Team's Defensive Strength: Effectiveness of the opposing team's defense.​
+
+Weather Conditions: Influence of weather on game performance.​
+
+Data Collection:
+
+To automate data retrieval, consider using APIs such as:​
+
+Sports Stats Gather MLB API: Provides recent batting performance data. ​
+sportsstatsgather.com
+
+Assigning Weights and Calculating Scores:
+
+Assign weights to each factor based on their perceived influence on RBI occurrences. For example:​
+
+Current Streak: High impact (weight = 0.2)​
+
+Stadium: Moderate impact (weight = 0.15)​
+
+Starting Pitcher: High impact (weight = 0.2)​
+
+Normalize the data for each factor, multiply by the assigned weights, and sum them to get a total score. A higher score could indicate a higher probability of not recording an RBI.​
+
+PowerShell Script Outline:
+
+While a comprehensive script requires access to specific data sources and APIs, the general structure in PowerShell would involve:​
+
+Fetching Data: Use Invoke-RestMethod to call APIs and retrieve data.​
+
+Processing Data: Parse the JSON or XML responses to extract relevant statistics.​
+
+Calculating Scores: Apply the weights to the normalized data and compute the total score.​
+
+Outputting Results: Display or export the results as needed.​
+
+Considerations:
+
+Data Accuracy: Ensure the data sources are reliable and up-to-date.​
+
+API Access: Some APIs may require authentication or have usage limits.​
+
+Statistical Validation: Regularly validate the model against actual game outcomes to refine the weights and improve accuracy.​
+
+By systematically analyzing these factors and automating the data collection and computation process, you can develop a model to predict the likelihood of a batter not recording an RBI in a game.
