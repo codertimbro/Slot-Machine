@@ -1,0 +1,286 @@
+# PowerShell script to calculate the likelihood of an MLB batter NOT getting a double
+
+# Function to get user input with validation
+function Get-UserInput {
+    param(
+        [Parameter(Mandatory=$true)]
+        [string]$Prompt,
+        [ValidateScript({$_ -match '^\d+$'})]
+        [string]$Validation
+    )
+    Write-Host $Prompt
+    return Read-Host
+}
+
+# Function to get categorical user input
+function Get-CategoricalInput {
+    param(
+        [Parameter(Mandatory=$true)]
+        [string]$Prompt,
+        [Parameter(Mandatory=$true)]
+        [hashtable]$Options
+    )
+    Write-Host $Prompt
+    foreach ($key in $Options.Keys) {
+        Write-Host "$key. $($Options[$key])"
+    }
+    do {
+        $choice = Read-Host "Enter the number corresponding to your choice"
+    } while (-not $Options.ContainsKey($choice))
+    return $choice
+}
+
+# Initialize total points
+$TotalPoints = 0
+
+Write-Host "Enter information to calculate the likelihood of a batter NOT getting a double:"
+Write-Host "-------------------------------------------------------------------------"
+
+# 1. Current Streak (vs. Doubles)
+$CurrentStreakChoice = Get-CategoricalInput -Prompt "Current Streak (consecutive games without a double):" -Options @{
+    "1" = "0-2 games (5 points)"
+    "2" = "3-5 games (3 points)"
+    "3" = "6+ games (1 point)"
+}
+switch ($CurrentStreakChoice) {
+    "1" {$TotalPoints += 5}
+    "2" {$TotalPoints += 3}
+    "3" {$TotalPoints += 1}
+}
+
+# 2. Average Streak (vs. Doubles)
+$AverageStreakChoice = Get-CategoricalInput -Prompt "Average Streak (batter's historical average streak without doubles):" -Options @{
+    "1" = "Below league average (4 points)"
+    "2" = "League average (3 points)"
+    "3" = "Above league average (2 points)"
+    "4" = "Significantly above league average (1 point)"
+}
+switch ($AverageStreakChoice) {
+    "1" {$TotalPoints += 4}
+    "2" {$TotalPoints += 3}
+    "3" {$TotalPoints += 2}
+    "4" {$TotalPoints += 1}
+}
+
+# 3. Stadium
+$StadiumChoice = Get-CategoricalInput -Prompt "Stadium Type:" -Options @{
+    "1" = "Double-friendly stadium (4 points)"
+    "2" = "Neutral stadium (2 points)"
+    "3" = "Double-unfriendly stadium (1 point)"
+}
+switch ($StadiumChoice) {
+    "1" {$TotalPoints += 4}
+    "2" {$TotalPoints += 2}
+    "3" {$TotalPoints += 1}
+}
+
+# 4. Time of Day
+$TimeOfDayChoice = Get-CategoricalInput -Prompt "Time of Day:" -Options @{
+    "1" = "Day game (2 points)"
+    "2" = "Night game (1 point)"
+}
+switch ($TimeOfDayChoice) {
+    "1" {$TotalPoints += 2}
+    "2" {$TotalPoints += 1}
+}
+
+# 5. Starting Pitcher (Double Rate Allowed)
+$PitcherChoice = Get-CategoricalInput -Prompt "Starting Pitcher's tendency to allow doubles:" -Options @{
+    "1" = "High double rate allowed (4 points)"
+    "2" = "Average double rate allowed (2 points)"
+    "3" = "Low double rate allowed (1 point)"
+}
+switch ($PitcherChoice) {
+    "1" {$TotalPoints += 4}
+    "2" {$TotalPoints += 2}
+    "3" {$TotalPoints += 1}
+}
+
+# 6. Average Doubles per At-Bat (Batter)
+$DoublesPerABChoice = Get-CategoricalInput -Prompt "Batter's Average Doubles per At-Bat:" -Options @{
+    "1" = "High doubles per at-bat (5 points)"
+    "2" = "Above average (3 points)"
+    "3" = "Average (2 points)"
+    "4" = "Below average (1 point)"
+}
+switch ($DoublesPerABChoice) {
+    "1" {$TotalPoints += 5}
+    "2" {$TotalPoints += 3}
+    "3" {$TotalPoints += 2}
+    "4" {$TotalPoints += 1}
+}
+
+# 7. Opposing Defensive Shift
+$ShiftChoice = Get-CategoricalInput -Prompt "Opposing Defensive Shift:" -Options @{
+    "1" = "Heavy shift towards where doubles are normally hit (1 point)"
+    "2" = "Normal defensive alignment (3 points)"
+    "3" = "Defensive shift away from where doubles are normally hit (5 points)"
+}
+switch ($ShiftChoice) {
+    "1" {$TotalPoints += 1}
+    "2" {$TotalPoints += 3}
+    "3" {$TotalPoints += 5}
+}
+
+# 8. Weather Conditions
+$WeatherChoice = Get-CategoricalInput -Prompt "Weather Conditions:" -Options @{
+    "1" = "High wind blowing out (5 points)"
+    "2" = "Neutral weather (2 points)"
+    "3" = "High wind blowing in (1 point)"
+    "4" = "Extreme heat or cold (3 points)"
+}
+switch ($WeatherChoice) {
+    "1" {$TotalPoints += 5}
+    "2" {$TotalPoints += 2}
+    "3" {$TotalPoints += 1}
+    "4" {$TotalPoints += 3}
+}
+
+# 9. Batter's Recent Batting Average
+$BattingAverageChoice = Get-CategoricalInput -Prompt "Batter's Recent Batting Average:" -Options @{
+    "1" = "Below .200 (1 point)"
+    "2" = ".200 - .250 (2 points)"
+    "3" = ".251 - .300 (3 points)"
+    "4" = "Above .300 (4 points)"
+}
+switch ($BattingAverageChoice) {
+    "1" {$TotalPoints += 1}
+    "2" {$TotalPoints += 2}
+    "3" {$TotalPoints += 3}
+    "4" {$TotalPoints += 4}
+}
+
+# 10. Ballpark Dimensions
+$DimensionsChoice = Get-CategoricalInput -Prompt "Ballpark Outfield Dimensions:" -Options @{
+    "1" = "Short outfield dimensions (4 points)"
+    "2" = "Average outfield dimensions (2 points)"
+    "3" = "Deep outfield dimensions (1 point)"
+}
+switch ($DimensionsChoice) {
+    "1" {$TotalPoints += 4}
+    "2" {$TotalPoints += 2}
+    "3" {$TotalPoints += 1}
+}
+
+# Output the total points and interpretation
+Write-Host "-------------------------------------------------------------------------"
+Write-Host "Total Points: $TotalPoints"
+Write-Host "-------------------------------------------------------------------------"
+
+if ($TotalPoints -le 15) {
+    Write-Host "Interpretation: Low point total (<= 15) suggests a higher probability that the batter will NOT hit a double in this game."
+} elseif ($TotalPoints -le 25) {
+    Write-Host "Interpretation: Moderate point total (16-25) suggests an average probability of the batter NOT hitting a double in this game."
+} else {
+    Write-Host "Interpretation: High point total (> 25) suggests a lower probability that the batter will NOT hit a double in this game (i.e., a higher probability of hitting a double)."
+}
+
+Write-Host "-------------------------------------------------------------------------"
+Write-Host "Remember this is a simplified model and baseball outcomes are complex and unpredictable."
+
+
+Categories and Point System:
+
+Current Streak (vs. Doubles):
+
+This measures how many consecutive games the batter has gone without a double.
+Points:
+0-2 games: 5 points
+3-5 games: 3 points
+6+ games: 1 point
+Average Streak (vs. Doubles):
+
+The batter's historical average streak length without doubles.
+Points:
+Below league average: 4 points
+League average: 3 points
+Above league average: 2 points
+Significantly above league average: 1 point
+Stadium:
+
+Some stadiums are notoriously double-friendly (e.g., Coors Field).
+Points:
+Double-friendly stadium: 4 points
+Neutral stadium: 2 points
+Double-unfriendly stadium: 1 point
+Time of Day:
+
+Day games might have different lighting conditions that affect hitting.
+Points:
+Day game: 2 points
+Night game: 1 points
+Starting Pitcher:
+
+Pitcher's style and tendencies play a role.
+Points:
+Pitcher with high double rate allowed: 4 points
+Average double rate allowed: 2 points
+Pitcher with low double rate allowed: 1 points
+Average Doubles per At-Bat:
+
+The batter's historical rate of hitting doubles.
+Points:
+High doubles per at-bat: 5 points
+Above average: 3 points
+Average: 2 points
+Below average: 1 point
+Opposing Defensive Shift:
+
+How the opposing defense is positioned.
+Points:
+Heavy shift towards where doubles are normally hit: 1 point.
+Normal defensive alignment: 3 points.
+Defensive shift away from where doubles are normally hit: 5 points.
+Weather Conditions:
+
+Wind, temperature, and humidity can affect ball flight.
+Points:
+High wind blowing out: 5 points.
+Neutral weather: 2 points.
+High wind blowing in: 1 point.
+Extreme heat or cold: 3 points.
+Batter's Recent Batting Average:
+
+A batter struggling at the plate is less likely to hit a double.
+Points:
+Batting average below .200: 1 points.
+Batting average .200 - .250: 2 points.
+Batting average .251 - .300: 3 points.
+Batting average above .300: 4 points.
+Ballpark Dimensions:
+
+The deeper the outfield the less likely a double is.
+Points:
+Short outfield dimensions: 4 points.
+Average outfield dimensions: 2 points.
+Deep outfield dimensions: 1 points.
+How to Use the System:
+
+Gather Data: For each category, collect the relevant data for the batter and the game.
+Assign Points: Based on the data, assign points for each category.
+Calculate Total Points: Sum the points from all categories.
+Interpret the Result:
+A lower total score suggests a higher probability that the batter will not hit a double.
+A higher total score suggests a higher probability that the batter will hit a double.
+Example:
+
+Let's say a batter has:
+
+Current streak: 7 games without a double (1 point)
+Average streak: Above league average (2 points)
+Stadium: Double-unfriendly (1 point)
+Time of day: Day game (2 points)
+Starting pitcher: Low double rate allowed (1 point)
+Average doubles per at-bat: Below average (1 point)
+Opposing Defensive shift: Heavy shift towards where doubles are normally hit (1 point)
+Weather conditions: Neutral weather (2 points)
+Batting average: below .200 (1 point)
+Ballpark dimensions: Deep outfield dimensions (1 point)
+Total points: 1 + 2 + 1 + 2 + 1 + 1 + 1 + 2 + 1 + 1 = 13 points. This is a fairly low score, indicating a higher probability of the batter not hitting a double in this game.
+
+Important Notes:
+
+This system is a tool, not a guarantee. Baseball is inherently unpredictable.
+You can adjust the point values and categories to better fit your preferences and observations.
+It would require a lot of data to make this system more accurate.
+Using a programing language like python, and using baseball data from a site like baseball savant, or FanGraphs, would greatly increase the accuracy of this type of system.
