@@ -1,0 +1,31 @@
+Creating a point system to predict the likelihood of an MLB batter not hitting a double in a game involves evaluating various factors that influence double-hitting probabilities. You've identified several key categories:
+
+Current Streak: The batter's recent performance, particularly their streak of games with or without doubles.​
+
+Average Streak: The typical length of games in which the batter records doubles, providing insight into their consistency.​
+
+Stadium: The ballpark's dimensions and characteristics can significantly affect extra-base hits.​
+
+Time of Day: Day or night games can influence visibility and playing conditions, potentially impacting performance.​
+
+Starting Pitcher: The opposing pitcher's skill level, pitching style, and handedness can affect a batter's success.​
+
+Average Doubles per At-Bat: The batter's historical rate of hitting doubles per at-bat. For example, Pete Scott had the highest career doubles per at-bat ratio at 0.08. ​
+StatMuse
+
+To enhance this model, consider incorporating additional categories:
+
+Team's Doubles per Game: The average number of doubles the batter's team records per game, reflecting overall offensive strength. For instance, in 2024, the Boston Red Sox led MLB with an average of 1.92 doubles per game. ​
+Team Rankings
+
+Weather Conditions: Factors like temperature, humidity, and wind can influence ball flight and field conditions, affecting the likelihood of extra-base hits.​
+
+Defensive Alignment: The opposing team's defensive strategies, such as shifts, can impact a batter's ability to hit to certain areas.​
+
+Batter's Fatigue Level: The player's recent workload and travel schedule may affect their physical condition and performance.​
+
+Historical Performance Against Pitcher: The batter's past success or struggles against the specific starting pitcher can be indicative.​
+
+Injury Status: Any existing injuries or health concerns that might impair the batter's performance.​
+
+Assigning appropriate weights to these categories would require statistical analysis of historical data to determine their relative impact on the likelihood of hitting doubles. This approach would provide a more comprehensive and accurate predictive model.
