@@ -1,0 +1,135 @@
+# MLB No-RBI Prediction System
+# This script calculates a score where LOWER points indicate a higher likelihood of a batter NOT getting an RBI
+
+function Get-NoRBIScore {
+    param (
+        [int]$CurrentNoRBIStreak,         # Current streak of games without an RBI
+        [decimal]$AverageNoRBIStreak,     # Average streak length of games without RBIs
+        [string]$Stadium,                 # Stadium where the game is played
+        [string]$TimeOfDay,               # Day/Night game
+        [string]$StartingPitcher,         # Opposing starting pitcher
+        [decimal]$DoublesPerAB,           # Batter's average doubles per at-bat
+        [decimal]$BattingAverage,         # Batter's batting average
+        [int]$BattingOrder,               # Batter's position in lineup (1-9)
+        [decimal]$RISP,                   # Batting average with runners in scoring position
+        [string]$Weather,                 # Weather conditions
+        [decimal]$ParkFactor,             # Park factor for runs (below 1.0 = pitcher's park)
+        [decimal]$OpponentBullpenERA      # Opponent's bullpen ERA
+    )
+
+    # Initialize the score - lower points means higher chance of NO RBIs
+    $Score = 100
+
+    # --- WEIGHT SYSTEM ---
+    # Current Streak Weight - Longer no-RBI streaks tend to continue
+    $Score -= ($CurrentNoRBIStreak * 3)
+    
+    # Average Streak Weight - Batters who frequently go without RBIs are likely to continue
+    $Score -= ($AverageNoRBIStreak * 4)
+    
+    # Stadium Factor Weight
+    $StadiumPoints = switch ($Stadium) {
+        "Tropicana Field" { -8 }    # Historically tough for hitters
+        "Oracle Park" { -7 }        # Pitcher's park
+        "Dodger Stadium" { -5 }     # Pitcher-friendly
+        "Citi Field" { -5 }         # Pitcher-friendly
+        "T-Mobile Park" { -6 }      # Pitcher-friendly
+        "Coors Field" { 10 }        # Hitter's park (fewer points deducted)
+        "Great American Ball Park" { 8 } # Hitter's park
+        "Yankee Stadium" { 6 }      # Hitter's park
+        default { 0 }               # Neutral park
+    }
+    $Score += $StadiumPoints
+    
+    # Time of Day Weight
+    $TimePoints = switch ($TimeOfDay) {
+        "Night" { -4 }              # Harder to see ball at night
+        "Day" { 2 }                 # Better visibility
+        default { 0 }
+    }
+    $Score += $TimePoints
+    
+    # Starting Pitcher Quality (lower score = better pitcher = less chance of RBI)
+    $PitcherPoints = switch ($StartingPitcher) {
+        {$_ -match "Ace"} { -10 }   # Ace pitcher
+        {$_ -match "Elite"} { -8 }  # Elite pitcher
+        {$_ -match "Good"} { -5 }   # Good pitcher
+        {$_ -match "Average"} { -2 } # Average pitcher
+        {$_ -match "Poor"} { 3 }    # Poor pitcher
+        default { 0 }
+    }
+    $Score += $PitcherPoints
+    
+    # Doubles Per At-Bat Weight - More doubles = more likely to get RBIs
+    $DoublesPoints = [Math]::Round($DoublesPerAB * 100)
+    $Score += $DoublesPoints
+    
+    # Batting Average Weight - Better average = more likely to get RBIs
+    $BAPoints = [Math]::Round($BattingAverage * 50)
+    $Score += $BAPoints
+    
+    # Batting Order Weight - Leadoff and #9 hitters get fewer RBI opportunities
+    $BattingOrderPoints = switch ($BattingOrder) {
+        1 { -8 }      # Leadoff - fewer RBI chances
+        9 { -7 }      # 9th spot - fewer RBI chances
+        8 { -5 }      # 8th spot - fewer RBI chances
+        2 { -3 }      # 2nd spot - some RBI chances
+        3 { 5 }       # 3rd spot - good RBI chances
+        4 { 6 }       # Cleanup - best RBI chances
+        5 { 4 }       # 5th spot - good RBI chances
+        default { 0 }
+    }
+    $Score += $BattingOrderPoints
+    
+    # RISP (Runners In Scoring Position) Batting Average
+    $RISPPoints = [Math]::Round($RISP * 60)
+    $Score += $RISPPoints
+    
+    # Weather Conditions
+    $WeatherPoints = switch ($Weather) {
+        {$_ -match "Rain"} { -4 }      # Harder to hit in rain
+        {$_ -match "Cold"} { -5 }      # Cold weather reduces offense
+        {$_ -match "Wind In"} { -6 }   # Wind blowing in reduces homers
+        {$_ -match "Wind Out"} { 4 }   # Wind blowing out helps offense
+        {$_ -match "Dome"} { 2 }       # Controlled environment
+        default { 0 }
+    }
+    $Score += $WeatherPoints
+    
+    # Park Factor
+    $Score += ($ParkFactor * 10)
+    
+    # Opponent Bullpen ERA
+    $Score -= (7 - $OpponentBullpenERA)  # Lower ERA bullpens prevent RBIs better
+    
+    # Return final score (lower = higher chance of NO RBIs)
+    return [Math]::Max(0, [Math]::Round($Score))
+}
+
+# Example usage
+$NoRBIScore = Get-NoRBIScore -CurrentNoRBIStreak 4 `
+                       -AverageNoRBIStreak 2.3 `
+                       -Stadium "Oracle Park" `
+                       -TimeOfDay "Night" `
+                       -StartingPitcher "Ace" `
+                       -DoublesPerAB 0.05 `
+                       -BattingAverage 0.247 `
+                       -BattingOrder 1 `
+                       -RISP 0.210 `
+                       -Weather "Cold" `
+                       -ParkFactor 0.89 `
+                       -OpponentBullpenERA 3.25
+
+Write-Host "No-RBI Prediction Score: $NoRBIScore"
+Write-Host "Interpretation:"
+if ($NoRBIScore -lt 30) {
+    Write-Host "Very High probability of NO RBIs (>80%)"
+} elseif ($NoRBIScore -lt 50) {
+    Write-Host "High probability of NO RBIs (60-80%)"
+} elseif ($NoRBIScore -lt 70) {
+    Write-Host "Moderate probability of NO RBIs (40-60%)"
+} elseif ($NoRBIScore -lt 90) {
+    Write-Host "Low probability of NO RBIs (20-40%)"
+} else {
+    Write-Host "Very Low probability of NO RBIs (<20%)"
+}
