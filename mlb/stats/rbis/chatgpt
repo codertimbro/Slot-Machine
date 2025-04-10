@@ -72,3 +72,56 @@ API Access: Some APIs may require authentication or have usage limits.​
 Statistical Validation: Regularly validate the model against actual game outcomes to refine the weights and improve accuracy.​
 
 By systematically analyzing these factors and automating the data collection and computation process, you can develop a model to predict the likelihood of a batter not recording an RBI in a game.
+
+
+Batter Trends
+RBI Droughts:
+
+Consecutive Games Without an RBI:
+A batter going three or more games without recording an RBI can be seen as being in a “drought.” This may suggest they’re struggling to capitalize on opportunities, although it might also reflect limited chances if their teammates aren’t getting on base consistently.
+
+Plate Appearance Efficiency:
+Examining the player’s overall offensive output (e.g., on-base percentage and slugging) can help determine if the drought is due to a lack of quality plate appearances or a slump in situational hitting.
+
+Situational Context:
+Sometimes an RBI drought can be partly due to a player's spot in the batting order (e.g., a leadoff hitter may naturally have fewer RBI opportunities than a middle-of-the-order hitter).
+
+Recent Performance vs. Career Averages:
+
+Compare the player’s recent RBI streaks with their career or seasonal averages. A sharp deviation might indicate a temporary slump, suggesting that the current streak could continue, especially if the underlying factors (pitching matchup, park factors, etc.) persist.
+
+Opposing Pitching and Game Environment:
+
+If a hitter is facing a pitcher who is in a streak of run prevention (for example, pitching several scoreless games), the chances for RBI opportunities naturally decrease.
+
+Environmental factors like playing in a pitcher-friendly ballpark can also contribute to prolonged droughts, regardless of the hitter's ability.
+
+Pitcher Trends
+Scoreless or Shutout Streaks:
+
+Consecutive Games with No Runs Allowed:
+A pitcher who has maintained a streak of scoreless outings (or very few baserunners) is less likely to allow RBIs. Monitoring a pitcher’s recent game logs for consecutive scoreless innings or games can be a strong indicator.
+
+Low Run Support Impact:
+While sometimes a pitcher’s streak might be helped along by solid defense or low run support from the opposing lineup, consistently low RBI counts against the opponent may also highlight the pitcher’s efficiency in limiting baserunners and preventing extra-base hits.
+
+Quality of Pitches and Command:
+
+A pitcher consistently throwing quality pitches—those that induce weak contact or ground balls—can disrupt the natural flow of a lineup, reducing RBI opportunities for batters in the game.
+
+Opponent Matchups:
+
+Certain pitchers might have success against hitters who normally drive in runs, especially if those batters are experiencing their own RBI droughts. In these cases, the pitcher’s track record against such opponents becomes particularly relevant.
+
+Practical Use of These Trends
+Predictive Value:
+Monitoring streaks like a batter’s three-game or longer RBI drought, combined with situational factors such as pitcher quality and park effects, can offer a lens on whether the player is likely to add an RBI in an upcoming game. However, baseball is inherently unpredictable, and these streaks should be considered as part of a broader set of statistical indicators rather than definitive predictors.
+
+Data Sources:
+Websites such as FanGraphs, Baseball-Reference, and MLB’s official statistics page can help you track these streaks in real time. They often provide detailed game logs and situational statistics that can be cross-referenced to identify trends over several games.
+
+Lineup Context:
+For batters, especially, consider not only their individual performance but also the overall effectiveness of the lineup. A batter in a lineup with limited on-base production might naturally experience fewer RBI opportunities, skewing their streak statistics.
+
+Conclusion
+While streaks such as a batter not recording an RBI in the last three games or a pitcher keeping consecutive scoreless games can offer insights into current performance, it’s important to consider them within the broader context of game situations, lineup constructions, and environmental conditions. These trends highlight tendencies but do not guarantee future outcomes—hence, they should be used alongside other advanced metrics to form a complete picture of performance expectations in an MLB game.
