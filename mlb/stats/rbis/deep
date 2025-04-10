@@ -102,3 +102,80 @@ Historical RBI production
 Bullpen strength
 
 Recent/long-term hitting slumps
+
+
+Key Stats to Analyze
+Runs Scored (Last 3+ Games)
+
+Target batters with 0 runs in their last 3+ games (use MLB game logs or tools like Baseball-Reference).
+
+Plate Appearances (PA)
+
+Filter for players with regular playing time (e.g., 10+ PA in 3 games). Limited opportunities (e.g., pinch-hitting) skew results.
+
+On-Base Percentage (OBP)
+
+Low OBP (< .250) in the streak suggests they’re not reaching base (walks/hits), reducing chances to score.
+
+Slugging Percentage (SLG)
+
+Poor power numbers (SLG < .300) indicate weak contact, making it harder to advance into scoring position.
+
+Batted Ball Data
+
+Check exit velocity and hard-hit rate (via Baseball Savant).
+
+Low exit velocity (< 85 mph) = weak contact.
+
+High hard-hit% but poor results = bad luck (streak may reverse).
+
+Contextual Factors
+Team Offense: If the team is slumping (low runs/game), even good hitters may struggle to score.
+
+Lineup Position: Leadoff hitters get more chances to score; bottom-of-order hitters depend on teammates.
+
+Situational Stats:
+
+Team’s performance with RISP (Runners in Scoring Position).
+
+Batter’s performance in high-leverage situations.
+
+Injuries/Workload: Check if the player is nursing an injury or facing fatigue (e.g., playing 15+ straight games).
+
+Example Workflow
+Identify Targets: Use FanGraphs to filter batters with 0 runs in 3+ games.
+
+Narrow Down:
+
+Remove part-time players (PA < 10 in 3 games).
+
+Eliminate hitters with strong underlying metrics (e.g., high OBP, hard-hit%).
+
+Team Context: Check if their team ranks bottom 10 in runs scored (e.g., 2023 Oakland Athletics).
+
+Betting/DFS: Use this to fade hitters in prop bets (e.g., "No Runs" props on DraftKings) or avoid in DFS.
+
+Streak-Breaking Indicators
+A cold streak may end if:
+
+The batter faces a weak pitcher (high ERA, low strikeout rate).
+
+The team’s lineup improves (e.g., key hitters return from injury).
+
+Underlying metrics (exit velocity, xwOBA) suggest positive regression.
+
+Tools & Sources
+MLB Game Logs: Baseball-Reference, ESPN.
+
+Advanced Stats: Baseball Savant (exit velocity, xwOBA).
+
+Team Metrics: FanGraphs Team Stats.
+
+Injury Reports: Rotowire.
+
+Limitations
+Runs depend heavily on teammates driving the batter in. A batter with a high OBP but no runs might be unlucky, not slumping.
+
+Small sample sizes (3 games) can be noisy. Look for streaks of 5+ games for stronger signals.
+
+Let me know if you want specific player examples or real-time data!
