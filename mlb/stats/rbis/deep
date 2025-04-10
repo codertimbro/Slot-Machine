@@ -91,4 +91,81 @@ $batterScore = Get-RBIAvoidanceScore -CurrentHitlessStreak 7 `
 Write-Output "RBI Avoidance Score: $batterScore (Lower = Higher Avoidance Probability)"
 
 
- 
+ Key Stats for RBI Slumps
+RBIs in Last 3+ Games
+
+Target batters with 0 RBIs over their last 3+ games (use MLB Game Logs or FanGraphs).
+
+Performance with Runners in Scoring Position (RISP)
+
+Check their AVG/SLG with RISP during the streak.
+
+AVG < .200 or SLG < .300 = struggles in clutch spots.
+
+Compare to their career RISP stats (e.g., a career .280 hitter with RISP now hitting .150 suggests a slump).
+
+Batted Ball Profile
+
+Ground Ball Rate > 50%: Grounders rarely drive in runs unless they find gaps.
+
+Low Hard-Hit% (< 35%): Weak contact reduces extra-base hits (key for RBIs).
+
+High Pop-up Rate (> 15%): Easy outs waste scoring chances (use Baseball Savant).
+
+Team Context: RISP Opportunities
+
+If the team has a low OBP (.300 or worse) ahead of the batter, RBI chances are limited.
+
+Example: A cleanup hitter with teammates failing to reach base ahead of him.
+
+Plate Discipline
+
+Chase Rate (O-Swing%) > 35%: Swinging at bad pitches leads to weak contact or strikeouts.
+
+Low Walk Rate (< 6%): Few free passes mean fewer RBI chances via walks with bases loaded.
+
+Contextual Factors
+Lineup Position: Middle-of-the-order hitters (3-5 spots) get the most RBI chances. A slump here is more significant than for a leadoff hitter.
+
+Pitcher Matchups: Facing elite pitchers (low ERA, high K%) reduces RBI opportunities.
+
+Ballpark Factors: Pitcher-friendly parks (e.g., Oracle Park) suppress run-scoring.
+
+Injuries: Key table-setters (e.g., leadoff hitters) missing games = fewer runners on base.
+
+Workflow to Identify RBI Cold Streaks
+Filter Batters: Use FanGraphs Leaderboards to find players with 0 RBIs in 3+ games.
+
+Narrow Down:
+
+Remove part-time players (e.g., < 10 PA in 3 games).
+
+Eliminate hitters with strong underlying metrics (e.g., hard-hit% > 40%, xwOBA > .350).
+
+Check Team Context:
+
+Does the team rank bottom 10 in runs scored or OBP?
+
+Are key runners (e.g., high-OBP leadoff hitters) injured?
+
+Betting/DFS: Target "No RBI" props (e.g., DraftKings) for batters in poor matchups or team slumps.
+
+Streak-Breaking Indicators
+A batter’s RBI drought may end if:
+
+Teammates’ OBP improves (e.g., leadoff hitter returns from injury).
+
+They face a struggling pitcher (high WHIP, high ERA).
+
+Their RISP luck improves (e.g., low BABIP with RISP despite strong contact).
+
+Ballpark shift to a hitter-friendly venue (e.g., Coors Field).
+
+Tools & Sources
+RISP Stats: Baseball-Reference Splits.
+
+Advanced Metrics: Baseball Savant’s Player Profiles (xBA, xSLG with RISP).
+
+Team OBP/RISP: FanGraphs Team Stats.
+
+Injury Reports: MLB Injury Tracker.
