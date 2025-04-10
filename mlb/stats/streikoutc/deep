@@ -1,0 +1,97 @@
+Key Stats for Predicting Strikeouts
+Recent Strikeout Rate (K%)
+
+Target batters with a K% > 30% over their last 5–10 games (use FanGraphs or Baseball-Reference).
+
+Example: A hitter with 8+ strikeouts in their last 3 games is in a slump.
+
+Swing-and-Miss Metrics
+
+Whiff Rate (SwStr%): A whiff rate > 15% signals frequent swings and misses (via Baseball Savant).
+
+Chase Rate (O-Swing%): A chase rate > 35% indicates poor plate discipline (swinging at pitches outside the zone).
+
+Contact Ability
+
+Contact Rate < 70%: Struggles to make contact, even on pitches in the zone.
+
+Z-Contact% (in-zone contact): Batters with < 80% Z-Contact% are vulnerable to strikeouts on hittable pitches.
+
+Two-Strike Performance
+
+Two-strike K%: Batters with > 40% strikeout rate in two-strike counts often lack clutch adjustments.
+
+Check their swing/take decisions in two-strike counts (e.g., chasing breaking balls low/away).
+
+Pitch-Type Weaknesses
+
+High whiff rates against specific pitches (e.g., sliders or high fastballs).
+
+Example: A batter with a > 40% whiff rate vs. sliders is prone to Ks against pitchers with strong breaking balls.
+
+Contextual Factors
+Pitcher Matchup:
+
+Batters facing high-K pitchers (K/9 > 9.0) or pitchers with elite putaway pitches (e.g., Jacob deGrom’s fastball, Spencer Strider’s slider).
+
+Pitchers with a high swinging-strike rate (SwStr%) (> 12%).
+
+Ballpark Factors: Smaller strike zones (umpire-dependent) or hitter-unfriendly parks (e.g., Oracle Park) can amplify K rates.
+
+Lineup Position: Lead-off hitters often see more pitches and work counts, while free-swinging power hitters (e.g., Joey Gallo) are strikeout-prone.
+
+Fatigue/Injury: Batters playing through injuries (e.g., wrist/hand issues) often lose bat speed or plate coverage.
+
+Workflow to Identify Strikeout-Prone Batters
+Filter High-K Batters: Use FanGraphs to sort by K% (last 7 days) or strikeouts per game.
+
+Analyze Swing Behavior:
+
+On Baseball Savant, check Whiff% and Chase Rate trends.
+
+Look for rising strikeout rates paired with declining contact rates.
+
+Pitcher Matchup: Cross-reference with the opposing pitcher’s:
+
+Strikeout arsenal (e.g., fastball velocity, slider spin rate).
+
+Pitch usage (does the pitcher rely on the batter’s weak spots?).
+
+DFS/Betting: Target these batters for strikeout props (e.g., "Over 1.5 Ks" on DraftKings) or fade them in DFS lineups.
+
+Streak-Breaking Indicators
+A batter’s strikeout slump may end if:
+
+They face a low-K pitcher (K/9 < 7.0) or a pitcher with poor command (high BB%).
+
+Their contact metrics improve (e.g., Z-Contact% jumps 5+% in recent games).
+
+They adjust their approach (e.g., shorter swings, choking up with two strikes).
+
+Tools & Sources
+Plate Discipline Stats: FanGraphs Plate Discipline.
+
+Pitch-Level Data: Baseball Savant Statcast Search.
+
+Pitcher Scouting Reports: Brooks Baseball.
+
+Umpire Trends: Umpires with large strike zones (e.g., Angel Hernandez) boost K chances.
+
+Limitations
+Small Sample Sizes: A 3-game K streak might be noise. Focus on 5+ games with consistent trends.
+
+Pitcher Form: Even strikeout-prone hitters can exploit struggling pitchers (e.g., fastball velocity dips).
+
+Umpire Variance: A hitter-friendly strike zone can reduce Ks.
+
+Example Workflow
+A batter like Joey Gallo (career 38% K rate):
+
+Last 5 games: 12 strikeouts, 40% K rate.
+
+Whiff Rate: 18% (vs. MLB avg 12%).
+
+Matchup: Faces Spencer Strider (14.0 K/9, elite slider).
+→ High probability of 2+ strikeouts in the game.
+
+Need real-time data or a specific player breakdown? Let me know!
