@@ -1,0 +1,97 @@
+# PowerShell Script to Create Emails from CSV Data and a Template .msg File
+# This script reads a CSV file with columns: fullname, name, and ticket
+# It then uses a saved .msg template file and creates personalized emails
+
+# Parameters - update these with your actual file paths
+param (
+    [Parameter(Mandatory = $true)]
+    [string]$CsvFilePath,
+    
+    [Parameter(Mandatory = $true)]
+    [string]$TemplateMessagePath,
+    
+    [Parameter(Mandatory = $false)]
+    [switch]$SendImmediately = $false
+)
+
+# Function to validate file paths
+function Test-FilePath {
+    param (
+        [string]$Path,
+        [string]$FileType
+    )
+    
+    if (-not (Test-Path -Path $Path)) {
+        Write-Error "The specified $FileType file does not exist: $Path"
+        exit 1
+    }
+}
+
+# Validate file paths
+Test-FilePath -Path $CsvFilePath -FileType "CSV"
+Test-FilePath -Path $TemplateMessagePath -FileType "template message (.msg)"
+
+# Import the CSV file
+try {
+    $csvData = Import-Csv -Path $CsvFilePath
+    Write-Host "Successfully imported CSV data with $($csvData.Count) records."
+} 
+catch {
+    Write-Error "Failed to import CSV file: $_"
+    exit 1
+}
+
+# Create Outlook application object
+try {
+    $outlook = New-Object -ComObject Outlook.Application
+    Write-Host "Successfully connected to Outlook."
+} 
+catch {
+    Write-Error "Failed to create Outlook application object: $_"
+    exit 1
+}
+
+# Count for tracking progress
+$count = 0
+$total = $csvData.Count
+
+# Process each row in the CSV
+foreach ($row in $csvData) {
+    $count++
+    Write-Host "Processing email $count of $total for: $($row.fullname)"
+    
+    try {
+        # Open the template .msg file
+        $msgFile = $outlook.CreateItemFromTemplate($TemplateMessagePath)
+        
+        # Replace the To field with the fullname from CSV
+        $msgFile.To = $row.fullname
+        
+        # Replace the Subject with the ticket from CSV
+        $msgFile.Subject = $row.ticket
+        
+        # Replace "name" in the body with the name from CSV
+        $body = $msgFile.Body
+        $body = $body -replace "name", $row.name
+        $msgFile.Body = $body
+        
+        # Either send immediately or save as draft
+        if ($SendImmediately) {
+            $msgFile.Send()
+            Write-Host "  Email sent to $($row.fullname)"
+        } 
+        else {
+            $msgFile.Save()
+            Write-Host "  Email saved as draft for $($row.fullname)"
+        }
+    }
+    catch {
+        Write-Error "Failed to process email for $($row.fullname): $_"
+    }
+}
+
+Write-Host "Process completed. $count emails processed."
+
+# Example usage:
+# .\Create-EmailsFromCSV.ps1 -CsvFilePath "C:\Path\To\YourData.csv" -TemplateMessagePath "C:\Path\To\Template.msg"
+# Add -SendImmediately switch to send emails instead of saving as drafts
