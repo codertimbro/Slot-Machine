@@ -1,0 +1,52 @@
+# Define the path to your CSV file
+$csvPath = ".\baseball_stats.csv"
+
+# Read the CSV file
+$data = Import-Csv -Path $csvPath
+
+# Initialize variables to track total bets and profits
+$totalBets = 0
+$totalProfit = 0
+$winningBets = 0
+
+# Process each row in the CSV
+foreach ($row in $data) {
+    # Convert string values to integers (handling possible non-numeric values)
+    $rbi = [int]::TryParse($row.rbi, [ref]$null) ? [int]$row.rbi : 0
+    $run = [int]::TryParse($row.run, [ref]$null) ? [int]$row.run : 0
+    $doubles = [int]::TryParse($row."2b", [ref]$null) ? [int]$row."2b" : 0  # Using quotes because 2b starts with a number
+    $walks = [int]::TryParse($row.walks, [ref]$null) ? [int]$row.walks : 0
+    $strikeouts = [int]::TryParse($row.k, [ref]$null) ? [int]$row.k : 0
+
+    # Check conditions - all these must be true for a winning bet:
+    # - RBI must be 0
+    # - Run must be 0
+    # - 2B must be 0
+    # - Walks must be 0
+    # - K must be >= 1 (or equivalently, K cannot be 0)
+    $conditionsMet = ($rbi -eq 0) -and ($run -eq 0) -and ($doubles -eq 0) -and ($walks -eq 0) -and ($strikeouts -ge 1)
+    
+    # Calculate profit for this bet (each bet is $10)
+    $betAmount = 10
+    $lineProfit = 0
+    
+    if ($conditionsMet) {
+        $lineProfit = 125
+        $winningBets++
+    }
+    
+    # Update totals
+    $totalBets++
+    $totalProfit += $lineProfit - $betAmount  # Subtract bet amount to get net profit
+    
+    # Display result for this line
+    Write-Host "Row $totalBets: RBI=$rbi, Run=$run, 2B=$doubles, Walks=$walks, K=$strikeouts"
+    Write-Host "Conditions met: $conditionsMet, Profit: $" + ($lineProfit - $betAmount)
+}
+
+# Display summary
+Write-Host "`nSummary:"
+Write-Host "Total bets placed: $totalBets ($$($totalBets * 10))"
+Write-Host "Winning bets: $winningBets"
+Write-Host "Net profit: $$totalProfit"
+Write-Host "ROI: $(($totalProfit / ($totalBets * 10)) * 100)%"
