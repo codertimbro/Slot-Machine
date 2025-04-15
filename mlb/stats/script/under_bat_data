@@ -9,6 +9,14 @@ $totalBets = 0
 $totalProfit = 0
 $winningBets = 0
 
+# Streak tracking variables
+$currentStreak = 0  # Positive for winning streak, negative for losing streak
+$streakType = $null  # Will be set to "win" or "lose" once we have our first bet
+$winStreaks = @()  # Array to store lengths of winning streaks
+$loseStreaks = @()  # Array to store lengths of losing streaks
+$longestWinStreak = 0
+$longestLoseStreak = 0
+
 # Process each row in the CSV
 foreach ($row in $data) {
     # Convert string values to integers (handling possible non-numeric values)
@@ -18,21 +26,47 @@ foreach ($row in $data) {
     $walks = [int]::TryParse($row.walks, [ref]$null) ? [int]$row.walks : 0
     $strikeouts = [int]::TryParse($row.k, [ref]$null) ? [int]$row.k : 0
 
-    # Check conditions - all these must be true for a winning bet:
-    # - RBI must be 0
-    # - Run must be 0
-    # - 2B must be 0
-    # - Walks must be 0
-    # - K must be >= 1 (or equivalently, K cannot be 0)
+    # Check conditions - all these must be true for a winning bet
     $conditionsMet = ($rbi -eq 0) -and ($run -eq 0) -and ($doubles -eq 0) -and ($walks -eq 0) -and ($strikeouts -ge 1)
     
     # Calculate profit for this bet (each bet is $10)
     $betAmount = 10
     $lineProfit = 0
     
+    # Track the result and update streaks
     if ($conditionsMet) {
         $lineProfit = 125
         $winningBets++
+        
+        # Update streak tracking
+        if ($streakType -eq "win") {
+            # Continue the winning streak
+            $currentStreak++
+        } else {
+            # End a losing streak if there was one
+            if ($currentStreak -lt 0) {
+                $loseStreaks += [Math]::Abs($currentStreak)
+                $longestLoseStreak = [Math]::Max($longestLoseStreak, [Math]::Abs($currentStreak))
+            }
+            # Start a new winning streak
+            $currentStreak = 1
+            $streakType = "win"
+        }
+    } else {
+        # Update streak tracking for a loss
+        if ($streakType -eq "lose") {
+            # Continue the losing streak
+            $currentStreak--
+        } else {
+            # End a winning streak if there was one
+            if ($currentStreak -gt 0) {
+                $winStreaks += $currentStreak
+                $longestWinStreak = [Math]::Max($longestWinStreak, $currentStreak)
+            }
+            # Start a new losing streak
+            $currentStreak = -1
+            $streakType = "lose"
+        }
     }
     
     # Update totals
@@ -44,9 +78,37 @@ foreach ($row in $data) {
     Write-Host "Conditions met: $conditionsMet, Profit: $" + ($lineProfit - $betAmount)
 }
 
+# Handle the final streak
+if ($currentStreak -gt 0) {
+    $winStreaks += $currentStreak
+    $longestWinStreak = [Math]::Max($longestWinStreak, $currentStreak)
+} elseif ($currentStreak -lt 0) {
+    $loseStreaks += [Math]::Abs($currentStreak)
+    $longestLoseStreak = [Math]::Max($longestLoseStreak, [Math]::Abs($currentStreak))
+}
+
+# Calculate average streaks
+$avgWinStreak = ($winStreaks.Count -gt 0) ? ($winStreaks | Measure-Object -Average).Average : 0
+$avgLoseStreak = ($loseStreaks.Count -gt 0) ? ($loseStreaks | Measure-Object -Average).Average : 0
+
+# Convert current streak to display format
+$currentStreakDisplay = if ($currentStreak -gt 0) { 
+    "$currentStreak wins" 
+} elseif ($currentStreak -lt 0) { 
+    "$([Math]::Abs($currentStreak)) losses" 
+} else { 
+    "None" 
+}
+
 # Display summary
 Write-Host "`nSummary:"
 Write-Host "Total bets placed: $totalBets ($$($totalBets * 10))"
 Write-Host "Winning bets: $winningBets"
+Write-Host "Win percentage: $([Math]::Round(($winningBets / $totalBets) * 100, 2))%"
 Write-Host "Net profit: $$totalProfit"
-Write-Host "ROI: $(($totalProfit / ($totalBets * 10)) * 100)%"
+Write-Host "ROI: $([Math]::Round(($totalProfit / ($totalBets * 10)) * 100, 2))%"
+Write-Host "Current streak: $currentStreakDisplay"
+Write-Host "Longest winning streak: $longestWinStreak"
+Write-Host "Longest losing streak: $longestLoseStreak"
+Write-Host "Average winning streak: $([Math]::Round($avgWinStreak, 2))"
+Write-Host "Average losing streak: $([Math]::Round($avgLoseStreak, 2))"
