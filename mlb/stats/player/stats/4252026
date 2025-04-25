@@ -1,205 +1,1116 @@
-1
-Colorado vs. Kansas City,Adael Amador,Batting - 1st Base,1.5,0.18,0.12,0,0,8,1,Under,
-Colorado vs. Kansas City,Hunter Goodman,Batting - 1st Base,1.5,0.8,0.6,1,0,10,1,Under,
-Colorado vs. Kansas City,Ryan McMahon,Batting - 1st Base,0.5,0.14,0.1,0,1,9,0.9,Under,
-Colorado vs. Kansas City,Michael Massey,Batting - 1st Base,1.5,0.56,0.5,0,1,9,0.9,Under,
-Colorado vs. Kansas City,Michael Toglia,Batting - 1st Base,1.5,0.6,0.6,0.5,1,9,0.9,Under,
-Colorado vs. Kansas City,Drew Waters,Batting - 1st Base,1.5,0.6,0.6,0.5,1,9,0.9,Under,
-Colorado vs. Kansas City,Vinnie Pasquantino,Batting - 1st Base,1.5,0.6,0.6,0.5,1,9,0.9,Under,
-Colorado vs. Kansas City,Brenton Doyle,Batting - 1st Base,1.5,1.02,0.8,1,1,9,0.9,Under,
-Colorado vs. Kansas City,Adael Amador,Batting - 1st Base,0.5,0.18,0.12,0,1,7,0.875,Under,
-Colorado vs. Kansas City,Bobby Witt Jr.,Batting - 1st Base,0.5,0.92,0.8,1,8,2,0.8,Over,
-Colorado vs. Kansas City,Cavan Biggio,Batting - 1st Base,0.5,0.27,0.2,0,2,8,0.8,Under,
-Colorado vs. Kansas City,Maikel Garcia,Batting - 1st Base,1.5,1,0.8,1,2,8,0.8,Under,
-Colorado vs. Kansas City,Kyle Isbel,Batting - 1st Base,0.5,0.35,0.3,0,2,8,0.8,Under,
-Colorado vs. Kansas City,Drew Waters,Batting - 2nd Base,0.5,0.01,0.1,0,1,9,0.9,Under,
-Colorado vs. Kansas City,Kyle Isbel,Batting - 2nd Base,0.5,0.03,0.1,0,1,9,0.9,Under,
-Colorado vs. Kansas City,Jonathan India,Batting - 2nd Base,0.5,0.07,0.1,0,1,9,0.9,Under,
-Colorado vs. Kansas City,Ryan McMahon,Batting - 2nd Base,0.5,0.11,0.1,0,1,9,0.9,Under,
-Colorado vs. Kansas City,Vinnie Pasquantino,Batting - 2nd Base,0.5,0.11,0.1,0,1,9,0.9,Under,
-Colorado vs. Kansas City,Michael Toglia,Batting - 2nd Base,0.5,0.14,0.1,0,1,9,0.9,Under,
-Colorado vs. Kansas City,Adael Amador,Batting - 2nd Base,0.5,0.13,0.12,0,1,7,0.875,Under,
-Colorado vs. Kansas City,Jacob Stallings,Batting - 2nd Base,0.5,0.12,0.2,0,2,8,0.8,Under,
-Colorado vs. Kansas City,Salvador Perez,Batting - 2nd Base,0.5,0.23,0.2,0,2,8,0.8,Under,
-Colorado vs. Kansas City,Nick Martini,Batting - 2nd Base,0.5,0.26,0.2,0,2,8,0.8,Under,
-Colorado vs. Kansas City,Maikel Garcia,Batting - 2nd Base,0.5,0.3,0.2,0,2,8,0.8,Under,
-Colorado vs. Kansas City,Aaron Schunk,Batting - 2nd Base,0.5,0.14,0.25,0,1,3,0.75,Under,
-Colorado vs. Kansas City,Kyle Farmer,Batting - Bases on Balls,0.5,0.06,0.1,0,1,9,0.9,Under,
-Colorado vs. Kansas City,Michael Massey,Batting - Bases on Balls,0.5,0.08,0.1,0,1,9,0.9,Under,
-Colorado vs. Kansas City,Drew Waters,Batting - Bases on Balls,0.5,0.18,0.2,0,1,9,0.9,Under,
-Colorado vs. Kansas City,Michael Toglia,Batting - Bases on Balls,0.5,0.25,0.1,0,1,9,0.9,Under,
-Colorado vs. Kansas City,Nick Martini,Batting - Bases on Balls,0.5,0.21,0.3,0,2,8,0.8,Under,
-Colorado vs. Kansas City,Bobby Witt Jr.,Batting - Hits,0.5,1.2,1.2,1,10,0,1,Over,
-Colorado vs. Kansas City,Ryan McMahon,Batting - Hits,1.5,0.22,0.2,0,0,10,1,Under,
-Colorado vs. Kansas City,Cavan Biggio,Batting - Hits,1.5,0.27,0.2,0,0,10,1,Under,
-Colorado vs. Kansas City,Adael Amador,Batting - Hits,1.5,0.3,0.25,0,0,8,1,Under,
-Colorado vs. Kansas City,Hunter Renfroe,Batting - Hits,1.5,0.37,0.3,0,0,10,1,Under,
-Colorado vs. Kansas City,Jacob Stallings,Batting - Hits,1.5,0.42,0.5,0.5,0,10,1,Under,
-Colorado vs. Kansas City,Jordan Beck,Batting - Hits,1.5,0.47,0.4,0,0,10,1,Under,
-Colorado vs. Kansas City,Bobby Witt Jr.,Batting - Hits,2.5,1.2,1.2,1,0,10,1,Under,
-Colorado vs. Kansas City,Salvador Perez,Batting - Hits,1.5,0.8,0.6,1,0,10,1,Under,
-Colorado vs. Kansas City,Hunter Goodman,Batting - Hits,1.5,0.81,0.7,1,0,10,1,Under,
-Colorado vs. Kansas City,Jonathan India,Batting - Hits,2.5,0.4,0.6,0,1,9,0.9,Under,
-Colorado vs. Kansas City,Kyle Isbel,Batting - Hits,1.5,0.56,0.5,0,1,9,0.9,Under,
-Colorado vs. Kansas City,Michael Massey,Batting - Hits,1.5,0.64,0.5,0,1,9,0.9,Under,
-Colorado vs. Kansas City,Maikel Garcia,Batting - Hits,2.5,1.2,1,1,1,9,0.9,Under,
-Colorado vs. Kansas City,Michael Toglia,Batting - Hits,1.5,0.95,0.8,1,1,9,0.9,Under,
-Colorado vs. Kansas City,Brenton Doyle,Batting - Hits,0.5,1.2,1.4,1,8,2,0.8,Over,
-Colorado vs. Kansas City,Vinnie Pasquantino,Batting - Hits,1.5,0.6,0.8,0.5,2,8,0.8,Under,
-Colorado vs. Kansas City,Ryan McMahon,Batting - Hits,0.5,0.22,0.2,0,2,8,0.8,Under,
-Colorado vs. Kansas City,Nick Martini,Batting - Hits,1.5,0.72,0.6,0,2,8,0.8,Under,
-Colorado vs. Kansas City,Cavan Biggio,Batting - Hits,0.5,0.27,0.2,0,2,8,0.8,Under,
-Colorado vs. Kansas City,Drew Waters,Batting - Hits,1.5,0.87,0.9,1,2,8,0.8,Under,
-Colorado vs. Kansas City,Bobby Witt Jr.,Batting - Hits,1.5,1.2,1.2,1,2,8,0.8,Under,
-Colorado vs. Kansas City,Cavan Biggio,Batting - Hits and Runs and RBIs,3.5,0.16,0.2,0,0,10,1,Under,
-Colorado vs. Kansas City,Cavan Biggio,Batting - Hits and Runs and RBIs,2.5,0.16,0.2,0,0,10,1,Under,
-Colorado vs. Kansas City,Cavan Biggio,Batting - Hits and Runs and RBIs,1.5,0.16,0.2,0,0,10,1,Under,
-Colorado vs. Kansas City,Hunter Renfroe,Batting - Hits and Runs and RBIs,3.5,0.53,0.4,0,0,10,1,Under,
-Colorado vs. Kansas City,Ryan McMahon,Batting - Hits and Runs and RBIs,2.5,0.47,0.5,0,0,10,1,Under,
-Colorado vs. Kansas City,Hunter Renfroe,Batting - Hits and Runs and RBIs,2.5,0.53,0.4,0,0,10,1,Under,
-Colorado vs. Kansas City,Adael Amador,Batting - Hits and Runs and RBIs,1.5,0.35,0.38,0,0,8,1,Under,
-Colorado vs. Kansas City,Michael Massey,Batting - Hits and Runs and RBIs,3.5,0.84,0.7,0,0,10,1,Under,
-Colorado vs. Kansas City,Jordan Beck,Batting - Hits and Runs and RBIs,2.5,0.6,1.1,0.5,1,9,0.9,Under,
-Colorado vs. Kansas City,Kyle Isbel,Batting - Hits and Runs and RBIs,3.5,0.9,0.9,0,1,9,0.9,Under,
-Colorado vs. Kansas City,Ryan McMahon,Batting - Hits and Runs and RBIs,1.5,0.47,0.5,0,1,9,0.9,Under,
-Colorado vs. Kansas City,Michael Massey,Batting - Hits and Runs and RBIs,2.5,0.84,0.7,0,1,9,0.9,Under,
-Colorado vs. Kansas City,Salvador Perez,Batting - Hits and Runs and RBIs,3.5,1.2,1.2,1,1,9,0.9,Under,
-Colorado vs. Kansas City,Hunter Renfroe,Batting - Hits and Runs and RBIs,1.5,0.53,0.4,0,1,9,0.9,Under,
-Colorado vs. Kansas City,Kyle Farmer,Batting - Hits and Runs and RBIs,3.5,1.25,1.3,0,1,9,0.9,Under,
-Colorado vs. Kansas City,Maikel Garcia,Batting - Hits and Runs and RBIs,3.5,1.8,1.6,1.5,1,9,0.9,Under,
-Colorado vs. Kansas City,Brenton Doyle,Batting - Hits and Runs and RBIs,0.5,2.4,3.2,2,8,2,0.8,Over,
-Colorado vs. Kansas City,Vinnie Pasquantino,Batting - Hits and Runs and RBIs,3.5,0.6,1.6,0.5,2,8,0.8,Under,
-Colorado vs. Kansas City,Sean Bouchard,Batting - Hits and Runs and RBIs,2.5,0.6,1.1,0.5,2,8,0.8,Under,
-Colorado vs. Kansas City,Vinnie Pasquantino,Batting - Hits and Runs and RBIs,2.5,0.6,1.6,0.5,2,8,0.8,Under,
-Colorado vs. Kansas City,Hunter Goodman,Batting - Hits and Runs and RBIs,3.5,1.2,1.5,1,2,8,0.8,Under,
-Colorado vs. Kansas City,Drew Waters,Batting - Hits and Runs and RBIs,3.5,1.2,1.6,1,2,8,0.8,Under,
-Colorado vs. Kansas City,Kyle Isbel,Batting - Hits and Runs and RBIs,2.5,0.9,0.9,0,2,8,0.8,Under,
-Colorado vs. Kansas City,Sean Bouchard,Batting - Hits and Runs and RBIs,1.5,0.6,1.1,0.5,2,8,0.8,Under,
-Colorado vs. Kansas City,Hunter Goodman,Batting - Hits and Runs and RBIs,2.5,1.2,1.5,1,2,8,0.8,Under,
-Colorado vs. Kansas City,Drew Waters,Batting - Hits and Runs and RBIs,2.5,1.2,1.6,1,2,8,0.8,Under,Robot Likes
-Colorado vs. Kansas City,Michael Toglia,Batting - Hits and Runs and RBIs,2.5,1.2,1.7,1,2,8,0.8,Under,
-Colorado vs. Kansas City,Michael Massey,Batting - Hits and Runs and RBIs,1.5,0.84,0.7,0,2,8,0.8,Under,
-Colorado vs. Kansas City,Bobby Witt Jr.,Batting - Hits and Runs and RBIs,3.5,2.24,2.1,2,2,8,0.8,Under,
-Colorado vs. Kansas City,Brenton Doyle,Batting - Hits and Runs and RBIs,3.5,2.4,3.2,2,2,8,0.8,Under,
-Colorado vs. Kansas City,Maikel Garcia,Batting - Hits and Runs and RBIs,2.5,1.8,1.6,1.5,2,8,0.8,Under,
-Colorado vs. Kansas City,Aaron Schunk,Batting - Hits and Runs and RBIs,2.5,0.4,1,0.5,1,3,0.75,Under,
-Colorado vs. Kansas City,Vinnie Pasquantino,Batting - Home Run,0.5,0.08,0.1,0,1,9,0.9,Under,
-Colorado vs. Kansas City,Bobby Witt Jr.,Batting - Home Run,0.5,0.1,0.1,0,1,9,0.9,Under,
-Colorado vs. Kansas City,Michael Toglia,Batting - Home Run,0.5,0.12,0.1,0,1,9,0.9,Under,
-Colorado vs. Kansas City,Hunter Goodman,Batting - Home Run,0.5,0.12,0.1,0,1,9,0.9,Under,
-Colorado vs. Kansas City,Salvador Perez,Batting - Home Run,0.5,0.16,0.1,0,1,9,0.9,Under,
-Colorado vs. Kansas City,Drew Waters,Batting - Home Run,0.5,0.16,0.1,0,1,9,0.9,Under,
-Colorado vs. Kansas City,Ryan McMahon,Batting - RBIs,0.5,0,0,0,0,10,1,Under,
-Colorado vs. Kansas City,Adael Amador,Batting - RBIs,0.5,0,0,0,0,8,1,Under,
-Colorado vs. Kansas City,Cavan Biggio,Batting - RBIs,0.5,0,0,0,0,10,1,Under,
-Colorado vs. Kansas City,Hunter Renfroe,Batting - RBIs,0.5,0,0,0,0,10,1,Under,
-Colorado vs. Kansas City,Jonathan India,Batting - RBIs,1.5,0.11,0.2,0,0,10,1,Under,
-Colorado vs. Kansas City,Michael Massey,Batting - RBIs,1.5,0.15,0.2,0,0,10,1,Under,
-Colorado vs. Kansas City,Kyle Isbel,Batting - RBIs,1.5,0.21,0.2,0,0,10,1,Under,
-Colorado vs. Kansas City,Drew Waters,Batting - RBIs,1.5,0.21,0.2,0,0,10,1,Under,
-Colorado vs. Kansas City,Bobby Witt Jr.,Batting - RBIs,1.5,0.39,0.3,0,0,10,1,Under,
-Colorado vs. Kansas City,Vinnie Pasquantino,Batting - RBIs,1.5,0.15,0.4,0,1,9,0.9,Under,
-Colorado vs. Kansas City,Nick Martini,Batting - RBIs,0.5,0.07,0.1,0,1,9,0.9,Under,
-Colorado vs. Kansas City,Sean Bouchard,Batting - RBIs,1.5,0.29,0.2,0,1,9,0.9,Under,
-Colorado vs. Kansas City,Kyle Farmer,Batting - RBIs,1.5,0.29,0.3,0,1,9,0.9,Under,
-Colorado vs. Kansas City,Hunter Goodman,Batting - RBIs,1.5,0.39,0.3,0,1,9,0.9,Under,
-Colorado vs. Kansas City,Maikel Garcia,Batting - RBIs,1.5,0.53,0.4,0,1,9,0.9,Under,
-Colorado vs. Kansas City,Salvador Perez,Batting - RBIs,1.5,0.66,0.4,0,1,9,0.9,Under,
-Colorado vs. Kansas City,Michael Toglia,Batting - RBIs,1.5,0.75,0.6,0,1,9,0.9,Under,
-Colorado vs. Kansas City,Jonathan India,Batting - RBIs,0.5,0.11,0.2,0,2,8,0.8,Under,
-Colorado vs. Kansas City,Michael Massey,Batting - RBIs,0.5,0.15,0.2,0,2,8,0.8,Under,
-Colorado vs. Kansas City,Kyle Isbel,Batting - RBIs,0.5,0.21,0.2,0,2,8,0.8,Under,
-Colorado vs. Kansas City,Drew Waters,Batting - RBIs,0.5,0.21,0.2,0,2,8,0.8,Under,
-Colorado vs. Kansas City,Jordan Beck,Batting - RBIs,0.5,0.28,0.4,0,2,8,0.8,Under,
-Colorado vs. Kansas City,Kyle Farmer,Batting - RBIs,0.5,0.29,0.3,0,2,8,0.8,Under,
-Colorado vs. Kansas City,Hunter Goodman,Batting - RBIs,0.5,0.39,0.3,0,2,8,0.8,Under,
-Colorado vs. Kansas City,Jacob Stallings,Batting - RBIs,0.5,0.45,0.5,0,2,8,0.8,Under,
-Colorado vs. Kansas City,Michael Toglia,Batting - RBIs,0.5,0.75,0.6,0,3,7,0.3,Over,
-Colorado vs. Kansas City,Cavan Biggio,Batting - Runs,0.5,0,0,0,0,10,1,Under,
-Colorado vs. Kansas City,Michael Massey,Batting - Runs,0.5,0,0,0,0,10,1,Under,
-Colorado vs. Kansas City,Kyle Farmer,Batting - Runs,1.5,0.01,0.1,0,0,10,1,Under,
-Colorado vs. Kansas City,Ryan McMahon,Batting - Runs,1.5,0.16,0.3,0,0,10,1,Under,
-Colorado vs. Kansas City,Hunter Renfroe,Batting - Runs,1.5,0.18,0.1,0,0,10,1,Under,
-Colorado vs. Kansas City,Kyle Isbel,Batting - Runs,1.5,0.18,0.2,0,0,10,1,Under,
-Colorado vs. Kansas City,Maikel Garcia,Batting - Runs,1.5,0.27,0.2,0,0,10,1,Under,
-Colorado vs. Kansas City,Salvador Perez,Batting - Runs,1.5,0.33,0.2,0,0,10,1,Under,
-Colorado vs. Kansas City,Kyle Farmer,Batting - Runs,0.5,0.01,0.1,0,1,9,0.9,Under,
-Colorado vs. Kansas City,Vinnie Pasquantino,Batting - Runs,1.5,0.24,0.4,0,1,9,0.9,Under,
-Colorado vs. Kansas City,Drew Waters,Batting - Runs,1.5,0.39,0.5,0,1,9,0.9,Under,
-Colorado vs. Kansas City,Hunter Renfroe,Batting - Runs,0.5,0.18,0.1,0,1,9,0.9,Under,
-Colorado vs. Kansas City,Bobby Witt Jr.,Batting - Runs,1.5,0.6,0.6,0.5,1,9,0.9,Under,
-Colorado vs. Kansas City,Adael Amador,Batting - Runs,0.5,0.04,0.12,0,1,7,0.875,Under,
-Colorado vs. Kansas City,Jacob Stallings,Batting - Runs,0.5,0.08,0.3,0,2,8,0.8,Under,
-Colorado vs. Kansas City,Kyle Isbel,Batting - Runs,0.5,0.18,0.2,0,2,8,0.8,Under,
-Colorado vs. Kansas City,Brenton Doyle,Batting - Runs,1.5,0.69,0.7,0,2,8,0.8,Under,
-Colorado vs. Kansas City,Maikel Garcia,Batting - Runs,0.5,0.25,0.2,0,2,8,0.8,Under,
-Colorado vs. Kansas City,Nick Martini,Batting - Runs,0.5,0.33,0.3,0,2,8,0.8,Under,
-Colorado vs. Kansas City,Salvador Perez,Batting - Runs,0.5,0.33,0.2,0,2,8,0.8,Under,
-Colorado vs. Kansas City,Aaron Schunk,Batting - Runs,0.5,0.1,0.25,0,1,3,0.75,Under,
-Colorado vs. Kansas City,Brenton Doyle,Batting - Stolen Bases,0.5,0.09,0.1,0,1,9,0.9,Under,
-Colorado vs. Kansas City,Jordan Beck,Batting - Stolen Bases,0.5,0.1,0.1,0,1,9,0.9,Under,
-Colorado vs. Kansas City,Drew Waters,Batting - Stolen Bases,0.5,0.15,0.1,0,1,9,0.9,Under,
-Colorado vs. Kansas City,Maikel Garcia,Batting - Stolen Bases,0.5,0.26,0.2,0,2,8,0.8,Under,
-Colorado vs. Kansas City,Jonathan India,Batting - Total Bases,4.5,0.02,0.7,0,0,10,1,Under,
-Colorado vs. Kansas City,Cavan Biggio,Batting - Total Bases,3.5,0.23,0.2,0,0,10,1,Under,
-Colorado vs. Kansas City,Ryan McMahon,Batting - Total Bases,3.5,0.25,0.3,0,0,10,1,Under,
-Colorado vs. Kansas City,Cavan Biggio,Batting - Total Bases,2.5,0.23,0.2,0,0,10,1,Under,
-Colorado vs. Kansas City,Adael Amador,Batting - Total Bases,3.5,0.33,0.38,0,0,8,1,Under,
-Colorado vs. Kansas City,Ryan McMahon,Batting - Total Bases,2.5,0.25,0.3,0,0,10,1,Under,
-Colorado vs. Kansas City,Hunter Renfroe,Batting - Total Bases,3.5,0.35,0.3,0,0,10,1,Under,
-Colorado vs. Kansas City,Adael Amador,Batting - Total Bases,2.5,0.33,0.38,0,0,8,1,Under,
-Colorado vs. Kansas City,Michael Massey,Batting - Total Bases,4.5,0.63,0.5,0,0,10,1,Under,
-Colorado vs. Kansas City,Hunter Renfroe,Batting - Total Bases,2.5,0.35,0.3,0,0,10,1,Under,
-Colorado vs. Kansas City,Jacob Stallings,Batting - Total Bases,3.5,0.55,0.7,0.5,0,10,1,Under,
-Colorado vs. Kansas City,Jordan Beck,Batting - Total Bases,3.5,0.61,0.6,0,0,10,1,Under,
-Colorado vs. Kansas City,Michael Massey,Batting - Total Bases,3.5,0.63,0.5,0,0,10,1,Under,
-Colorado vs. Kansas City,Bobby Witt Jr.,Batting - Total Bases,5.5,1.2,1.8,1,0,10,1,Under,
-Colorado vs. Kansas City,Maikel Garcia,Batting - Total Bases,4.5,1.2,1.2,1,0,10,1,Under,
-Colorado vs. Kansas City,Salvador Perez,Batting - Total Bases,4.5,1.2,1.1,1,0,10,1,Under,
-Colorado vs. Kansas City,Jonathan India,Batting - Total Bases,3.5,0.02,0.7,0,1,9,0.9,Under,
-Colorado vs. Kansas City,Vinnie Pasquantino,Batting - Total Bases,4.5,0.6,1.2,0.5,1,9,0.9,Under,
-Colorado vs. Kansas City,Vinnie Pasquantino,Batting - Total Bases,3.5,0.6,1.2,0.5,1,9,0.9,Under,
-Colorado vs. Kansas City,Jordan Beck,Batting - Total Bases,2.5,0.61,0.6,0,1,9,0.9,Under,
-Colorado vs. Kansas City,Michael Massey,Batting - Total Bases,2.5,0.63,0.5,0,1,9,0.9,Under,
-Colorado vs. Kansas City,Kyle Isbel,Batting - Total Bases,3.5,0.92,0.8,0,1,9,0.9,Under,
-Colorado vs. Kansas City,Bobby Witt Jr.,Batting - Total Bases,4.5,1.2,1.8,1,1,9,0.9,Under,
-Colorado vs. Kansas City,Nick Martini,Batting - Total Bases,2.5,0.73,0.8,0,1,9,0.9,Under,
-Colorado vs. Kansas City,Sean Bouchard,Batting - Total Bases,3.5,1.04,0.8,0,1,9,0.9,Under,
-Colorado vs. Kansas City,Drew Waters,Batting - Total Bases,3.5,1.2,1.5,1,1,9,0.9,Under,
-Colorado vs. Kansas City,Bobby Witt Jr.,Batting - Total Bases,3.5,1.2,1.8,1,1,9,0.9,Under,
-Colorado vs. Kansas City,Hunter Goodman,Batting - Total Bases,3.5,1.2,1,1,1,9,0.9,Under,
-Colorado vs. Kansas City,Maikel Garcia,Batting - Total Bases,3.5,1.2,1.2,1,1,9,0.9,Under,
-Colorado vs. Kansas City,Salvador Perez,Batting - Total Bases,3.5,1.2,1.1,1,1,9,0.9,Under,
-Colorado vs. Kansas City,Michael Massey,Batting - Total Bases,1.5,0.63,0.5,0,1,9,0.9,Under,
-Colorado vs. Kansas City,Hunter Goodman,Batting - Total Bases,2.5,1.2,1,1,1,9,0.9,Under,
-Colorado vs. Kansas City,Salvador Perez,Batting - Total Bases,2.5,1.2,1.1,1,1,9,0.9,Under,
-Colorado vs. Kansas City,Drew Waters,Batting - Total Bases,2.5,1.2,1.5,1,1,9,0.9,Under,
-Colorado vs. Kansas City,Adael Amador,Batting - Total Bases,1.5,0.33,0.38,0,1,7,0.875,Under,
-Colorado vs. Kansas City,Brenton Doyle,Batting - Total Bases,0.5,1.8,2.6,1.5,8,2,0.8,Over,
-Colorado vs. Kansas City,Vinnie Pasquantino,Batting - Total Bases,2.5,0.6,1.2,0.5,2,8,0.8,Under,
-Colorado vs. Kansas City,Michael Toglia,Batting - Total Bases,3.5,1.2,1.2,1,2,8,0.8,Under,
-Colorado vs. Kansas City,Kyle Isbel,Batting - Total Bases,2.5,0.92,0.8,0,2,8,0.8,Under,
-Colorado vs. Kansas City,Brenton Doyle,Batting - Total Bases,4.5,1.8,2.6,1.5,2,8,0.8,Under,
-Colorado vs. Kansas City,Vinnie Pasquantino,Batting - Total Bases,1.5,0.6,1.2,0.5,2,8,0.8,Under,
-Colorado vs. Kansas City,Kyle Farmer,Batting - Total Bases,3.5,1.42,1.5,0,2,8,0.8,Under,
-Colorado vs. Kansas City,Cavan Biggio,Batting - Total Bases,0.5,0.23,0.2,0,2,8,0.8,Under,
-Colorado vs. Kansas City,Michael Toglia,Batting - Total Bases,2.5,1.2,1.2,1,2,8,0.8,Under,
-Colorado vs. Kansas City,Bobby Witt Jr.,Batting - Total Bases,2.5,1.2,1.8,1,2,8,0.8,Under,
-Colorado vs. Kansas City,Maikel Garcia,Batting - Total Bases,2.5,1.2,1.2,1,2,8,0.8,Under,
-Colorado vs. Kansas City,Ryan McMahon,Batting - Total Bases,0.5,0.25,0.3,0,2,8,0.8,Under,
-Colorado vs. Kansas City,Kyle Isbel,Batting - Total Bases,0.5,0.92,0.8,0,3,7,0.3,Over,
-Colorado vs. Kansas City,Cole Ragans,Pitching - Bases on Balls,3.5,1.6,1.4,2,0,5,1,Under,
-Colorado vs. Kansas City,Cole Ragans,Pitching - Bases on Balls,2.5,1.6,1.4,2,1,4,0.8,Under,
-Colorado vs. Kansas City,Cole Ragans,Pitching - Earned Runs Allowed,0.5,1.2,2.2,1,5,0,1,Over,
-Colorado vs. Kansas City,Cole Ragans,Pitching - Earned Runs Allowed,4.5,1.2,2.2,1,1,4,0.8,Under,
-Colorado vs. Kansas City,Cole Ragans,Pitching - Earned Runs Allowed,3.5,1.2,2.2,1,1,4,0.8,Under,
-Colorado vs. Kansas City,Cole Ragans,Pitching - Hits Allowed,2.5,4.63,4.8,5,5,0,1,Over,
-Colorado vs. Kansas City,Cole Ragans,Pitching - Hits Allowed,6.5,4.63,4.8,5,0,5,1,Under,
-Colorado vs. Kansas City,Cole Ragans,Pitching - Hits Allowed,5.5,4.63,4.8,5,1,4,0.8,Under,
-Colorado vs. Kansas City,Cole Ragans,Pitching - Outs,18.5,17.01,16.6,15,1,4,0.8,Under,
-Colorado vs. Kansas City,Cole Ragans,Pitching - Strikeouts,12.5,8.84,8.4,10,0,5,1,Under,
-Colorado vs. Kansas City,Cole Ragans,Pitching - Strikeouts,11.5,8.84,8.4,10,0,5,1,Under,
-Colorado vs. Kansas City,Cole Ragans,Pitching - Strikeouts,6.5,8.84,8.4,10,4,1,0.8,Over,
-Colorado vs. Kansas City,Cole Ragans,Pitching - Strikeouts,7.5,8.84,8.4,10,4,1,0.8,Over,
-Colorado vs. Kansas City,Cole Ragans,Pitching - Strikeouts,10.5,8.84,8.4,10,1,4,0.8,Under,
-Game,Player Name,Prop,Line,Projection,Mean,Median,Over Count,Under Count,#VALUE!,Robot Likes,
+Game,Player Name,Prop,Line,Projection,Mean,Median,Over Count,Under Count,Robot Likes
+Pittsburgh vs. LA Angels,Jorge Soler,Batting - 2nd Base,0.5,14.47,0.3,0,3,7,Over
+Pittsburgh vs. LA Angels,Oneil Cruz,Batting - Hits and Runs and RBIs,0.5,3.14,2.6,3,7,3,Over
+Baltimore vs. Washington,CJ Abrams,Batting - Total Bases,0.5,3.11,2.4,3,6,4,Over
+Tampa Bay vs. Arizona,Corbin Carroll,Batting - Total Bases,0.5,3,3.2,2.5,9,1,Over
+Tampa Bay vs. Arizona,Josh Naylor,Batting - Hits and Runs and RBIs,0.5,2.97,2.8,3.5,8,2,Over
+Pittsburgh vs. LA Angels,Oneil Cruz,Batting - Total Bases,0.5,2.94,2.5,3,7,3,Over
+Baltimore vs. Washington,Cedric Mullins,Batting - Hits and Runs and RBIs,0.5,2.75,2.3,3,8,2,Over
+Tampa Bay vs. Arizona,Tim Tawa,Batting - Hits and Runs and RBIs,0.5,2.53,2.1,3,8,2,Over
+Texas vs. A's,Wyatt Langford,Batting - Total Bases,0.5,2.48,2.6,2.5,6,4,Over
+Texas vs. A's,Josh Smith,Batting - Hits and Runs and RBIs,0.5,2.4,2.4,3,8,2,Over
+Baltimore vs. Washington,Cedric Mullins,Batting - Total Bases,0.5,2.4,2.1,2,8,2,Over
+Baltimore vs. Washington,Keibert Ruiz,Batting - Hits and Runs and RBIs,0.5,2.4,2.2,2,8,2,Over
+Tampa Bay vs. Arizona,Pavin Smith,Batting - Total Bases,0.5,2.4,2.4,2,7,3,Over
+Baltimore vs. Washington,Nathaniel Lowe,Batting - Hits and Runs and RBIs,0.5,2.31,1.9,2,9,1,Over
+Tampa Bay vs. Arizona,Josh Naylor,Batting - Total Bases,0.5,2.29,2.4,2,8,2,Over
+Pittsburgh vs. LA Angels,Taylor Ward,Batting - Total Bases,0.5,2.23,2,2,7,3,Over
+Tampa Bay vs. Arizona,Jake Mangum,Batting - Hits and Runs and RBIs,0.5,2.17,1.9,2,8,2,Over
+Pittsburgh vs. LA Angels,Mike Trout,Batting - Strikeouts,0.5,2.15,2,2,10,0,Over
+Tampa Bay vs. Arizona,Chandler Simpson,Batting - Hits and Runs and RBIs,0.5,2.01,2.25,2.5,4,0,Over
+Texas vs. A's,Josh Smith,Batting - Total Bases,0.5,1.94,2,2,8,2,Over
+Tampa Bay vs. Arizona,Tim Tawa,Batting - Total Bases,0.5,1.8,1.8,1.5,6,4,Over
+Tampa Bay vs. Arizona,Jonathan Aranda,Batting - Hits and Runs and RBIs,0.5,1.8,2.1,1.5,7,3,Over
+Pittsburgh vs. LA Angels,Bryan Reynolds,Batting - Hits and Runs and RBIs,0.5,1.8,2.7,1.5,8,2,Over
+Baltimore vs. Washington,Heston Kjerstad,Batting - Hits and Runs and RBIs,0.5,1.8,2,1.5,6,4,Over
+Baltimore vs. Washington,Dylan Crews,Batting - Hits and Runs and RBIs,0.5,1.8,2.3,1.5,8,2,Over
+Tampa Bay vs. Arizona,Alek Thomas,Batting - Hits and Runs and RBIs,0.5,1.8,1.7,1.5,6,4,Over
+Pittsburgh vs. LA Angels,Tommy Pham,Batting - Hits and Runs and RBIs,0.5,1.8,1.7,1.5,6,4,Over
+Pittsburgh vs. LA Angels,Isiah Kiner-Falefa,Batting - Hits and Runs and RBIs,0.5,1.8,1.8,1.5,8,2,Over
+Tampa Bay vs. Arizona,Kameron Misner,Batting - Hits and Runs and RBIs,0.5,1.8,2.6,1.5,8,2,Over
+Baltimore vs. Washington,James Wood,Batting - Hits and Runs and RBIs,0.5,1.8,2.3,1.5,7,3,Over
+Pittsburgh vs. LA Angels,Logan O'Hoppe,Batting - Strikeouts,0.5,1.75,1.4,1.5,6,4,Over
+Tampa Bay vs. Arizona,Pavin Smith,Batting - Hits and Runs and RBIs,0.5,1.74,2.1,1.5,7,3,Over
+Tampa Bay vs. Arizona,Josh Naylor,Batting - Hits,0.5,1.73,1.4,1.5,8,2,Over
+Pittsburgh vs. LA Angels,Zach Neto,Batting - Hits and Runs and RBIs,0.5,1.63,1.6,0,2,3,Over
+Pittsburgh vs. LA Angels,Bryan Reynolds,Batting - Total Bases,0.5,1.63,1.8,1.5,7,3,Over
+Tampa Bay vs. Arizona,Corbin Carroll,Batting - Hits,0.5,1.62,1.6,2,9,1,Over
+Baltimore vs. Washington,Josh Bell,Batting - Hits and Runs and RBIs,0.5,1.6,1.1,0,4,6,Over
+Pittsburgh vs. LA Angels,Oneil Cruz,Batting - Strikeouts,0.5,1.59,1.4,1.5,8,2,Over
+Baltimore vs. Washington,Josh Bell,Batting - Total Bases,0.5,1.57,1,0,4,6,Over
+Tampa Bay vs. Arizona,Corbin Carroll,Batting - Hits and Runs and RBIs,1.5,4.66,4.2,4,9,1,Over
+Tampa Bay vs. Arizona,Chandler Simpson,Batting - Total Bases,0.5,1.49,1.5,1.5,4,0,Over
+Tampa Bay vs. Arizona,Corbin Carroll,Batting - Runs,0.5,1.41,1.2,1.5,7,3,Over
+Tampa Bay vs. Arizona,Danny Jansen,Batting - Total Bases,0.5,1.38,1.1,0,4,6,Over
+Pittsburgh vs. LA Angels,Kyren Paris,Batting - Strikeouts,0.5,1.33,1.6,1.5,9,1,Over
+Baltimore vs. Washington,Cade Povich,Pitching - Earned Runs Allowed,1.5,3.71,4,3.5,4,0,Over
+Texas vs. A's,Jonah Heim,Batting - Strikeouts,0.5,1.2,1.2,1.5,6,4,Over
+Pittsburgh vs. LA Angels,Nolan Schanuel,Batting - Hits and Runs and RBIs,0.5,1.2,1.5,1.5,7,3,Over
+Pittsburgh vs. LA Angels,Jorge Soler,Batting - Hits and Runs and RBIs,0.5,1.2,1.4,1.5,7,3,Over
+Baltimore vs. Washington,Keibert Ruiz,Batting - Total Bases,0.5,1.2,1.5,1,8,2,Over
+Pittsburgh vs. LA Angels,Jorge Soler,Batting - Hits,0.5,1.2,0.9,1,7,3,Over
+Texas vs. A's,Josh Smith,Batting - Hits,0.5,1.2,1.4,1,8,2,Over
+Pittsburgh vs. LA Angels,Enmanuel Valdez,Batting - Hits and Runs and RBIs,0.5,1.2,1.9,1,8,2,Over
+Texas vs. A's,Jake Burger,Batting - Total Bases,0.5,1.2,1.2,1,6,4,Over
+Pittsburgh vs. LA Angels,Andrew McCutchen,Batting - Hits and Runs and RBIs,0.5,1.2,1.7,1,7,3,Over
+Baltimore vs. Washington,Cedric Mullins,Batting - Hits,0.5,1.2,1,1,8,2,Over
+Baltimore vs. Washington,Dylan Crews,Batting - Total Bases,0.5,1.2,2,1,8,2,Over
+Baltimore vs. Washington,Nathaniel Lowe,Batting - Total Bases,0.5,1.2,1.7,1,9,1,Over
+Baltimore vs. Washington,Nathaniel Lowe,Batting - 1st Base,0.5,1.2,1.1,1,8,2,Over
+Pittsburgh vs. LA Angels,Jorge Soler,Batting - Strikeouts,0.5,1.2,1.3,1,10,0,Over
+Baltimore vs. Washington,Keibert Ruiz,Batting - Hits,0.5,1.2,1.3,1,8,2,Over
+Baltimore vs. Washington,Heston Kjerstad,Batting - Total Bases,0.5,1.2,1.7,1,6,4,Over
+Pittsburgh vs. LA Angels,Andrew McCutchen,Batting - Total Bases,0.5,1.2,1.1,1,6,4,Over
+Tampa Bay vs. Arizona,Lourdes Gurriel Jr.,Batting - Hits and Runs and RBIs,0.5,1.2,1.9,1,8,2,Over
+Texas vs. A's,Marcus Semien,Batting - Hits and Runs and RBIs,0.5,1.2,1.5,1,8,2,Over
+Pittsburgh vs. LA Angels,Zach Neto,Batting - Strikeouts,0.5,1.2,1.2,1,3,2,Over
+Texas vs. A's,Jonah Heim,Batting - Total Bases,0.5,1.2,1.2,1,6,4,Over
+Tampa Bay vs. Arizona,Geraldo Perdomo,Batting - Hits and Runs and RBIs,0.5,1.2,1.8,1,7,3,Over
+Pittsburgh vs. LA Angels,Jorge Soler,Batting - Total Bases,0.5,1.2,1.5,1,7,3,Over
+Texas vs. A's,Jake Burger,Batting - Hits and Runs and RBIs,0.5,1.2,1.4,1,6,4,Over
+Texas vs. A's,Jake Burger,Batting - Strikeouts,0.5,1.2,1.2,1,7,3,Over
+Tampa Bay vs. Arizona,Junior Caminero,Batting - Strikeouts,0.5,1.2,1,1,8,2,Over
+Texas vs. A's,Josh Jung,Batting - Strikeouts,0.5,1.2,1.2,1,7,3,Over
+Tampa Bay vs. Arizona,Junior Caminero,Batting - Hits and Runs and RBIs,0.5,1.2,2.4,1,8,2,Over
+Tampa Bay vs. Arizona,Kameron Misner,Batting - Hits,0.5,1.2,1.2,1,7,3,Over
+Pittsburgh vs. LA Angels,Isiah Kiner-Falefa,Batting - Total Bases,0.5,1.2,1.5,1,8,2,Over
+Texas vs. A's,Jonah Heim,Batting - Hits and Runs and RBIs,0.5,1.2,1.3,1,6,4,Over
+Pittsburgh vs. LA Angels,Enmanuel Valdez,Batting - Total Bases,0.5,1.2,1.5,1,6,4,Over
+Tampa Bay vs. Arizona,Jake Mangum,Batting - Total Bases,0.5,1.2,1.4,1,8,2,Over
+Baltimore vs. Washington,Cedric Mullins,Batting - Bases on Balls,0.5,1.2,1.1,1,7,3,Over
+Baltimore vs. Washington,Nathaniel Lowe,Batting - Hits,0.5,1.2,1.3,1,9,1,Over
+Tampa Bay vs. Arizona,Lourdes Gurriel Jr.,Batting - Total Bases,0.5,1.2,1.5,1,6,4,Over
+Tampa Bay vs. Arizona,Jake Mangum,Batting - Hits,0.5,1.2,1.2,1,8,2,Over
+Pittsburgh vs. LA Angels,Bryan Reynolds,Batting - Hits,0.5,1.2,1.4,1,7,3,Over
+Tampa Bay vs. Arizona,Corbin Carroll,Batting - RBIs,0.5,1.2,1.4,1,7,3,Over
+Baltimore vs. Washington,CJ Abrams,Batting - Hits,0.5,1.2,1,1,6,4,Over
+Tampa Bay vs. Arizona,Kameron Misner,Batting - Total Bases,0.5,1.2,2.2,1,7,3,Over
+Tampa Bay vs. Arizona,Geraldo Perdomo,Batting - Total Bases,0.5,1.2,1.2,1,6,4,Over
+Tampa Bay vs. Arizona,Corbin Carroll,Batting - Strikeouts,0.5,1.2,1.3,1,7,3,Over
+Pittsburgh vs. LA Angels,Oneil Cruz,Batting - Hits,0.5,1.2,1.1,1,7,3,Over
+Baltimore vs. Washington,Jacob Young,Batting - Hits and Runs and RBIs,0.5,1.2,1.1,1,7,3,Over
+Tampa Bay vs. Arizona,Alek Thomas,Batting - Total Bases,0.5,1.2,1.2,1,6,4,Over
+Tampa Bay vs. Arizona,Junior Caminero,Batting - Total Bases,0.5,1.2,2,1,7,3,Over
+Pittsburgh vs. LA Angels,Mike Trout,Batting - Hits and Runs and RBIs,0.5,1.2,1.1,0,4,6,Over
+Tampa Bay vs. Arizona,Brandon Lowe,Batting - Strikeouts,0.5,1.19,1.2,1,7,3,Over
+Tampa Bay vs. Arizona,Pavin Smith,Batting - Bases on Balls,0.5,1.18,0.9,1,6,4,Over
+Baltimore vs. Washington,Tyler O'Neill,Batting - Hits and Runs and RBIs,0.5,1.17,0.8,0,4,6,Over
+Baltimore vs. Washington,Gunnar Henderson,Batting - Strikeouts,0.5,1.16,1.2,1,9,1,Over
+Pittsburgh vs. LA Angels,Tommy Pham,Batting - Hits,0.5,1.15,0.9,1,6,4,Over
+Baltimore vs. Washington,Dylan Crews,Batting - Hits,0.5,1.14,1,1,8,2,Over
+Tampa Bay vs. Arizona,Geraldo Perdomo,Batting - Strikeouts,0.5,1.13,0.9,1,8,2,Over
+Tampa Bay vs. Arizona,Chandler Simpson,Batting - Hits,0.5,1.13,1.25,1,4,0,Over
+Tampa Bay vs. Arizona,Taylor Walls,Batting - Hits and Runs and RBIs,0.5,1.12,1.2,1,8,2,Over
+Tampa Bay vs. Arizona,Taylor Walls,Batting - Strikeouts,0.5,1.11,0.8,1,6,4,Over
+Pittsburgh vs. LA Angels,Zach Neto,Batting - Total Bases,0.5,1.11,1.2,0,2,3,Over
+Baltimore vs. Washington,James Wood,Batting - RBIs,0.5,1.11,0.7,0,4,6,Over
+Tampa Bay vs. Arizona,Kameron Misner,Batting - Runs,0.5,1.1,0.9,1,6,4,Over
+Pittsburgh vs. LA Angels,Isiah Kiner-Falefa,Batting - Hits,0.5,1.1,1.1,1,8,2,Over
+Pittsburgh vs. LA Angels,Taylor Ward,Batting - Strikeouts,0.5,1.1,1.3,1,7,3,Over
+Pittsburgh vs. LA Angels,Jo Adell,Batting - Strikeouts,0.5,1.09,0.9,1,6,4,Over
+Baltimore vs. Washington,Jordan Westburg,Batting - Strikeouts,0.5,1.08,1.1,1,8,2,Over
+Tampa Bay vs. Arizona,Jake Mangum,Batting - 1st Base,0.5,1.08,1,1,8,2,Over
+Pittsburgh vs. LA Angels,Carmen Mlodzinski,Pitching - Earned Runs Allowed,1.5,3.2,3.5,4,3,1,Over
+Texas vs. A's,Josh Smith,Batting - 1st Base,0.5,1.06,1,1,6,4,Over
+Tampa Bay vs. Arizona,Pavin Smith,Batting - Strikeouts,0.5,1.06,0.8,1,7,3,Over
+Pittsburgh vs. LA Angels,Andrew McCutchen,Batting - Bases on Balls,0.5,1.06,0.7,1,6,4,Over
+Pittsburgh vs. LA Angels,Oneil Cruz,Batting - Hits and Runs and RBIs,1.5,3.14,2.6,3,6,4,Over
+Baltimore vs. Washington,Jacob Young,Batting - Total Bases,0.5,1.04,0.9,1,7,3,Over
+Tampa Bay vs. Arizona,Jonathan Aranda,Batting - Total Bases,0.5,1.04,1.6,1,6,4,Over
+Baltimore vs. Washington,Jacob Young,Batting - Hits,0.5,1.04,0.8,1,7,3,Over
+Baltimore vs. Washington,Heston Kjerstad,Batting - RBIs,0.5,1.03,0.8,0,4,6,Over
+Pittsburgh vs. LA Angels,Henry Davis,Batting - Hits and Runs and RBIs,0.5,1.03,0.86,0,3,4,Over
+Texas vs. A's,Joc Pederson,Batting - Strikeouts,0.5,1.03,1,1,8,2,Over
+Baltimore vs. Washington,Adley Rutschman,Batting - Total Bases,0.5,1.01,1.3,0,4,6,Over
+Pittsburgh vs. LA Angels,Tyler Anderson,Pitching - Bases on Balls,1.5,3.04,3,3,4,0,Over
+Pittsburgh vs. LA Angels,Tommy Pham,Batting - Total Bases,0.5,1,1.1,1,6,4,Over
+Texas vs. A's,Marcus Semien,Batting - Total Bases,0.5,1,1.1,1,6,4,Over
+Baltimore vs. Washington,Jackson Holliday,Batting - RBIs,0.5,0,0.4,0,1,9,Under
+Texas vs. A's,Joc Pederson,Batting - Runs,0.5,0,0,0,0,10,Under
+Pittsburgh vs. LA Angels,Tommy Pham,Batting - Stolen Bases,0.5,0,0,0,0,10,Under
+Baltimore vs. Washington,Gunnar Henderson,Batting - Stolen Bases,0.5,0,0,0,0,10,Under
+Baltimore vs. Washington,Josh Bell,Batting - Bases on Balls,0.5,0,0.3,0,2,8,Under
+Pittsburgh vs. LA Angels,Zach Neto,Batting - Bases on Balls,0.5,0,0,0,0,5,Under
+Pittsburgh vs. LA Angels,Jared Triolo,Batting - RBIs,0.5,0,0,0,0,10,Under
+Pittsburgh vs. LA Angels,Kyren Paris,Batting - RBIs,0.5,0,0,0,0,10,Under
+Pittsburgh vs. LA Angels,Luis Rengifo,Batting - Bases on Balls,0.5,0,0,0,0,10,Under
+Tampa Bay vs. Arizona,Chandler Simpson,Batting - Bases on Balls,0.5,0,0,0,0,4,Under
+Pittsburgh vs. LA Angels,Logan O'Hoppe,Batting - RBIs,0.5,0,0,0,0,10,Under
+Pittsburgh vs. LA Angels,Jo Adell,Batting - Runs,0.5,0,0,0,0,10,Under
+Texas vs. A's,Joc Pederson,Batting - 1st Base,0.5,0,0,0,0,10,Under
+Tampa Bay vs. Arizona,Pavin Smith,Batting - 1st Base,0.5,0,0.4,0,3,7,Under
+Pittsburgh vs. LA Angels,Kyren Paris,Batting - Stolen Bases,0.5,0,0.1,0,1,9,Under
+Texas vs. A's,Josh Jung,Batting - RBIs,0.5,0,0,0,0,10,Under
+Pittsburgh vs. LA Angels,Zach Neto,Batting - Stolen Bases,0.5,0,0,0,0,5,Under
+Texas vs. A's,Joc Pederson,Batting - RBIs,0.5,0,0,0,0,10,Under
+Baltimore vs. Washington,Nathaniel Lowe,Batting - Bases on Balls,0.5,0,0.4,0,4,6,Under
+Pittsburgh vs. LA Angels,Henry Davis,Batting - Bases on Balls,0.5,0,0,0,0,7,Under
+Pittsburgh vs. LA Angels,Luis Rengifo,Batting - Stolen Bases,0.5,0,0,0,0,10,Under
+Pittsburgh vs. LA Angels,Jo Adell,Batting - Stolen Bases,0.5,0,0,0,0,10,Under
+Tampa Bay vs. Arizona,Corbin Carroll,Batting - Total Bases,1.5,3,3.2,2.5,7,3,Over
+Tampa Bay vs. Arizona,Tim Tawa,Batting - RBIs,0.5,1,0.7,1,6,4,Over
+Baltimore vs. Washington,Jackson Holliday,Batting - 1st Base,0.5,0,0.4,0,3,7,Under
+Baltimore vs. Washington,Josh Bell,Batting - Strikeouts,1.5,0.01,0.6,0,1,9,Under
+Texas vs. A's,Joc Pederson,Batting - Hits and Runs and RBIs,4.5,0.07,0.1,0,0,10,Under
+Tampa Bay vs. Arizona,Brandon Lowe,Batting - Bases on Balls,0.5,0.01,0.1,0,1,9,Under
+Tampa Bay vs. Arizona,Josh Naylor,Batting - Hits and Runs and RBIs,1.5,2.97,2.8,3.5,7,3,Over
+Texas vs. A's,Joc Pederson,Batting - Hits and Runs and RBIs,3.5,0.07,0.1,0,0,10,Under
+Tampa Bay vs. Arizona,Gabriel Moreno,Batting - Hits and Runs and RBIs,0.5,0.99,1,1,6,4,Over
+Baltimore vs. Washington,Josh Bell,Batting - Strikeouts,0.5,0.01,0.6,0,4,6,Under
+Pittsburgh vs. LA Angels,Bryan Reynolds,Batting - Strikeouts,0.5,0.98,1.3,1,8,2,Over
+Tampa Bay vs. Arizona,Christopher Morel,Batting - RBIs,1.5,0.06,0.4,0,1,9,Under
+Texas vs. A's,Joc Pederson,Batting - Total Bases,3.5,0.15,0.2,0,0,10,Under
+Texas vs. A's,Joc Pederson,Batting - Hits and Runs and RBIs,1.5,0.07,0.1,0,0,10,Under
+Baltimore vs. Washington,Jacob Young,Batting - RBIs,0.5,0.02,0.1,0,1,9,Under
+Pittsburgh vs. LA Angels,Kyren Paris,Batting - Runs,0.5,0.02,0.1,0,1,9,Under
+Pittsburgh vs. LA Angels,Luis Rengifo,Batting - Runs,0.5,0.02,0.1,0,1,9,Under
+Texas vs. A's,Joc Pederson,Batting - Hits,1.5,0.08,0.1,0,0,10,Under
+Baltimore vs. Washington,James Wood,Batting - Stolen Bases,0.5,0.03,0.1,0,1,9,Under
+Texas vs. A's,Joc Pederson,Batting - Total Bases,2.5,0.15,0.2,0,0,10,Under
+Baltimore vs. Washington,Jordan Westburg,Batting - RBIs,1.5,0.09,0.1,0,0,10,Under
+Tampa Bay vs. Arizona,Christopher Morel,Batting - 1st Base,0.5,0.04,0.4,0,3,7,Under
+Tampa Bay vs. Arizona,Gabriel Moreno,Batting - RBIs,0.5,0.04,0.1,0,1,9,Under
+Baltimore vs. Washington,Josh Bell,Batting - Runs,1.5,0.12,0.2,0,0,10,Under
+Tampa Bay vs. Arizona,Corbin Burnes,Pitching - Earned Runs Allowed,1.5,2.88,2.75,2.5,4,0,Over
+Pittsburgh vs. LA Angels,Oneil Cruz,Batting - RBIs,0.5,0.96,0.7,0,4,6,Over
+Tampa Bay vs. Arizona,Christopher Morel,Batting - Total Bases,0.5,0.96,1.2,0,4,6,Over
+Pittsburgh vs. LA Angels,Ke'Bryan Hayes,Batting - Runs,1.5,0.13,0.1,0,0,10,Under
+Pittsburgh vs. LA Angels,Nolan Schanuel,Batting - RBIs,1.5,0.13,0.3,0,0,10,Under
+Baltimore vs. Washington,Nathaniel Lowe,Batting - Runs,0.5,0.05,0.1,0,1,9,Under
+Pittsburgh vs. LA Angels,Nolan Schanuel,Batting - Bases on Balls,0.5,0.05,0.3,0,2,8,Under
+Pittsburgh vs. LA Angels,Nolan Schanuel,Batting - 2nd Base,0.5,0.05,0.1,0,1,9,Under
+Baltimore vs. Washington,Dylan Crews,Batting - Strikeouts,1.5,0.16,0.3,0,0,10,Under
+Pittsburgh vs. LA Angels,Bryan Reynolds,Batting - 2nd Base,0.5,0.05,0.1,0,1,9,Under
+Pittsburgh vs. LA Angels,Jo Adell,Batting - Bases on Balls,0.5,0.05,0.1,0,1,9,Under
+Tampa Bay vs. Arizona,Christopher Morel,Batting - RBIs,0.5,0.06,0.4,0,3,7,Under
+Baltimore vs. Washington,Jacob Young,Batting - Strikeouts,1.5,0.17,0.4,0,1,9,Under
+Tampa Bay vs. Arizona,Brandon Lowe,Batting - Total Bases,3.5,0.4,0.5,0.5,0,10,Under
+Baltimore vs. Washington,Jordan Westburg,Batting - Bases on Balls,0.5,0.06,0.1,0,1,9,Under
+Pittsburgh vs. LA Angels,Kyren Paris,Batting - Hits and Runs and RBIs,3.5,0.41,0.5,0,0,10,Under
+Baltimore vs. Washington,Jackson Holliday,Batting - Hits,1.5,0.18,0.5,0,1,9,Under
+Pittsburgh vs. LA Angels,Jorge Soler,Batting - RBIs,1.5,0.18,0.2,0,0,10,Under
+Tampa Bay vs. Arizona,Drew Rasmussen,Pitching - Earned Runs Allowed,4.5,0.57,0.5,0.5,0,4,Under
+Texas vs. A's,Wyatt Langford,Batting - Hits,0.5,0.94,1,1,6,4,Over
+Pittsburgh vs. LA Angels,Kyren Paris,Batting - Total Bases,3.5,0.45,0.5,0,0,10,Under
+Baltimore vs. Washington,Cedric Mullins,Batting - Stolen Bases,0.5,0.07,0.2,0,2,8,Under
+Baltimore vs. Washington,Ryan Mountcastle,Batting - Hits and Runs and RBIs,4.5,0.6,1.3,0.5,1,9,Under
+Baltimore vs. Washington,Adley Rutschman,Batting - Hits and Runs and RBIs,4.5,0.6,1.3,0.5,0,10,Under
+Pittsburgh vs. LA Angels,Ke'Bryan Hayes,Batting - Hits and Runs and RBIs,4.5,0.6,1.3,0.5,1,9,Under
+Baltimore vs. Washington,Jordan Westburg,Batting - Hits and Runs and RBIs,4.5,0.6,1.1,0.5,0,10,Under
+Texas vs. A's,Josh Jung,Batting - Hits and Runs and RBIs,4.5,0.6,0.8,0.5,0,10,Under
+Baltimore vs. Washington,Gunnar Henderson,Batting - Hits and Runs and RBIs,4.5,0.6,2,0.5,3,7,Under
+Pittsburgh vs. LA Angels,Kyren Paris,Batting - Bases on Balls,0.5,0.07,0.1,0,1,9,Under
+Texas vs. A's,Josh Smith,Batting - RBIs,1.5,0.2,0.2,0,0,10,Under
+Texas vs. A's,Joc Pederson,Batting - Hits and Runs and RBIs,0.5,0.07,0.1,0,1,9,Under
+Baltimore vs. Washington,Ryan Mountcastle,Batting - Home Run,0.5,0.07,0.1,0,1,9,Under
+Baltimore vs. Washington,Ryan Mountcastle,Batting - RBIs,1.5,0.21,0.2,0,0,10,Under
+Pittsburgh vs. LA Angels,Ke'Bryan Hayes,Batting - Strikeouts,0.5,0.93,1,1,8,2,Over
+Pittsburgh vs. LA Angels,Taylor Ward,Batting - 1st Base,1.5,0.23,0.2,0,0,10,Under
+Baltimore vs. Washington,Heston Kjerstad,Batting - 2nd Base,0.5,0.08,0.1,0,1,9,Under
+Texas vs. A's,Joc Pederson,Batting - Hits,0.5,0.08,0.1,0,1,9,Under
+Baltimore vs. Washington,Nathaniel Lowe,Batting - 2nd Base,0.5,0.08,0.1,0,1,9,Under
+Tampa Bay vs. Arizona,Brandon Lowe,Batting - Total Bases,2.5,0.4,0.5,0.5,0,10,Under
+Baltimore vs. Washington,Tyler O'Neill,Batting - Runs,1.5,0.24,0.2,0,0,10,Under
+Baltimore vs. Washington,Jackson Holliday,Batting - Total Bases,3.5,0.56,0.8,0,1,9,Under
+Tampa Bay vs. Arizona,Junior Caminero,Batting - Hits,0.5,0.92,1,1,7,3,Over
+Baltimore vs. Washington,Cedric Mullins,Batting - Hits and Runs and RBIs,1.5,2.75,2.3,3,6,4,Over
+Baltimore vs. Washington,Jacob Young,Batting - Stolen Bases,0.5,0.08,0.1,0,1,9,Under
+Pittsburgh vs. LA Angels,Zach Neto,Batting - Hits,1.5,0.26,0.4,0,0,5,Under
+Pittsburgh vs. LA Angels,Ke'Bryan Hayes,Batting - Hits and Runs and RBIs,3.5,0.6,1.3,0.5,1,9,Under
+Baltimore vs. Washington,Ryan Mountcastle,Batting - Total Bases,3.5,0.6,1.1,0.5,1,9,Under
+Baltimore vs. Washington,Adley Rutschman,Batting - Hits and Runs and RBIs,3.5,0.6,1.3,0.5,1,9,Under
+Pittsburgh vs. LA Angels,Ke'Bryan Hayes,Batting - Total Bases,3.5,0.6,0.7,0.5,0,10,Under
+Baltimore vs. Washington,Ryan Mountcastle,Batting - Hits and Runs and RBIs,3.5,0.6,1.3,0.5,1,9,Under
+Pittsburgh vs. LA Angels,Jo Adell,Batting - Hits and Runs and RBIs,3.5,0.6,1.2,0.5,1,9,Under
+Pittsburgh vs. LA Angels,Luis Rengifo,Batting - Hits and Runs and RBIs,3.5,0.6,1,0.5,0,10,Under
+Texas vs. A's,Josh Jung,Batting - Total Bases,3.5,0.6,0.9,0.5,0,10,Under
+Pittsburgh vs. LA Angels,Jo Adell,Batting - Total Bases,3.5,0.6,1,0.5,1,9,Under
+Tampa Bay vs. Arizona,Danny Jansen,Batting - Hits and Runs and RBIs,3.5,0.6,1.5,0.5,1,9,Under
+Baltimore vs. Washington,Gunnar Henderson,Batting - Hits and Runs and RBIs,3.5,0.6,2,0.5,3,7,Under
+Pittsburgh vs. LA Angels,Luis Rengifo,Batting - Total Bases,3.5,0.6,0.7,0.5,0,10,Under
+Baltimore vs. Washington,Gunnar Henderson,Batting - Total Bases,3.5,0.6,2.1,0.5,3,7,Under
+Texas vs. A's,Josh Jung,Batting - Hits and Runs and RBIs,3.5,0.6,0.8,0.5,0,10,Under
+Baltimore vs. Washington,James Wood,Batting - Total Bases,3.5,0.6,2,0.5,4,6,Under
+Pittsburgh vs. LA Angels,Jared Triolo,Batting - Total Bases,3.5,0.6,0.7,0.5,0,10,Under
+Baltimore vs. Washington,Jordan Westburg,Batting - Hits and Runs and RBIs,3.5,0.6,1.1,0.5,0,10,Under
+Pittsburgh vs. LA Angels,Luis Rengifo,Batting - RBIs,1.5,0.26,0.3,0,1,9,Under
+Baltimore vs. Washington,Dylan Crews,Batting - 2nd Base,0.5,0.09,0.1,0,1,9,Under
+Baltimore vs. Washington,Gunnar Henderson,Batting - Bases on Balls,0.5,0.09,0.2,0,1,9,Under
+Pittsburgh vs. LA Angels,Logan O'Hoppe,Batting - 2nd Base,0.5,0.09,0.1,0,1,9,Under
+Pittsburgh vs. LA Angels,Henry Davis,Batting - Total Bases,0.5,0.91,0.86,0,3,4,Over
+Pittsburgh vs. LA Angels,Jared Triolo,Batting - Strikeouts,1.5,0.27,0.3,0,0,10,Under
+Baltimore vs. Washington,Gunnar Henderson,Batting - RBIs,1.5,0.27,0.3,0,1,9,Under
+Pittsburgh vs. LA Angels,Logan O'Hoppe,Batting - Hits and Runs and RBIs,4.5,0.8,1.1,1,1,9,Under
+Pittsburgh vs. LA Angels,Jorge Soler,Batting - Runs,1.5,0.27,0.3,0,0,10,Under
+Pittsburgh vs. LA Angels,Kyren Paris,Batting - Total Bases,2.5,0.45,0.5,0,1,9,Under
+Baltimore vs. Washington,Jordan Westburg,Batting - RBIs,0.5,0.09,0.1,0,1,9,Under
+Pittsburgh vs. LA Angels,Logan O'Hoppe,Batting - Bases on Balls,0.5,0.09,0.1,0,1,9,Under
+Pittsburgh vs. LA Angels,Henry Davis,Batting - Strikeouts,1.5,0.28,0.43,0,1,6,Under
+Tampa Bay vs. Arizona,Junior Caminero,Batting - 2nd Base,0.5,0.09,0.1,0,1,9,Under
+Pittsburgh vs. LA Angels,Jorge Soler,Batting - Home Run,0.5,0.09,0.1,0,1,9,Under
+Texas vs. A's,Joc Pederson,Batting - Bases on Balls,0.5,0.1,0.1,0,1,9,Under
+Texas vs. A's,Jake Burger,Batting - Bases on Balls,0.5,0.1,0.1,0,1,9,Under
+Tampa Bay vs. Arizona,Gabriel Moreno,Batting - 2nd Base,0.5,0.1,0.1,0,1,9,Under
+Tampa Bay vs. Arizona,Josh Naylor,Batting - 2nd Base,0.5,0.1,0.1,0,1,9,Under
+Texas vs. A's,Jonah Heim,Batting - Home Run,0.5,0.1,0.1,0,1,9,Under
+Texas vs. A's,Josh Smith,Batting - Home Run,0.5,0.1,0.1,0,1,9,Under
+Texas vs. A's,Josh Jung,Batting - 1st Base,1.5,0.3,0.3,0,0,10,Under
+Pittsburgh vs. LA Angels,Isiah Kiner-Falefa,Batting - Stolen Bases,0.5,0.1,0.1,0,1,9,Under
+Tampa Bay vs. Arizona,Lourdes Gurriel Jr.,Batting - 2nd Base,0.5,0.1,0.1,0,1,9,Under
+Texas vs. A's,Wyatt Langford,Batting - 2nd Base,0.5,0.1,0.1,0,1,9,Under
+Texas vs. A's,Marcus Semien,Batting - 2nd Base,0.5,0.1,0.1,0,1,9,Under
+Baltimore vs. Washington,Adley Rutschman,Batting - RBIs,1.5,0.3,0.4,0,0,10,Under
+Tampa Bay vs. Arizona,Brandon Lowe,Batting - Runs,0.5,0.1,0.1,0,1,9,Under
+Texas vs. A's,Marcus Semien,Batting - Home Run,0.5,0.1,0.1,0,1,9,Under
+Pittsburgh vs. LA Angels,Taylor Ward,Batting - Runs,1.5,0.31,0.5,0,1,9,Under
+Texas vs. A's,Marcus Semien,Batting - Runs,1.5,0.31,0.3,0,0,10,Under
+Texas vs. A's,Jake Burger,Batting - Home Run,0.5,0.11,0.1,0,1,9,Under
+Texas vs. A's,Jake Burger,Batting - 2nd Base,0.5,0.11,0.1,0,1,9,Under
+Tampa Bay vs. Arizona,Danny Jansen,Batting - Home Run,0.5,0.11,0.1,0,1,9,Under
+Texas vs. A's,Josh Smith,Batting - Stolen Bases,0.5,0.11,0.1,0,1,9,Under
+Tampa Bay vs. Arizona,Brandon Lowe,Batting - Hits and Runs and RBIs,0.5,0.89,1.1,1,6,4,Over
+Tampa Bay vs. Arizona,Brandon Lowe,Batting - RBIs,1.5,0.32,0.5,0,2,8,Under
+Texas vs. A's,Jake Burger,Batting - RBIs,1.5,0.32,0.3,0,0,10,Under
+Pittsburgh vs. LA Angels,Enmanuel Valdez,Batting - Bases on Balls,0.5,0.89,0.7,1,6,4,Over
+Baltimore vs. Washington,Adley Rutschman,Batting - Runs,1.5,0.32,0.3,0,0,10,Under
+Baltimore vs. Washington,Jordan Westburg,Batting - Home Run,0.5,0.11,0.1,0,1,9,Under
+Baltimore vs. Washington,Jordan Westburg,Batting - Total Bases,3.5,0.76,1.2,0,2,8,Under
+Tampa Bay vs. Arizona,Taylor Walls,Batting - Total Bases,2.5,0.54,0.5,0.5,0,10,Under
+Texas vs. A's,Joc Pederson,Batting - 2nd Base,0.5,0.11,0.1,0,1,9,Under
+Tampa Bay vs. Arizona,Christopher Morel,Batting - Home Run,0.5,0.11,0.1,0,1,9,Under
+Texas vs. A's,Josh Jung,Batting - Bases on Balls,0.5,0.11,0.1,0,1,9,Under
+Pittsburgh vs. LA Angels,Tommy Pham,Batting - RBIs,1.5,0.34,0.3,0,0,10,Under
+Tampa Bay vs. Arizona,Jonathan Aranda,Batting - Home Run,0.5,0.11,0.2,0,2,8,Under
+Baltimore vs. Washington,Jackson Holliday,Batting - Total Bases,2.5,0.56,0.8,0,1,9,Under
+Baltimore vs. Washington,Jordan Westburg,Batting - 1st Base,0.5,0.11,0.1,0,1,9,Under
+Pittsburgh vs. LA Angels,Nolan Schanuel,Batting - Total Bases,0.5,0.89,1.5,1,7,3,Over
+Pittsburgh vs. LA Angels,Logan O'Hoppe,Batting - Hits and Runs and RBIs,3.5,0.8,1.1,1,1,9,Under
+Pittsburgh vs. LA Angels,Logan O'Hoppe,Batting - Total Bases,3.5,0.8,0.9,1,1,9,Under
+Pittsburgh vs. LA Angels,Jared Triolo,Batting - Hits and Runs and RBIs,3.5,0.8,0.6,1,0,10,Under
+Baltimore vs. Washington,Keibert Ruiz,Batting - Bases on Balls,0.5,0.12,0.2,0,1,9,Under
+Baltimore vs. Washington,Dylan Crews,Batting - RBIs,0.5,0.88,0.5,0,2,8,Over
+Baltimore vs. Washington,Jackson Holliday,Batting - Home Run,0.5,0.12,0.1,0,1,9,Under
+Pittsburgh vs. LA Angels,Zach Neto,Batting - Total Bases,3.5,0.83,1.2,0,1,4,Under
+Pittsburgh vs. LA Angels,Mike Trout,Batting - Total Bases,3.5,0.83,1,0,1,9,Under
+Tampa Bay vs. Arizona,Gabriel Moreno,Batting - Total Bases,2.5,0.59,0.6,0.5,0,10,Under
+Baltimore vs. Washington,Josh Bell,Batting - Runs,0.5,0.12,0.2,0,2,8,Under
+Tampa Bay vs. Arizona,Drew Rasmussen,Pitching - Earned Runs Allowed,2.5,0.6,0.5,0.5,0,4,Under
+Pittsburgh vs. LA Angels,Oneil Cruz,Batting - Runs,0.5,0.88,0.8,1,6,4,Over
+Pittsburgh vs. LA Angels,Jo Adell,Batting - Total Bases,2.5,0.6,1,0.5,1,9,Under
+Pittsburgh vs. LA Angels,Luis Rengifo,Batting - Hits and Runs and RBIs,2.5,0.6,1,0.5,2,8,Under
+Baltimore vs. Washington,Gunnar Henderson,Batting - Total Bases,2.5,0.6,2.1,0.5,4,6,Under
+Baltimore vs. Washington,Ryan Mountcastle,Batting - Total Bases,2.5,0.6,1.1,0.5,1,9,Under
+Texas vs. A's,Josh Jung,Batting - Total Bases,2.5,0.6,0.9,0.5,1,9,Under
+Pittsburgh vs. LA Angels,Luis Rengifo,Batting - Total Bases,2.5,0.6,0.7,0.5,1,9,Under
+Baltimore vs. Washington,Adley Rutschman,Batting - Hits and Runs and RBIs,2.5,0.6,1.3,0.5,3,7,Under
+Pittsburgh vs. LA Angels,Ke'Bryan Hayes,Batting - Total Bases,2.5,0.6,0.7,0.5,0,10,Under
+Pittsburgh vs. LA Angels,Jared Triolo,Batting - Total Bases,2.5,0.6,0.7,0.5,0,10,Under
+Baltimore vs. Washington,James Wood,Batting - Total Bases,2.5,0.6,2,0.5,4,6,Under
+Pittsburgh vs. LA Angels,Taylor Ward,Batting - RBIs,1.5,0.36,0.3,0,0,10,Under
+Baltimore vs. Washington,Tyler O'Neill,Batting - Total Bases,0.5,0.88,0.6,0,3,7,Over
+Texas vs. A's,Jonah Heim,Batting - RBIs,1.5,0.36,0.4,0,2,8,Under
+Tampa Bay vs. Arizona,Taylor Walls,Batting - Bases on Balls,0.5,0.12,0.2,0,2,8,Under
+Baltimore vs. Washington,CJ Abrams,Batting - Hits and Runs and RBIs,1.5,2.63,2.2,2.5,7,3,Over
+Baltimore vs. Washington,Alex Call,Batting - Total Bases,3.5,0.86,0.7,0,1,9,Under
+Tampa Bay vs. Arizona,Jake Mangum,Batting - Strikeouts,1.5,0.37,0.3,0,0,10,Under
+Baltimore vs. Washington,Ryan Mountcastle,Batting - 2nd Base,0.5,0.12,0.2,0,2,8,Under
+Texas vs. A's,Wyatt Langford,Batting - 1st Base,1.5,0.38,0.4,0,1,9,Under
+Baltimore vs. Washington,Tyler O'Neill,Batting - Total Bases,3.5,0.88,0.6,0,1,9,Under
+Baltimore vs. Washington,Adley Rutschman,Batting - 1st Base,1.5,0.38,0.3,0,1,9,Under
+Pittsburgh vs. LA Angels,Nolan Schanuel,Batting - Total Bases,3.5,0.89,1.5,1,2,8,Under
+Pittsburgh vs. LA Angels,Zach Neto,Batting - Home Run,0.5,0.13,0.2,0,1,4,Under
+Baltimore vs. Washington,Ryan Mountcastle,Batting - Strikeouts,0.5,0.87,0.9,1,7,3,Over
+Tampa Bay vs. Arizona,Brandon Lowe,Batting - Hits and Runs and RBIs,3.5,0.89,1.1,1,1,9,Under
+Baltimore vs. Washington,Jacob Young,Batting - 2nd Base,0.5,0.13,0.1,0,1,9,Under
+Baltimore vs. Washington,Tyler O'Neill,Batting - Hits and Runs and RBIs,4.5,1.17,0.8,0,0,10,Under
+Tampa Bay vs. Arizona,Jonathan Aranda,Batting - Strikeouts,1.5,0.39,0.4,0,0,10,Under
+Pittsburgh vs. LA Angels,Henry Davis,Batting - Total Bases,3.5,0.91,0.86,0,1,6,Under
+Baltimore vs. Washington,Heston Kjerstad,Batting - Bases on Balls,0.5,0.13,0.1,0,1,9,Under
+Pittsburgh vs. LA Angels,Ke'Bryan Hayes,Batting - Stolen Bases,0.5,0.13,0.1,0,1,9,Under
+Pittsburgh vs. LA Angels,Mike Trout,Batting - Hits,1.5,0.39,0.4,0,1,9,Under
+Tampa Bay vs. Arizona,Taylor Walls,Batting - Stolen Bases,0.5,0.13,0.1,0,1,9,Under
+Pittsburgh vs. LA Angels,Ke'Bryan Hayes,Batting - Runs,0.5,0.13,0.1,0,1,9,Under
+Tampa Bay vs. Arizona,Pavin Smith,Batting - RBIs,1.5,0.4,0.5,0,2,8,Under
+Pittsburgh vs. LA Angels,Tommy Pham,Batting - 2nd Base,0.5,0.13,0.2,0,2,8,Under
+Pittsburgh vs. LA Angels,Mike Trout,Batting - Hits and Runs and RBIs,4.5,1.2,1.1,0,1,9,Under
+Tampa Bay vs. Arizona,Chandler Simpson,Batting - Runs,1.5,0.4,0.5,0.5,0,4,Under
+Pittsburgh vs. LA Angels,Taylor Ward,Batting - Hits and Runs and RBIs,4.5,1.2,1.6,1,1,9,Under
+Pittsburgh vs. LA Angels,Jorge Soler,Batting - Hits and Runs and RBIs,4.5,1.2,1.4,1.5,0,10,Under
+Texas vs. A's,Marcus Semien,Batting - Hits and Runs and RBIs,4.5,1.2,1.5,1,1,9,Under
+Tampa Bay vs. Arizona,Junior Caminero,Batting - Hits and Runs and RBIs,4.5,1.2,2.4,1,3,7,Under
+Pittsburgh vs. LA Angels,Andrew McCutchen,Batting - Hits and Runs and RBIs,4.5,1.2,1.7,1,1,9,Under
+Baltimore vs. Washington,Cade Povich,Pitching - Hits Allowed,4.5,7.8,7.75,6.5,4,0,Over
+Texas vs. A's,Jake Burger,Batting - Hits and Runs and RBIs,4.5,1.2,1.4,1,1,9,Under
+Pittsburgh vs. LA Angels,Tyler Anderson,Pitching - Earned Runs Allowed,4.5,1.2,1.25,1,0,4,Under
+Baltimore vs. Washington,Ryan Mountcastle,Batting - Bases on Balls,0.5,0.13,0.1,0,1,9,Under
+Pittsburgh vs. LA Angels,Nolan Schanuel,Batting - RBIs,0.5,0.13,0.3,0,3,7,Under
+Pittsburgh vs. LA Angels,Kyren Paris,Batting - Hits and Runs and RBIs,1.5,0.41,0.5,0,1,9,Under
+Pittsburgh vs. LA Angels,Kyren Paris,Batting - 2nd Base,0.5,0.14,0.1,0,1,9,Under
+Pittsburgh vs. LA Angels,Luis Rengifo,Batting - 2nd Base,0.5,0.14,0.1,0,1,9,Under
+Tampa Bay vs. Arizona,Kameron Misner,Batting - Stolen Bases,0.5,0.14,0.1,0,1,9,Under
+Tampa Bay vs. Arizona,Tim Tawa,Batting - 2nd Base,0.5,0.14,0.2,0,2,8,Under
+Tampa Bay vs. Arizona,Christopher Morel,Batting - Total Bases,3.5,0.96,1.2,0,2,8,Under
+Tampa Bay vs. Arizona,Gabriel Moreno,Batting - Strikeouts,1.5,0.41,0.4,0,0,10,Under
+Baltimore vs. Washington,Alex Call,Batting - Total Bases,0.5,0.86,0.7,0,4,6,Over
+Tampa Bay vs. Arizona,Alek Thomas,Batting - Hits,0.5,0.86,0.9,1,6,4,Over
+Baltimore vs. Washington,Tyler O'Neill,Batting - Hits,1.5,0.41,0.3,0,0,10,Under
+Pittsburgh vs. LA Angels,Mike Trout,Batting - Runs,1.5,0.42,0.3,0,1,9,Under
+Baltimore vs. Washington,Ryan Mountcastle,Batting - 1st Base,1.5,0.42,0.3,0,0,10,Under
+Tampa Bay vs. Arizona,Gabriel Moreno,Batting - Hits and Runs and RBIs,3.5,0.99,1,1,0,10,Under
+Baltimore vs. Washington,Alex Call,Batting - RBIs,1.5,0.42,0.3,0,0,10,Under
+Texas vs. A's,Marcus Semien,Batting - Total Bases,3.5,1,1.1,1,1,9,Under
+Pittsburgh vs. LA Angels,Kyren Paris,Batting - Hits,1.5,0.43,0.4,0,1,9,Under
+Pittsburgh vs. LA Angels,Tommy Pham,Batting - Total Bases,3.5,1,1.1,1,0,10,Under
+Pittsburgh vs. LA Angels,Andrew McCutchen,Batting - Home Run,0.5,0.14,0.1,0,1,9,Under
+Baltimore vs. Washington,Nathaniel Lowe,Batting - Home Run,0.5,0.14,0.1,0,1,9,Under
+Tampa Bay vs. Arizona,Lourdes Gurriel Jr.,Batting - Strikeouts,1.5,0.43,0.4,0,1,9,Under
+Baltimore vs. Washington,Tyler O'Neill,Batting - RBIs,1.5,0.43,0.3,0,0,10,Under
+Baltimore vs. Washington,Adley Rutschman,Batting - Total Bases,3.5,1.01,1.3,0,2,8,Under
+Tampa Bay vs. Arizona,Lourdes Gurriel Jr.,Batting - 1st Base,1.5,0.44,0.5,0.5,0,10,Under
+Baltimore vs. Washington,Tyler O'Neill,Batting - Home Run,0.5,0.15,0.1,0,1,9,Under
+Pittsburgh vs. LA Angels,Jared Triolo,Batting - Runs,0.5,0.15,0.1,0,1,9,Under
+Tampa Bay vs. Arizona,Jonathan Aranda,Batting - RBIs,1.5,0.44,0.6,0,2,8,Under
+Pittsburgh vs. LA Angels,Enmanuel Valdez,Batting - Strikeouts,1.5,0.44,0.5,0,1,9,Under
+Texas vs. A's,Wyatt Langford,Batting - Strikeouts,0.5,0.85,0.9,1,7,3,Over
+Pittsburgh vs. LA Angels,Henry Davis,Batting - Hits,1.5,0.44,0.43,0,0,7,Under
+Tampa Bay vs. Arizona,Brandon Lowe,Batting - Hits,1.5,0.44,0.5,0.5,0,10,Under
+Pittsburgh vs. LA Angels,Henry Davis,Batting - Hits and Runs and RBIs,3.5,1.03,0.86,0,1,6,Under
+Tampa Bay vs. Arizona,Josh Naylor,Batting - Home Run,0.5,0.15,0.3,0,3,7,Under
+Tampa Bay vs. Arizona,Jonathan Aranda,Batting - Total Bases,3.5,1.04,1.6,1,2,8,Under
+Tampa Bay vs. Arizona,Christopher Morel,Batting - Hits,1.5,0.45,0.7,0,2,8,Under
+Pittsburgh vs. LA Angels,Mike Trout,Batting - Home Run,0.5,0.15,0.2,0,1,9,Under
+Tampa Bay vs. Arizona,Pavin Smith,Batting - Hits,0.5,0.85,1.1,1,7,3,Over
+Tampa Bay vs. Arizona,Kameron Misner,Batting - Strikeouts,1.5,0.45,0.4,0,0,10,Under
+Pittsburgh vs. LA Angels,Mike Trout,Batting - Stolen Bases,0.5,0.15,0.1,0,1,9,Under
+Baltimore vs. Washington,Jordan Westburg,Batting - Total Bases,2.5,0.76,1.2,0,3,7,Under
+Texas vs. A's,Joc Pederson,Batting - Total Bases,0.5,0.15,0.2,0,1,9,Under
+Baltimore vs. Washington,Jordan Westburg,Batting - Hits,1.5,0.46,0.5,0,1,9,Under
+Baltimore vs. Washington,Alex Call,Batting - 1st Base,1.5,0.46,0.4,0,0,10,Under
+Pittsburgh vs. LA Angels,Luis Rengifo,Batting - Strikeouts,1.5,0.47,0.6,0.5,1,9,Under
+Pittsburgh vs. LA Angels,Oneil Cruz,Batting - 2nd Base,0.5,0.16,0.2,0,2,8,Under
+Texas vs. A's,Marcus Semien,Batting - RBIs,1.5,0.47,0.5,0,1,9,Under
+Baltimore vs. Washington,Dylan Crews,Batting - Strikeouts,0.5,0.16,0.3,0,3,7,Under
+Pittsburgh vs. LA Angels,Mike Trout,Batting - RBIs,1.5,0.48,0.4,0,2,8,Under
+Pittsburgh vs. LA Angels,Taylor Ward,Batting - Hits,0.5,0.84,0.8,1,7,3,Over
+Pittsburgh vs. LA Angels,Enmanuel Valdez,Batting - RBIs,0.5,0.84,0.6,0,2,8,Over
+Baltimore vs. Washington,Heston Kjerstad,Batting - Strikeouts,1.5,0.48,0.5,0,1,9,Under
+Baltimore vs. Washington,James Wood,Batting - 1st Base,1.5,0.48,0.4,0,1,9,Under
+Pittsburgh vs. LA Angels,Andrew McCutchen,Batting - 2nd Base,0.5,0.16,0.1,0,1,9,Under
+Baltimore vs. Washington,Jacob Young,Batting - 1st Base,0.5,0.84,0.7,1,6,4,Over
+Pittsburgh vs. LA Angels,Logan O'Hoppe,Batting - Total Bases,2.5,0.8,0.9,1,1,9,Under
+Baltimore vs. Washington,Jackson Holliday,Batting - Strikeouts,0.5,0.84,0.8,1,7,3,Over
+Tampa Bay vs. Arizona,Taylor Walls,Batting - Hits,1.5,0.49,0.5,0.5,0,10,Under
+Tampa Bay vs. Arizona,Lourdes Gurriel Jr.,Batting - Bases on Balls,0.5,0.16,0.2,0,2,8,Under
+Tampa Bay vs. Arizona,Taylor Walls,Batting - Hits and Runs and RBIs,3.5,1.15,1.2,1,0,10,Under
+Pittsburgh vs. LA Angels,Jared Triolo,Batting - Bases on Balls,0.5,0.16,0.1,0,1,9,Under
+Pittsburgh vs. LA Angels,Zach Neto,Batting - Total Bases,2.5,0.83,1.2,0,1,4,Under
+Baltimore vs. Washington,Adley Rutschman,Batting - Home Run,0.5,0.17,0.2,0,2,8,Under
+Baltimore vs. Washington,Keibert Ruiz,Batting - RBIs,1.5,0.5,0.4,0,1,9,Under
+Pittsburgh vs. LA Angels,Jared Triolo,Batting - Hits,1.5,0.5,0.5,0.5,0,10,Under
+Pittsburgh vs. LA Angels,Mike Trout,Batting - Total Bases,2.5,0.83,1,0,1,9,Under
+Tampa Bay vs. Arizona,Gabriel Moreno,Batting - 1st Base,1.5,0.51,0.4,0,0,10,Under
+Pittsburgh vs. LA Angels,Mike Trout,Batting - Total Bases,0.5,0.83,1,0,3,7,Over
+Baltimore vs. Washington,Gunnar Henderson,Batting - Runs,1.5,0.51,0.7,0,3,7,Under
+Texas vs. A's,Marcus Semien,Batting - Strikeouts,1.5,0.51,0.5,0,2,8,Under
+Baltimore vs. Washington,Jacob Young,Batting - Strikeouts,0.5,0.17,0.4,0,3,7,Under
+Pittsburgh vs. LA Angels,Mike Trout,Batting - Hits and Runs and RBIs,3.5,1.2,1.1,0,1,9,Under
+Pittsburgh vs. LA Angels,Andrew McCutchen,Batting - Total Bases,3.5,1.2,1.1,1,1,9,Under
+Tampa Bay vs. Arizona,Drew Rasmussen,Pitching - Bases on Balls,3.5,1.2,1.25,1,0,4,Under
+Baltimore vs. Washington,Dylan Crews,Batting - Total Bases,3.5,1.2,2,1,2,8,Under
+Tampa Bay vs. Arizona,Lourdes Gurriel Jr.,Batting - Total Bases,3.5,1.2,1.5,1,2,8,Under
+Tampa Bay vs. Arizona,Alek Thomas,Batting - Total Bases,3.5,1.2,1.2,1,1,9,Under
+Texas vs. A's,Jonah Heim,Batting - Total Bases,3.5,1.2,1.2,1,1,9,Under
+Pittsburgh vs. LA Angels,Taylor Ward,Batting - Hits and Runs and RBIs,3.5,1.2,1.6,1,1,9,Under
+Baltimore vs. Washington,Jacob Young,Batting - Hits and Runs and RBIs,3.5,1.2,1.1,1,0,10,Under
+Texas vs. A's,Jake Burger,Batting - Hits and Runs and RBIs,3.5,1.2,1.4,1,1,9,Under
+Tampa Bay vs. Arizona,Geraldo Perdomo,Batting - Hits and Runs and RBIs,3.5,1.2,1.8,1,3,7,Under
+Pittsburgh vs. LA Angels,Enmanuel Valdez,Batting - Hits and Runs and RBIs,3.5,1.2,1.9,1,2,8,Under
+Pittsburgh vs. LA Angels,Enmanuel Valdez,Batting - Total Bases,3.5,1.2,1.5,1,1,9,Under
+Texas vs. A's,Marcus Semien,Batting - Hits and Runs and RBIs,3.5,1.2,1.5,1,1,9,Under
+Pittsburgh vs. LA Angels,Jorge Soler,Batting - Total Bases,3.5,1.2,1.5,1,1,9,Under
+Texas vs. A's,Jonah Heim,Batting - Hits and Runs and RBIs,3.5,1.2,1.3,1,1,9,Under
+Baltimore vs. Washington,Keibert Ruiz,Batting - Total Bases,3.5,1.2,1.5,1,1,9,Under
+Tampa Bay vs. Arizona,Geraldo Perdomo,Batting - Total Bases,3.5,1.2,1.2,1,1,9,Under
+Tampa Bay vs. Arizona,Kameron Misner,Batting - Total Bases,3.5,1.2,2.2,1,2,8,Under
+Pittsburgh vs. LA Angels,Nolan Schanuel,Batting - Hits and Runs and RBIs,3.5,1.2,1.5,1.5,1,9,Under
+Pittsburgh vs. LA Angels,Jorge Soler,Batting - Hits and Runs and RBIs,3.5,1.2,1.4,1.5,1,9,Under
+Pittsburgh vs. LA Angels,Tyler Anderson,Pitching - Earned Runs Allowed,3.5,1.2,1.25,1,0,4,Under
+Tampa Bay vs. Arizona,Lourdes Gurriel Jr.,Batting - Hits and Runs and RBIs,3.5,1.2,1.9,1,2,8,Under
+Texas vs. A's,Jake Burger,Batting - Total Bases,3.5,1.2,1.2,1,1,9,Under
+Baltimore vs. Washington,Heston Kjerstad,Batting - Total Bases,3.5,1.2,1.7,1,3,7,Under
+Baltimore vs. Washington,Nathaniel Lowe,Batting - Total Bases,3.5,1.2,1.7,1,1,9,Under
+Tampa Bay vs. Arizona,Junior Caminero,Batting - Hits and Runs and RBIs,3.5,1.2,2.4,1,3,7,Under
+Tampa Bay vs. Arizona,Junior Caminero,Batting - Total Bases,3.5,1.2,2,1,3,7,Under
+Pittsburgh vs. LA Angels,Carmen Mlodzinski,Pitching - Hits Allowed,3.5,5.8,6.5,6,4,0,Over
+Tampa Bay vs. Arizona,Josh Naylor,Batting - Strikeouts,1.5,0.52,0.5,0,1,9,Under
+Baltimore vs. Washington,Cedric Mullins,Batting - Strikeouts,0.5,0.83,0.9,1,7,3,Over
+Pittsburgh vs. LA Angels,Andrew McCutchen,Batting - Runs,1.5,0.52,0.6,0,2,8,Under
+Baltimore vs. Washington,Alex Call,Batting - Total Bases,2.5,0.86,0.7,0,1,9,Under
+Tampa Bay vs. Arizona,Alek Thomas,Batting - Strikeouts,0.5,0.83,1,1,6,4,Over
+Pittsburgh vs. LA Angels,Enmanuel Valdez,Batting - Home Run,0.5,0.17,0.1,0,1,9,Under
+Texas vs. A's,Marcus Semien,Batting - 1st Base,1.5,0.53,0.5,0.5,0,10,Under
+Baltimore vs. Washington,Tyler O'Neill,Batting - Total Bases,2.5,0.88,0.6,0,1,9,Under
+Baltimore vs. Washington,Dylan Crews,Batting - Bases on Balls,0.5,0.18,0.1,0,1,9,Under
+Baltimore vs. Washington,Adley Rutschman,Batting - Hits,1.5,0.53,0.6,0,2,8,Under
+Pittsburgh vs. LA Angels,Nolan Schanuel,Batting - Total Bases,2.5,0.89,1.5,1,2,8,Under
+Baltimore vs. Washington,Josh Bell,Batting - Hits and Runs and RBIs,4.5,1.6,1.1,0,0,10,Under
+Baltimore vs. Washington,Jackson Holliday,Batting - Hits,0.5,0.18,0.5,0,4,6,Under
+Pittsburgh vs. LA Angels,Luis Rengifo,Batting - 1st Base,1.5,0.54,0.5,0.5,0,10,Under
+Pittsburgh vs. LA Angels,Jorge Soler,Batting - RBIs,0.5,0.18,0.2,0,2,8,Under
+Tampa Bay vs. Arizona,Brandon Lowe,Batting - Hits and Runs and RBIs,2.5,0.89,1.1,1,2,8,Under
+Pittsburgh vs. LA Angels,Isiah Kiner-Falefa,Batting - Bases on Balls,0.5,0.18,0.1,0,1,9,Under
+Baltimore vs. Washington,CJ Abrams,Batting - 1st Base,1.5,0.54,0.4,0,1,9,Under
+Tampa Bay vs. Arizona,Tim Tawa,Batting - 1st Base,0.5,0.18,0.2,0,2,8,Under
+Tampa Bay vs. Arizona,Taylor Walls,Batting - Total Bases,1.5,0.54,0.5,0.5,0,10,Under
+Pittsburgh vs. LA Angels,Zach Neto,Batting - Hits and Runs and RBIs,4.5,1.63,1.6,0,1,4,Under
+Pittsburgh vs. LA Angels,Henry Davis,Batting - Total Bases,2.5,0.91,0.86,0,1,6,Under
+Baltimore vs. Washington,Cedric Mullins,Batting - 2nd Base,0.5,0.18,0.2,0,2,8,Under
+Pittsburgh vs. LA Angels,Tyler Anderson,Pitching - Hits Allowed,6.5,2.4,2.75,2,0,4,Under
+Pittsburgh vs. LA Angels,Henry Davis,Batting - Home Run,0.5,0.19,0.14,0,1,6,Under
+Tampa Bay vs. Arizona,Gabriel Moreno,Batting - Hits,1.5,0.56,0.5,0.5,0,10,Under
+Tampa Bay vs. Arizona,Geraldo Perdomo,Batting - 2nd Base,0.5,0.19,0.2,0,2,8,Under
+Tampa Bay vs. Arizona,Alek Thomas,Batting - Bases on Balls,0.5,0.19,0.2,0,2,8,Under
+Baltimore vs. Washington,James Wood,Batting - 2nd Base,0.5,0.19,0.2,0,1,9,Under
+Tampa Bay vs. Arizona,Drew Rasmussen,Pitching - Earned Runs Allowed,1.5,0.57,0.5,0.5,0,4,Under
+Pittsburgh vs. LA Angels,Jorge Soler,Batting - Bases on Balls,0.5,0.19,0.2,0,2,8,Under
+Tampa Bay vs. Arizona,Christopher Morel,Batting - Total Bases,2.5,0.96,1.2,0,2,8,Under
+Baltimore vs. Washington,Jordan Westburg,Batting - 2nd Base,0.5,0.19,0.2,0,1,9,Under
+Pittsburgh vs. LA Angels,Zach Neto,Batting - Runs,0.5,0.81,0.6,0,2,3,Over
+Texas vs. A's,Josh Jung,Batting - Hits,1.5,0.58,0.6,0.5,1,9,Under
+Texas vs. A's,Wyatt Langford,Batting - Runs,1.5,0.58,0.6,0.5,1,9,Under
+Baltimore vs. Washington,Alex Call,Batting - Runs,1.5,0.58,0.4,0,0,10,Under
+Pittsburgh vs. LA Angels,Nolan Schanuel,Batting - 1st Base,1.5,0.58,0.5,0.5,0,10,Under
+Baltimore vs. Washington,CJ Abrams,Batting - 2nd Base,0.5,0.2,0.2,0,1,9,Under
+Pittsburgh vs. LA Angels,Zach Neto,Batting - RBIs,0.5,0.8,0.6,0,2,3,Over
+Tampa Bay vs. Arizona,Danny Jansen,Batting - Total Bases,3.5,1.38,1.1,0,1,9,Under
+Tampa Bay vs. Arizona,Junior Caminero,Batting - Bases on Balls,0.5,0.2,0.3,0,3,7,Under
+Tampa Bay vs. Arizona,Gabriel Moreno,Batting - Total Bases,1.5,0.59,0.6,0.5,1,9,Under
+Pittsburgh vs. LA Angels,Tommy Pham,Batting - Bases on Balls,0.5,0.2,0.2,0,2,8,Under
+Pittsburgh vs. LA Angels,Jo Adell,Batting - RBIs,1.5,0.6,0.5,0,1,9,Under
+Baltimore vs. Washington,CJ Abrams,Batting - Runs,0.5,0.8,0.6,1,6,4,Over
+Baltimore vs. Washington,Heston Kjerstad,Batting - Hits,0.5,0.8,0.7,1,6,4,Over
+Tampa Bay vs. Arizona,Chandler Simpson,Batting - 1st Base,0.5,0.8,1,1,3,1,Over
+Texas vs. A's,Wyatt Langford,Batting - RBIs,0.5,0.8,0.7,1,6,4,Over
+Baltimore vs. Washington,CJ Abrams,Batting - RBIs,0.5,0.8,0.6,1,6,4,Over
+Pittsburgh vs. LA Angels,Logan O'Hoppe,Batting - 1st Base,0.5,0.8,0.7,1,6,4,Over
+Tampa Bay vs. Arizona,Jonathan Aranda,Batting - Hits and Runs and RBIs,4.5,1.8,2.1,1.5,1,9,Under
+Pittsburgh vs. LA Angels,Bryan Reynolds,Batting - Hits and Runs and RBIs,4.5,1.8,2.7,1.5,3,7,Under
+Pittsburgh vs. LA Angels,Andrew McCutchen,Batting - Hits,0.5,0.8,0.7,1,6,4,Over
+Texas vs. A's,Jonah Heim,Batting - Hits,0.5,0.8,0.7,1,6,4,Over
+Baltimore vs. Washington,Dylan Crews,Batting - Hits and Runs and RBIs,4.5,1.8,2.3,1.5,1,9,Under
+Baltimore vs. Washington,James Wood,Batting - Hits and Runs and RBIs,4.5,1.8,2.3,1.5,2,8,Under
+Baltimore vs. Washington,James Wood,Batting - Strikeouts,0.5,0.8,0.8,1,7,3,Over
+Pittsburgh vs. LA Angels,Andrew McCutchen,Batting - Strikeouts,0.5,0.8,0.8,1,6,4,Over
+Pittsburgh vs. LA Angels,Logan O'Hoppe,Batting - Total Bases,0.5,0.8,0.9,1,6,4,Over
+Pittsburgh vs. LA Angels,Logan O'Hoppe,Batting - Hits and Runs and RBIs,0.5,0.8,1.1,1,6,4,Over
+Texas vs. A's,Jake Burger,Batting - Hits,0.5,0.8,0.8,1,6,4,Over
+Tampa Bay vs. Arizona,Danny Jansen,Batting - Strikeouts,0.5,0.8,0.9,1,6,4,Over
+Pittsburgh vs. LA Angels,Nolan Schanuel,Batting - Hits,0.5,0.8,0.8,1,7,3,Over
+Baltimore vs. Washington,Adley Rutschman,Batting - Strikeouts,0.5,0.8,0.8,1,6,4,Over
+Tampa Bay vs. Arizona,Jonathan Aranda,Batting - Runs,0.5,0.8,0.7,1,6,4,Over
+Texas vs. A's,Wyatt Langford,Batting - Bases on Balls,0.5,0.8,0.7,1,7,3,Over
+Tampa Bay vs. Arizona,Alek Thomas,Batting - 1st Base,0.5,0.8,0.7,1,6,4,Over
+Pittsburgh vs. LA Angels,Logan O'Hoppe,Batting - Hits,0.5,0.8,0.8,1,6,4,Over
+Baltimore vs. Washington,Nathaniel Lowe,Batting - Strikeouts,0.5,0.8,0.9,1,6,4,Over
+Tampa Bay vs. Arizona,Junior Caminero,Batting - 1st Base,0.5,0.8,0.6,1,6,4,Over
+Pittsburgh vs. LA Angels,Jared Triolo,Batting - Hits and Runs and RBIs,0.5,0.8,0.6,1,6,4,Over
+Tampa Bay vs. Arizona,Josh Naylor,Batting - RBIs,0.5,0.8,0.7,1,6,4,Over
+Tampa Bay vs. Arizona,Tim Tawa,Batting - Runs,0.5,0.8,0.7,1,6,4,Over
+Texas vs. A's,Josh Smith,Batting - Strikeouts,0.5,0.8,0.7,1,7,3,Over
+Pittsburgh vs. LA Angels,Tommy Pham,Batting - Strikeouts,0.5,0.8,0.8,1,6,4,Over
+Baltimore vs. Washington,Dylan Crews,Batting - 1st Base,0.5,0.8,0.6,1,6,4,Over
+Texas vs. A's,Marcus Semien,Batting - Hits,0.5,0.8,0.7,1,6,4,Over
+Tampa Bay vs. Arizona,Kameron Misner,Batting - 1st Base,0.5,0.8,0.6,1,6,4,Over
+Tampa Bay vs. Arizona,Danny Jansen,Batting - Bases on Balls,0.5,0.8,0.7,1,6,4,Over
+Tampa Bay vs. Arizona,Lourdes Gurriel Jr.,Batting - Hits,0.5,0.8,0.8,1,6,4,Over
+Tampa Bay vs. Arizona,Jonathan Aranda,Batting - Hits,0.5,0.8,0.8,1,6,4,Over
+Tampa Bay vs. Arizona,Corbin Carroll,Batting - 1st Base,0.5,0.8,0.8,1,6,4,Over
+Pittsburgh vs. LA Angels,Enmanuel Valdez,Batting - Hits,0.5,0.8,0.8,1,6,4,Over
+Pittsburgh vs. LA Angels,Nolan Schanuel,Batting - Strikeouts,0.5,0.8,0.7,1,6,4,Over
+Tampa Bay vs. Arizona,Geraldo Perdomo,Batting - Hits,0.5,0.8,0.7,1,6,4,Over
+Pittsburgh vs. LA Angels,Jo Adell,Batting - Hits,1.5,0.6,0.7,0.5,1,9,Under
+Baltimore vs. Washington,Ryan Mountcastle,Batting - Hits,1.5,0.6,0.6,0.5,1,9,Under
+Tampa Bay vs. Arizona,Christopher Morel,Batting - Hits and Runs and RBIs,1.5,0.6,1.6,0.5,3,7,Under
+Baltimore vs. Washington,Keibert Ruiz,Batting - Hits and Runs and RBIs,1.5,2.4,2.2,2,6,4,Over
+Baltimore vs. Washington,Gunnar Henderson,Batting - Hits,1.5,0.6,1,0.5,4,6,Under
+Texas vs. A's,Josh Jung,Batting - Hits and Runs and RBIs,1.5,0.6,0.8,0.5,2,8,Under
+Baltimore vs. Washington,Dylan Crews,Batting - Runs,1.5,0.6,0.8,0.5,1,9,Under
+Baltimore vs. Washington,Gunnar Henderson,Batting - Hits and Runs and RBIs,1.5,0.6,2,0.5,4,6,Under
+Baltimore vs. Washington,Adley Rutschman,Batting - Hits and Runs and RBIs,1.5,0.6,1.3,0.5,4,6,Under
+Baltimore vs. Washington,James Wood,Batting - Hits,1.5,0.6,0.9,0.5,2,8,Under
+Pittsburgh vs. LA Angels,Ke'Bryan Hayes,Batting - Hits,1.5,0.6,0.7,0.5,2,8,Under
+Pittsburgh vs. LA Angels,Luis Rengifo,Batting - Hits,1.5,0.6,0.6,0.5,1,9,Under
+Tampa Bay vs. Arizona,Chandler Simpson,Batting - Strikeouts,1.5,0.6,0.5,0.5,0,4,Under
+Texas vs. A's,Josh Smith,Batting - Runs,1.5,0.6,0.8,0.5,3,7,Under
+Pittsburgh vs. LA Angels,Bryan Reynolds,Batting - Runs,1.5,0.6,0.6,0.5,1,9,Under
+Tampa Bay vs. Arizona,Tim Tawa,Batting - Strikeouts,1.5,0.6,0.7,0.5,2,8,Under
+Pittsburgh vs. LA Angels,Luis Rengifo,Batting - Hits and Runs and RBIs,1.5,0.6,1,0.5,3,7,Under
+Pittsburgh vs. LA Angels,Ke'Bryan Hayes,Batting - Hits and Runs and RBIs,1.5,0.6,1.3,0.5,3,7,Under
+Pittsburgh vs. LA Angels,Ke'Bryan Hayes,Batting - 1st Base,1.5,0.6,0.7,0.5,2,8,Under
+Tampa Bay vs. Arizona,Danny Jansen,Batting - Hits and Runs and RBIs,1.5,0.6,1.5,0.5,3,7,Under
+Baltimore vs. Washington,Ryan Mountcastle,Batting - Hits and Runs and RBIs,1.5,0.6,1.3,0.5,3,7,Under
+Tampa Bay vs. Arizona,Josh Naylor,Batting - 1st Base,1.5,0.6,1,0.5,4,6,Under
+Pittsburgh vs. LA Angels,Jo Adell,Batting - Hits and Runs and RBIs,1.5,0.6,1.2,0.5,4,6,Under
+Texas vs. A's,Marcus Semien,Batting - Total Bases,2.5,1,1.1,1,1,9,Under
+Pittsburgh vs. LA Angels,Tommy Pham,Batting - Total Bases,2.5,1,1.1,1,2,8,Under
+Baltimore vs. Washington,Alex Call,Batting - Hits,1.5,0.6,0.5,0,1,9,Under
+Pittsburgh vs. LA Angels,Isiah Kiner-Falefa,Batting - 2nd Base,0.5,0.2,0.2,0,2,8,Under
+Tampa Bay vs. Arizona,Tim Tawa,Batting - Stolen Bases,0.5,0.2,0.2,0,2,8,Under
+Texas vs. A's,Josh Smith,Batting - RBIs,0.5,0.2,0.2,0,2,8,Under
+Baltimore vs. Washington,Adley Rutschman,Batting - Total Bases,2.5,1.01,1.3,0,2,8,Under
+Pittsburgh vs. LA Angels,Carmen Mlodzinski,Pitching - Strikeouts,2.5,3.99,3.5,4,3,1,Over
+Texas vs. A's,Jonah Heim,Batting - 2nd Base,0.5,0.2,0.2,0,2,8,Under
+Texas vs. A's,Josh Jung,Batting - Runs,0.5,0.2,0.2,0,2,8,Under
+Baltimore vs. Washington,Dylan Crews,Batting - Stolen Bases,0.5,0.21,0.3,0,3,7,Under
+Pittsburgh vs. LA Angels,Andrew McCutchen,Batting - RBIs,1.5,0.62,0.4,0,1,9,Under
+Pittsburgh vs. LA Angels,Henry Davis,Batting - Hits and Runs and RBIs,2.5,1.03,0.86,0,1,6,Under
+Tampa Bay vs. Arizona,Jonathan Aranda,Batting - Total Bases,2.5,1.04,1.6,1,3,7,Under
+Pittsburgh vs. LA Angels,Mike Trout,Batting - 1st Base,0.5,0.21,0.2,0,2,8,Under
+Baltimore vs. Washington,Keibert Ruiz,Batting - Runs,0.5,0.79,0.5,0,3,7,Over
+Baltimore vs. Washington,Jacob Young,Batting - Total Bases,2.5,1.04,0.9,1,0,10,Under
+Baltimore vs. Washington,Gunnar Henderson,Batting - Home Run,0.5,0.21,0.2,0,2,8,Under
+Texas vs. A's,Jonah Heim,Batting - Runs,0.5,0.21,0.2,0,2,8,Under
+Tampa Bay vs. Arizona,Drew Rasmussen,Pitching - Strikeouts,3.5,5.53,5.5,5.5,4,0,Over
+Tampa Bay vs. Arizona,Chandler Simpson,Batting - Total Bases,3.5,1.49,1.5,1.5,0,4,Under
+Tampa Bay vs. Arizona,Danny Jansen,Batting - RBIs,0.5,0.79,0.5,0,2,8,Over
+Baltimore vs. Washington,Ryan Mountcastle,Batting - RBIs,0.5,0.21,0.2,0,2,8,Under
+Tampa Bay vs. Arizona,Kameron Misner,Batting - Home Run,0.5,0.22,0.2,0,1,9,Under
+Texas vs. A's,Jacob deGrom,Pitching - Earned Runs Allowed,4.5,1.94,2,2,0,4,Under
+Baltimore vs. Washington,Jordan Westburg,Batting - Strikeouts,2.5,1.08,1.1,1,0,10,Under
+Pittsburgh vs. LA Angels,Tyler Anderson,Pitching - Hits Allowed,5.5,2.4,2.75,2,1,3,Under
+Baltimore vs. Washington,MacKenzie Gore,Pitching - Earned Runs Allowed,1.5,2.35,2.2,2,4,1,Over
+Baltimore vs. Washington,Cedric Mullins,Batting - 1st Base,1.5,0.66,0.5,0,1,9,Under
+Baltimore vs. Washington,Josh Bell,Batting - Hits,1.5,0.67,0.4,0,0,10,Under
+Baltimore vs. Washington,Nathaniel Lowe,Batting - RBIs,1.5,0.67,0.5,0,1,9,Under
+Baltimore vs. Washington,Josh Bell,Batting - Total Bases,3.5,1.57,1,0,2,8,Under
+Baltimore vs. Washington,James Wood,Batting - Bases on Balls,0.5,0.77,0.5,0,3,7,Over
+Tampa Bay vs. Arizona,Junior Caminero,Batting - RBIs,1.5,0.68,0.7,0,3,7,Under
+Tampa Bay vs. Arizona,Drew Rasmussen,Pitching - Hits Allowed,6.5,2.95,3,3,0,4,Under
+Baltimore vs. Washington,Josh Bell,Batting - Hits and Runs and RBIs,3.5,1.6,1.1,0,1,9,Under
+Pittsburgh vs. LA Angels,Taylor Ward,Batting - 1st Base,0.5,0.23,0.2,0,2,8,Under
+Baltimore vs. Washington,Nathaniel Lowe,Batting - Hits and Runs and RBIs,1.5,2.31,1.9,2,6,4,Over
+Tampa Bay vs. Arizona,Taylor Walls,Batting - Hits and Runs and RBIs,2.5,1.15,1.2,1,1,9,Under
+Pittsburgh vs. LA Angels,Nolan Schanuel,Batting - Runs,0.5,0.23,0.4,0,4,6,Under
+Baltimore vs. Washington,Cade Povich,Pitching - Earned Runs Allowed,2.5,3.84,4,3.5,3,1,Over
+Baltimore vs. Washington,Gunnar Henderson,Batting - Strikeouts,2.5,1.16,1.2,1,0,10,Under
+Baltimore vs. Washington,Cedric Mullins,Batting - RBIs,1.5,0.7,0.5,0,1,9,Under
+Pittsburgh vs. LA Angels,Bryan Reynolds,Batting - Total Bases,3.5,1.63,1.8,1.5,1,9,Under
+Pittsburgh vs. LA Angels,Zach Neto,Batting - Hits and Runs and RBIs,3.5,1.63,1.6,0,1,4,Under
+Baltimore vs. Washington,MacKenzie Gore,Pitching - Strikeouts,5.5,8.4,9,7,4,1,Over
+Pittsburgh vs. LA Angels,Zach Neto,Batting - Runs,1.5,0.71,0.6,0,1,4,Under
+Pittsburgh vs. LA Angels,Henry Davis,Batting - Runs,0.5,0.24,0.14,0,1,6,Under
+Baltimore vs. Washington,MacKenzie Gore,Pitching - Bases on Balls,3.5,1.67,1.6,2,0,5,Under
+Tampa Bay vs. Arizona,Brandon Lowe,Batting - Strikeouts,2.5,1.19,1.2,1,2,8,Under
+Tampa Bay vs. Arizona,Danny Jansen,Batting - Hits,1.5,0.72,0.6,0,1,9,Under
+Baltimore vs. Washington,Jacob Young,Batting - Runs,0.5,0.24,0.2,0,2,8,Under
+Texas vs. A's,Jonah Heim,Batting - Total Bases,2.5,1.2,1.2,1,1,9,Under
+Tampa Bay vs. Arizona,Jake Mangum,Batting - Total Bases,2.5,1.2,1.4,1,2,8,Under
+Texas vs. A's,Jake Burger,Batting - Total Bases,2.5,1.2,1.2,1,2,8,Under
+Pittsburgh vs. LA Angels,Andrew McCutchen,Batting - Total Bases,2.5,1.2,1.1,1,1,9,Under
+Baltimore vs. Washington,Dylan Crews,Batting - Total Bases,2.5,1.2,2,1,2,8,Under
+Tampa Bay vs. Arizona,Kameron Misner,Batting - Total Bases,2.5,1.2,2.2,1,3,7,Under
+Tampa Bay vs. Arizona,Drew Rasmussen,Pitching - Bases on Balls,2.5,1.2,1.25,1,1,3,Under
+Tampa Bay vs. Arizona,Geraldo Perdomo,Batting - Total Bases,2.5,1.2,1.2,1,2,8,Under
+Pittsburgh vs. LA Angels,Tyler Anderson,Pitching - Earned Runs Allowed,2.5,1.2,1.25,1,1,3,Under
+Baltimore vs. Washington,Keibert Ruiz,Batting - Total Bases,2.5,1.2,1.5,1,2,8,Under
+Tampa Bay vs. Arizona,Lourdes Gurriel Jr.,Batting - Hits and Runs and RBIs,2.5,1.2,1.9,1,2,8,Under
+Tampa Bay vs. Arizona,Junior Caminero,Batting - Total Bases,2.5,1.2,2,1,3,7,Under
+Baltimore vs. Washington,Alex Call,Batting - Hits and Runs and RBIs,2.5,1.2,1.2,1,2,8,Under
+Baltimore vs. Washington,Nathaniel Lowe,Batting - Total Bases,2.5,1.2,1.7,1,3,7,Under
+Tampa Bay vs. Arizona,Lourdes Gurriel Jr.,Batting - Total Bases,2.5,1.2,1.5,1,3,7,Under
+Pittsburgh vs. LA Angels,Isiah Kiner-Falefa,Batting - Total Bases,2.5,1.2,1.5,1,2,8,Under
+Baltimore vs. Washington,Heston Kjerstad,Batting - Total Bases,2.5,1.2,1.7,1,3,7,Under
+Pittsburgh vs. LA Angels,Enmanuel Valdez,Batting - Hits and Runs and RBIs,2.5,1.2,1.9,1,2,8,Under
+Tampa Bay vs. Arizona,Corbin Burnes,Pitching - Strikeouts,7.5,3.6,4.25,3,1,3,Under
+Tampa Bay vs. Arizona,Alek Thomas,Batting - Total Bases,2.5,1.2,1.2,1,2,8,Under
+Pittsburgh vs. LA Angels,Jorge Soler,Batting - Total Bases,2.5,1.2,1.5,1,2,8,Under
+Pittsburgh vs. LA Angels,Enmanuel Valdez,Batting - Total Bases,2.5,1.2,1.5,1,3,7,Under
+Baltimore vs. Washington,Josh Bell,Batting - RBIs,1.5,0.72,0.5,0,2,8,Under
+Baltimore vs. Washington,Tyler O'Neill,Batting - Runs,0.5,0.24,0.2,0,2,8,Under
+Texas vs. A's,Wyatt Langford,Batting - Hits and Runs and RBIs,4.5,2.17,2.3,2,2,8,Under
+Baltimore vs. Washington,Jordan Westburg,Batting - Total Bases,0.5,0.76,1.2,0,4,6,Over
+Tampa Bay vs. Arizona,Kameron Misner,Batting - RBIs,1.5,0.73,0.5,0,1,9,Under
+Baltimore vs. Washington,Cade Povich,Pitching - Bases on Balls,3.5,1.69,2,1.5,1,3,Under
+Tampa Bay vs. Arizona,Chandler Simpson,Batting - 2nd Base,0.5,0.24,0.25,0,1,3,Under
+Pittsburgh vs. LA Angels,Bryan Reynolds,Batting - RBIs,0.5,0.76,0.7,0,4,6,Over
+Baltimore vs. Washington,Jackson Holliday,Batting - Bases on Balls,0.5,0.75,0.5,0,4,6,Over
+Pittsburgh vs. LA Angels,Zach Neto,Batting - RBIs,1.5,0.74,0.6,0,1,4,Under
+Tampa Bay vs. Arizona,Lourdes Gurriel Jr.,Batting - RBIs,1.5,0.74,0.7,0,2,8,Under
+Tampa Bay vs. Arizona,Danny Jansen,Batting - 1st Base,0.5,0.25,0.3,0,3,7,Under
+Baltimore vs. Washington,Jackson Holliday,Batting - Runs,0.5,0.25,0.2,0,2,8,Under
+Tampa Bay vs. Arizona,Pavin Smith,Batting - Hits and Runs and RBIs,3.5,1.74,2.1,1.5,3,7,Under
+Baltimore vs. Washington,Tyler O'Neill,Batting - Bases on Balls,0.5,0.25,0.2,0,2,8,Under
+Tampa Bay vs. Arizona,Christopher Morel,Batting - 2nd Base,0.5,0.25,0.2,0,2,8,Under
+Pittsburgh vs. LA Angels,Bryan Reynolds,Batting - RBIs,1.5,0.76,0.7,0,3,7,Under
+Tampa Bay vs. Arizona,Corbin Burnes,Pitching - Hits Allowed,3.5,5.23,5.25,5,4,0,Over
+Pittsburgh vs. LA Angels,Taylor Ward,Batting - Bases on Balls,0.5,0.25,0.1,0,1,9,Under
+Tampa Bay vs. Arizona,Corbin Burnes,Pitching - Bases on Balls,1.5,2.24,2.25,2.5,3,1,Over
+Pittsburgh vs. LA Angels,Jared Triolo,Batting - 1st Base,0.5,0.25,0.3,0,3,7,Under
+Baltimore vs. Washington,Josh Bell,Batting - Home Run,0.5,0.25,0.2,0,2,8,Under
+Tampa Bay vs. Arizona,Tim Tawa,Batting - Total Bases,3.5,1.8,1.8,1.5,3,7,Under
+Texas vs. A's,Jacob deGrom,Pitching - Bases on Balls,3.5,1.8,1.75,1.5,1,3,Under
+Baltimore vs. Washington,Heston Kjerstad,Batting - Hits and Runs and RBIs,3.5,1.8,2,1.5,4,6,Under
+Tampa Bay vs. Arizona,Alek Thomas,Batting - Hits and Runs and RBIs,3.5,1.8,1.7,1.5,2,8,Under
+Pittsburgh vs. LA Angels,Bryan Reynolds,Batting - Hits and Runs and RBIs,3.5,1.8,2.7,1.5,4,6,Under
+Baltimore vs. Washington,Dylan Crews,Batting - Hits and Runs and RBIs,3.5,1.8,2.3,1.5,1,9,Under
+Pittsburgh vs. LA Angels,Isiah Kiner-Falefa,Batting - Hits and Runs and RBIs,3.5,1.8,1.8,1.5,1,9,Under
+Pittsburgh vs. LA Angels,Tommy Pham,Batting - Hits and Runs and RBIs,3.5,1.8,1.7,1.5,2,8,Under
+Tampa Bay vs. Arizona,Jonathan Aranda,Batting - Hits and Runs and RBIs,3.5,1.8,2.1,1.5,3,7,Under
+Baltimore vs. Washington,James Wood,Batting - Hits and Runs and RBIs,3.5,1.8,2.3,1.5,2,8,Under
+Tampa Bay vs. Arizona,Kameron Misner,Batting - Hits and Runs and RBIs,3.5,1.8,2.6,1.5,3,7,Under
+Tampa Bay vs. Arizona,Geraldo Perdomo,Batting - RBIs,0.5,0.26,0.6,0,3,7,Under
+Pittsburgh vs. LA Angels,Luis Rengifo,Batting - RBIs,0.5,0.26,0.3,0,2,8,Under
+Pittsburgh vs. LA Angels,Tyler Anderson,Pitching - Strikeouts,3.5,5.18,5.25,5.5,4,0,Over
+Tampa Bay vs. Arizona,Lourdes Gurriel Jr.,Batting - RBIs,0.5,0.74,0.7,0,4,6,Over
+Pittsburgh vs. LA Angels,Mike Trout,Batting - Bases on Balls,0.5,0.26,0.4,0,3,7,Under
+Baltimore vs. Washington,MacKenzie Gore,Pitching - Earned Runs Allowed,4.5,2.35,2.2,2,0,5,Under
+Tampa Bay vs. Arizona,Danny Jansen,Batting - RBIs,1.5,0.79,0.5,0,1,9,Under
+Tampa Bay vs. Arizona,Geraldo Perdomo,Batting - Stolen Bases,0.5,0.27,0.2,0,2,8,Under
+Pittsburgh vs. LA Angels,Jared Triolo,Batting - Strikeouts,0.5,0.27,0.3,0,3,7,Under
+Baltimore vs. Washington,Gunnar Henderson,Batting - RBIs,0.5,0.27,0.3,0,2,8,Under
+Baltimore vs. Washington,Heston Kjerstad,Batting - Hits,1.5,0.8,0.7,1,1,9,Under
+Tampa Bay vs. Arizona,Chandler Simpson,Batting - 1st Base,1.5,0.8,1,1,1,3,Under
+Texas vs. A's,Marcus Semien,Batting - Hits,1.5,0.8,0.7,1,1,9,Under
+Pittsburgh vs. LA Angels,Nolan Schanuel,Batting - Hits,1.5,0.8,0.8,1,1,9,Under
+Tampa Bay vs. Arizona,Geraldo Perdomo,Batting - Hits,1.5,0.8,0.7,1,1,9,Under
+Tampa Bay vs. Arizona,Josh Naylor,Batting - RBIs,1.5,0.8,0.7,1,1,9,Under
+Texas vs. A's,Josh Smith,Batting - Strikeouts,1.5,0.8,0.7,1,0,10,Under
+Pittsburgh vs. LA Angels,Logan O'Hoppe,Batting - Hits,1.5,0.8,0.8,1,1,9,Under
+Pittsburgh vs. LA Angels,Enmanuel Valdez,Batting - Hits,1.5,0.8,0.8,1,2,8,Under
+Pittsburgh vs. LA Angels,Andrew McCutchen,Batting - Strikeouts,1.5,0.8,0.8,1,1,9,Under
+Baltimore vs. Washington,James Wood,Batting - Strikeouts,1.5,0.8,0.8,1,1,9,Under
+Baltimore vs. Washington,Adley Rutschman,Batting - Strikeouts,1.5,0.8,0.8,1,2,8,Under
+Baltimore vs. Washington,Cedric Mullins,Batting - Runs,1.5,0.8,0.8,1,2,8,Under
+Tampa Bay vs. Arizona,Danny Jansen,Batting - Strikeouts,1.5,0.8,0.9,1,2,8,Under
+Pittsburgh vs. LA Angels,Nolan Schanuel,Batting - Strikeouts,1.5,0.8,0.7,1,1,9,Under
+Pittsburgh vs. LA Angels,Isiah Kiner-Falefa,Batting - Strikeouts,1.5,0.8,0.9,1,3,7,Under
+Pittsburgh vs. LA Angels,Tommy Pham,Batting - Strikeouts,1.5,0.8,0.8,1,2,8,Under
+Pittsburgh vs. LA Angels,Jared Triolo,Batting - Hits and Runs and RBIs,1.5,0.8,0.6,1,0,10,Under
+Pittsburgh vs. LA Angels,Andrew McCutchen,Batting - Hits,1.5,0.8,0.7,1,1,9,Under
+Baltimore vs. Washington,Nathaniel Lowe,Batting - Strikeouts,1.5,0.8,0.9,1,2,8,Under
+Tampa Bay vs. Arizona,Lourdes Gurriel Jr.,Batting - Hits,1.5,0.8,0.8,1,2,8,Under
+Tampa Bay vs. Arizona,Tim Tawa,Batting - Hits,1.5,0.8,0.7,1,1,9,Under
+Baltimore vs. Washington,Dylan Crews,Batting - 1st Base,1.5,0.8,0.6,1,0,10,Under
+Texas vs. A's,Wyatt Langford,Batting - RBIs,1.5,0.8,0.7,1,1,9,Under
+Baltimore vs. Washington,CJ Abrams,Batting - RBIs,1.5,0.8,0.6,1,0,10,Under
+Pittsburgh vs. LA Angels,Logan O'Hoppe,Batting - Hits and Runs and RBIs,1.5,0.8,1.1,1,2,8,Under
+Tampa Bay vs. Arizona,Jonathan Aranda,Batting - Hits,1.5,0.8,0.8,1,2,8,Under
+Texas vs. A's,Jonah Heim,Batting - Hits,1.5,0.8,0.7,1,1,9,Under
+Pittsburgh vs. LA Angels,Isiah Kiner-Falefa,Batting - 1st Base,1.5,0.8,0.8,1,2,8,Under
+Baltimore vs. Washington,CJ Abrams,Batting - Runs,1.5,0.8,0.6,1,0,10,Under
+Texas vs. A's,Jake Burger,Batting - Hits,1.5,0.8,0.8,1,1,9,Under
+Texas vs. A's,Josh Smith,Batting - Hits and Runs and RBIs,4.5,2.4,2.4,3,1,9,Under
+Tampa Bay vs. Arizona,Corbin Carroll,Batting - Bases on Balls,0.5,0.27,0.4,0,4,6,Under
+Baltimore vs. Washington,Alex Call,Batting - Bases on Balls,0.5,0.73,0.5,0,3,7,Over
+Tampa Bay vs. Arizona,Drew Rasmussen,Pitching - Hits Allowed,5.5,2.95,3,3,0,4,Under
+Pittsburgh vs. LA Angels,Jorge Soler,Batting - Runs,0.5,0.27,0.3,0,3,7,Under
+Tampa Bay vs. Arizona,Taylor Walls,Batting - RBIs,0.5,0.27,0.3,0,3,7,Under
+Pittsburgh vs. LA Angels,Zach Neto,Batting - 2nd Base,0.5,0.27,0.2,0,1,4,Under
+Baltimore vs. Washington,MacKenzie Gore,Pitching - Hits Allowed,3.5,5.09,5.4,5,4,1,Over
+Tampa Bay vs. Arizona,Lourdes Gurriel Jr.,Batting - Home Run,0.5,0.27,0.2,0,2,8,Under
+Tampa Bay vs. Arizona,Kameron Misner,Batting - RBIs,0.5,0.73,0.5,0,3,7,Over
+Tampa Bay vs. Arizona,Alek Thomas,Batting - Strikeouts,1.5,0.83,1,1,3,7,Under
+Tampa Bay vs. Arizona,Danny Jansen,Batting - Total Bases,2.5,1.38,1.1,0,1,9,Under
+Baltimore vs. Washington,Cedric Mullins,Batting - Strikeouts,1.5,0.83,0.9,1,2,8,Under
+Tampa Bay vs. Arizona,Corbin Burnes,Pitching - Strikeouts,6.5,3.6,4.25,3,1,3,Under
+Texas vs. A's,Jacob deGrom,Pitching - Hits Allowed,6.5,3.6,4,3,1,3,Under
+Texas vs. A's,Wyatt Langford,Batting - Hits and Runs and RBIs,1.5,2.17,2.3,2,5,5,Over
+Texas vs. A's,Josh Smith,Batting - Total Bases,3.5,1.94,2,2,2,8,Under
+Pittsburgh vs. LA Angels,Henry Davis,Batting - Strikeouts,0.5,0.28,0.43,0,2,5,Under
+Baltimore vs. Washington,Josh Bell,Batting - RBIs,0.5,0.72,0.5,0,3,7,Over
+Pittsburgh vs. LA Angels,Henry Davis,Batting - 1st Base,0.5,0.28,0.29,0,2,5,Under
+Tampa Bay vs. Arizona,Gabriel Moreno,Batting - Bases on Balls,0.5,0.28,0.5,0,4,6,Under
+Baltimore vs. Washington,Jackson Holliday,Batting - Strikeouts,1.5,0.84,0.8,1,1,9,Under
+Baltimore vs. Washington,Jacob Young,Batting - 1st Base,1.5,0.84,0.7,1,1,9,Under
+Pittsburgh vs. LA Angels,Enmanuel Valdez,Batting - RBIs,1.5,0.84,0.6,0,2,8,Under
+Pittsburgh vs. LA Angels,Taylor Ward,Batting - Hits,1.5,0.84,0.8,1,1,9,Under
+Tampa Bay vs. Arizona,Kameron Misner,Batting - Bases on Balls,0.5,0.28,0.3,0,3,7,Under
+Baltimore vs. Washington,Cade Povich,Pitching - Strikeouts,6.5,3.66,4.5,4,1,3,Under
+Tampa Bay vs. Arizona,Pavin Smith,Batting - Hits,1.5,0.85,1.1,1,4,6,Under
+Pittsburgh vs. LA Angels,Mike Trout,Batting - Strikeouts,1.5,2.15,2,2,7,3,Over
+Tampa Bay vs. Arizona,Danny Jansen,Batting - Hits,0.5,0.72,0.6,0,4,6,Over
+Texas vs. A's,Wyatt Langford,Batting - Strikeouts,1.5,0.85,0.9,1,2,8,Under
+Pittsburgh vs. LA Angels,Carmen Mlodzinski,Pitching - Bases on Balls,3.5,2,2,2,0,4,Under
+Tampa Bay vs. Arizona,Chandler Simpson,Batting - Hits and Runs and RBIs,3.5,2.01,2.25,2.5,0,4,Under
+Tampa Bay vs. Arizona,Alek Thomas,Batting - Hits,1.5,0.86,0.9,1,3,7,Under
+Pittsburgh vs. LA Angels,Carmen Mlodzinski,Pitching - Hits Allowed,4.5,6.39,6.5,6,4,0,Over
+Tampa Bay vs. Arizona,Taylor Walls,Batting - Runs,0.5,0.29,0.4,0,3,7,Under
+Baltimore vs. Washington,Ryan Mountcastle,Batting - Strikeouts,1.5,0.87,0.9,1,2,8,Under
+Tampa Bay vs. Arizona,Corbin Burnes,Pitching - Earned Runs Allowed,4.5,2.64,2.75,2.5,0,4,Under
+Pittsburgh vs. LA Angels,Ke'Bryan Hayes,Batting - RBIs,0.5,0.71,0.5,0,3,7,Over
+Texas vs. A's,Jacob deGrom,Pitching - Strikeouts,8.5,5,5,5,0,4,Under
+Baltimore vs. Washington,Dylan Crews,Batting - RBIs,1.5,0.88,0.5,0,1,9,Under
+Pittsburgh vs. LA Angels,Oneil Cruz,Batting - Runs,1.5,0.89,0.8,1,2,8,Under
+Pittsburgh vs. LA Angels,Logan O'Hoppe,Batting - Runs,0.5,0.3,0.3,0,2,8,Under
+Texas vs. A's,Josh Smith,Batting - 2nd Base,0.5,0.3,0.3,0,3,7,Under
+Baltimore vs. Washington,Tyler O'Neill,Batting - 1st Base,0.5,0.3,0.2,0,2,8,Under
+Texas vs. A's,Josh Jung,Batting - 2nd Base,0.5,0.3,0.3,0,3,7,Under
+Tampa Bay vs. Arizona,Chandler Simpson,Batting - Total Bases,2.5,1.49,1.5,1.5,0,4,Under
+Baltimore vs. Washington,Adley Rutschman,Batting - RBIs,0.5,0.3,0.4,0,4,6,Under
+Baltimore vs. Washington,James Wood,Batting - Home Run,0.5,0.3,0.3,0,3,7,Under
+Tampa Bay vs. Arizona,Kameron Misner,Batting - 2nd Base,0.5,0.7,0.4,0,3,7,Over
+Baltimore vs. Washington,Cedric Mullins,Batting - RBIs,0.5,0.7,0.5,0,4,6,Over
+Baltimore vs. Washington,Cedric Mullins,Batting - Hits and Runs and RBIs,4.5,2.75,2.3,3,0,10,Under
+Pittsburgh vs. LA Angels,Carmen Mlodzinski,Pitching - Strikeouts,6.5,3.99,3.5,4,0,4,Under
+Pittsburgh vs. LA Angels,Bryan Reynolds,Batting - Bases on Balls,0.5,0.31,0.3,0,2,8,Under
+Baltimore vs. Washington,Dylan Crews,Batting - Home Run,0.5,0.31,0.3,0,2,8,Under
+Baltimore vs. Washington,Gunnar Henderson,Batting - 2nd Base,0.5,0.31,0.3,0,3,7,Under
+Pittsburgh vs. LA Angels,Ke'Bryan Hayes,Batting - Strikeouts,1.5,0.93,1,1,2,8,Under
+Tampa Bay vs. Arizona,Jake Mangum,Batting - Hits and Runs and RBIs,3.5,2.17,1.9,2,1,9,Under
+Texas vs. A's,Wyatt Langford,Batting - Hits and Runs and RBIs,3.5,2.17,2.3,2,4,6,Under
+Pittsburgh vs. LA Angels,Oneil Cruz,Batting - RBIs,1.5,0.93,0.7,0,1,9,Under
+Texas vs. A's,Wyatt Langford,Batting - Hits,1.5,0.94,1,1,3,7,Under
+Tampa Bay vs. Arizona,Junior Caminero,Batting - Hits,1.5,0.94,1,1,3,7,Under
+Pittsburgh vs. LA Angels,Taylor Ward,Batting - Runs,0.5,0.31,0.5,0,4,6,Under
+Texas vs. A's,Marcus Semien,Batting - Runs,0.5,0.31,0.3,0,3,7,Under
+Pittsburgh vs. LA Angels,Carmen Mlodzinski,Pitching - Earned Runs Allowed,2.5,3.43,3.5,4,3,1,Over
+Baltimore vs. Washington,Josh Bell,Batting - Total Bases,2.5,1.57,1,0,2,8,Under
+Texas vs. A's,Jake Burger,Batting - Runs,0.5,0.31,0.3,0,3,7,Under
+Pittsburgh vs. LA Angels,Oneil Cruz,Batting - Strikeouts,2.5,1.59,1.4,1.5,1,9,Under
+Tampa Bay vs. Arizona,Brandon Lowe,Batting - RBIs,0.5,0.32,0.5,0,3,7,Under
+Texas vs. A's,Jake Burger,Batting - RBIs,0.5,0.32,0.3,0,3,7,Under
+Pittsburgh vs. LA Angels,Taylor Ward,Batting - Total Bases,3.5,2.23,2,2,3,7,Under
+Baltimore vs. Washington,Adley Rutschman,Batting - Runs,0.5,0.32,0.3,0,3,7,Under
+Baltimore vs. Washington,MacKenzie Gore,Pitching - Bases on Balls,2.5,1.6,1.6,2,1,4,Under
+Baltimore vs. Washington,Tyler O'Neill,Batting - Strikeouts,2.5,1.6,1.5,2,2,8,Under
+Baltimore vs. Washington,James Wood,Batting - Runs,1.5,0.97,0.7,1,1,9,Under
+Pittsburgh vs. LA Angels,Kyren Paris,Batting - 1st Base,0.5,0.33,0.3,0,3,7,Under
+Pittsburgh vs. LA Angels,Bryan Reynolds,Batting - Total Bases,2.5,1.63,1.8,1.5,3,7,Under
+Pittsburgh vs. LA Angels,Ke'Bryan Hayes,Batting - Bases on Balls,0.5,0.33,0.2,0,1,9,Under
+Baltimore vs. Washington,CJ Abrams,Batting - Bases on Balls,0.5,0.33,0.3,0,3,7,Under
+Baltimore vs. Washington,Nathaniel Lowe,Batting - RBIs,0.5,0.67,0.5,0,4,6,Under
+Texas vs. A's,Jacob deGrom,Pitching - Hits Allowed,5.5,3.6,4,3,1,3,Under
+Tampa Bay vs. Arizona,Corbin Burnes,Pitching - Strikeouts,5.5,3.6,4.25,3,1,3,Under
+Tampa Bay vs. Arizona,Josh Naylor,Batting - Total Bases,3.5,2.29,2.4,2,3,7,Under
+Pittsburgh vs. LA Angels,Bryan Reynolds,Batting - Strikeouts,1.5,0.98,1.3,1,4,6,Under
+Tampa Bay vs. Arizona,Drew Rasmussen,Pitching - Hits Allowed,4.5,2.96,3,3,0,4,Under
+Tampa Bay vs. Arizona,Gabriel Moreno,Batting - Hits and Runs and RBIs,1.5,0.99,1,1,3,7,Under
+Tampa Bay vs. Arizona,Corbin Burnes,Pitching - Bases on Balls,3.5,2.31,2.25,2.5,1,3,Under
+Baltimore vs. Washington,Nathaniel Lowe,Batting - Hits and Runs and RBIs,3.5,2.31,1.9,2,2,8,Under
+Baltimore vs. Washington,Josh Bell,Batting - Hits,0.5,0.67,0.4,0,4,6,Under
+Texas vs. A's,Kyle Higashioka,Batting - Hits and Runs and RBIs,2.5,1.65,1.6,2,2,8,Under
+Tampa Bay vs. Arizona,Alek Thomas,Batting - Stolen Bases,0.5,0.33,0.3,0,3,7,Under
+Baltimore vs. Washington,Keibert Ruiz,Batting - Strikeouts,0.5,0.33,0.4,0,4,6,Under
+Tampa Bay vs. Arizona,Christopher Morel,Batting - Runs,0.5,0.67,0.5,0,3,7,Under
+Baltimore vs. Washington,Cade Povich,Pitching - Strikeouts,5.5,3.66,4.5,4,1,3,Under
+Tampa Bay vs. Arizona,Tim Tawa,Batting - RBIs,1.5,1,0.7,1,1,9,Under
+Texas vs. A's,Jacob deGrom,Pitching - Earned Runs Allowed,1.5,2,2,2,2,2,Over
+Texas vs. A's,Jacob deGrom,Pitching - Strikeouts,7.5,5,5,5,0,4,Under
+Pittsburgh vs. LA Angels,Carmen Mlodzinski,Pitching - Bases on Balls,1.5,2,2,2,4,0,Over
+Tampa Bay vs. Arizona,Chandler Simpson,Batting - Hits and Runs and RBIs,1.5,2,2.25,2.5,3,1,Over
+Tampa Bay vs. Arizona,Corbin Carroll,Batting - Hits and Runs and RBIs,3.5,4.66,4.2,4,6,4,Over
+Pittsburgh vs. LA Angels,Zach Neto,Batting - Hits,0.5,0.34,0.4,0,2,3,Under
+Baltimore vs. Washington,Cedric Mullins,Batting - Home Run,0.5,0.34,0.3,0,3,7,Under
+Pittsburgh vs. LA Angels,Tommy Pham,Batting - RBIs,0.5,0.34,0.3,0,3,7,Under
+Baltimore vs. Washington,Cade Povich,Pitching - Earned Runs Allowed,5.5,3.71,4,3.5,1,3,Under
+Baltimore vs. Washington,Cedric Mullins,Batting - 1st Base,0.5,0.66,0.5,0,4,6,Under
+Baltimore vs. Washington,Cade Povich,Pitching - Bases on Balls,2.5,1.69,2,1.5,1,3,Under
+Texas vs. A's,Joc Pederson,Batting - Strikeouts,1.5,1.03,1,1,2,8,Under
+Baltimore vs. Washington,Jackson Holliday,Batting - Hits and Runs and RBIs,0.5,0.66,1.1,0,4,6,Under
+Baltimore vs. Washington,Cedric Mullins,Batting - Total Bases,3.5,2.4,2.1,2,3,7,Under
+Baltimore vs. Washington,Keibert Ruiz,Batting - Hits and Runs and RBIs,3.5,2.4,2.2,2,2,8,Under
+Pittsburgh vs. LA Angels,Tyler Anderson,Pitching - Hits Allowed,3.5,2.4,2.75,2,1,3,Under
+Tampa Bay vs. Arizona,Pavin Smith,Batting - Total Bases,3.5,2.4,2.4,2,3,7,Under
+Texas vs. A's,Josh Smith,Batting - Hits and Runs and RBIs,3.5,2.4,2.4,3,2,8,Under
+Tampa Bay vs. Arizona,Jake Mangum,Batting - Stolen Bases,0.5,0.34,0.3,0,3,7,Under
+Tampa Bay vs. Arizona,Tim Tawa,Batting - Bases on Balls,0.5,0.66,0.5,0,3,7,Under
+Baltimore vs. Washington,Heston Kjerstad,Batting - RBIs,1.5,1.03,0.8,0,4,6,Under
+Baltimore vs. Washington,Jacob Young,Batting - Hits,1.5,1.04,0.8,1,1,9,Under
+Pittsburgh vs. LA Angels,Tyler Anderson,Pitching - Strikeouts,7.5,5.18,5.25,5.5,0,4,Under
+Baltimore vs. Washington,Jacob Young,Batting - Total Bases,1.5,1.04,0.9,1,2,8,Under
+Pittsburgh vs. LA Angels,Oneil Cruz,Batting - Hits and Runs and RBIs,4.5,3.14,2.6,3,1,9,Under
+Pittsburgh vs. LA Angels,Zach Neto,Batting - Hits and Runs and RBIs,1.5,1.95,1.6,0,2,3,Over
+Tampa Bay vs. Arizona,Danny Jansen,Batting - 2nd Base,0.5,0.35,0.2,0,2,8,Under
+Tampa Bay vs. Arizona,Pavin Smith,Batting - Strikeouts,1.5,1.06,0.8,1,1,9,Under
+Baltimore vs. Washington,MacKenzie Gore,Pitching - Strikeouts,6.5,8.4,9,7,4,1,Over
+Pittsburgh vs. LA Angels,Taylor Ward,Batting - 2nd Base,0.5,0.35,0.3,0,3,7,Under
+Texas vs. A's,Josh Smith,Batting - 1st Base,1.5,1.06,1,1,3,7,Under
+Texas vs. A's,Wyatt Langford,Batting - Total Bases,3.5,2.48,2.6,2.5,5,5,Under
+Pittsburgh vs. LA Angels,Carmen Mlodzinski,Pitching - Earned Runs Allowed,4.5,3.2,3.5,4,1,3,Under
+Pittsburgh vs. LA Angels,Enmanuel Valdez,Batting - 1st Base,0.5,0.36,0.4,0,4,6,Under
+Tampa Bay vs. Arizona,Lourdes Gurriel Jr.,Batting - Runs,0.5,0.36,0.4,0,3,7,Under
+Tampa Bay vs. Arizona,Jake Mangum,Batting - 2nd Base,0.5,0.36,0.2,0,2,8,Under
+Pittsburgh vs. LA Angels,Tommy Pham,Batting - Hits and Runs and RBIs,2.5,1.8,1.7,1.5,4,6,Under
+Texas vs. A's,Jacob deGrom,Pitching - Bases on Balls,2.5,1.8,1.75,1.5,1,3,Under
+Tampa Bay vs. Arizona,Tim Tawa,Batting - Total Bases,2.5,1.8,1.8,1.5,4,6,Under
+Tampa Bay vs. Arizona,Corbin Burnes,Pitching - Strikeouts,5,3.6,4.25,3,1,3,Under
+Baltimore vs. Washington,Jordan Westburg,Batting - Strikeouts,1.5,1.08,1.1,1,3,7,Under
+Tampa Bay vs. Arizona,Tim Tawa,Batting - Hits and Runs and RBIs,3.5,2.53,2.1,3,1,9,Under
+Pittsburgh vs. LA Angels,Taylor Ward,Batting - RBIs,0.5,0.36,0.3,0,3,7,Under
+Pittsburgh vs. LA Angels,Jo Adell,Batting - Strikeouts,1.5,1.09,0.9,1,2,8,Under
+Pittsburgh vs. LA Angels,Carmen Mlodzinski,Pitching - Strikeouts,5.5,3.99,3.5,4,1,3,Under
+Baltimore vs. Washington,Keibert Ruiz,Batting - 2nd Base,0.5,0.36,0.2,0,1,9,Under
+Texas vs. A's,Jonah Heim,Batting - RBIs,0.5,0.36,0.4,0,2,8,Under
+Tampa Bay vs. Arizona,Junior Caminero,Batting - Home Run,0.5,0.37,0.3,0,3,7,Under
+Pittsburgh vs. LA Angels,Taylor Ward,Batting - Strikeouts,1.5,1.1,1.3,1,4,6,Under
+Pittsburgh vs. LA Angels,Isiah Kiner-Falefa,Batting - Hits,1.5,1.1,1.1,1,2,8,Under
+Tampa Bay vs. Arizona,Pavin Smith,Batting - Home Run,0.5,0.37,0.3,0,3,7,Under
+Tampa Bay vs. Arizona,Drew Rasmussen,Pitching - Strikeouts,7.5,5.53,5.5,5.5,0,4,Under
+Baltimore vs. Washington,James Wood,Batting - RBIs,1.5,1.11,0.7,0,1,9,Under
+Tampa Bay vs. Arizona,Taylor Walls,Batting - Strikeouts,1.5,1.11,0.8,1,2,8,Under
+Pittsburgh vs. LA Angels,Jo Adell,Batting - 2nd Base,0.5,0.37,0.3,0,3,7,Under
+Tampa Bay vs. Arizona,Corbin Carroll,Batting - 2nd Base,0.5,0.37,0.4,0,4,6,Under
+Tampa Bay vs. Arizona,Geraldo Perdomo,Batting - 1st Base,0.5,0.37,0.4,0,4,6,Under
+Texas vs. A's,Wyatt Langford,Batting - 1st Base,0.5,0.38,0.4,0,3,7,Under
+Tampa Bay vs. Arizona,Geraldo Perdomo,Batting - Strikeouts,1.5,1.13,0.9,1,1,9,Under
+Baltimore vs. Washington,Josh Bell,Batting - 1st Base,0.5,0.38,0.2,0,2,8,Under
+Tampa Bay vs. Arizona,Corbin Burnes,Pitching - Earned Runs Allowed,3.5,2.64,2.75,2.5,1,3,Under
+Tampa Bay vs. Arizona,Jake Mangum,Batting - RBIs,0.5,0.38,0.3,0,3,7,Under
+Baltimore vs. Washington,CJ Abrams,Batting - Total Bases,2.5,3.11,2.4,3,5,5,Over
+Baltimore vs. Washington,Dylan Crews,Batting - Hits,1.5,1.14,1,1,1,9,Under
+Pittsburgh vs. LA Angels,Henry Davis,Batting - RBIs,0.5,0.38,0.29,0,1,6,Under
+Pittsburgh vs. LA Angels,Taylor Ward,Batting - Home Run,0.5,0.38,0.3,0,3,7,Under
+Pittsburgh vs. LA Angels,Andrew McCutchen,Batting - RBIs,0.5,0.62,0.4,0,2,8,Under
+Tampa Bay vs. Arizona,Chandler Simpson,Batting - Hits,1.5,1.15,1.25,1,1,3,Under
+Pittsburgh vs. LA Angels,Tommy Pham,Batting - Hits,1.5,1.15,0.9,1,2,8,Under
+Tampa Bay vs. Arizona,Junior Caminero,Batting - RBIs,0.5,0.62,0.7,0,3,7,Under
+Texas vs. A's,Josh Smith,Batting - Bases on Balls,0.5,0.38,0.4,0,4,6,Under
+Texas vs. A's,Jacob deGrom,Pitching - Strikeouts,6.5,5,5,5,1,3,Under
+Texas vs. A's,Jonah Heim,Batting - 1st Base,0.5,0.38,0.4,0,4,6,Under
+Tampa Bay vs. Arizona,Drew Rasmussen,Pitching - Strikeouts,4.5,5.53,5.5,5.5,2,2,Over
+Baltimore vs. Washington,Gunnar Henderson,Batting - Strikeouts,1.5,1.16,1.2,1,3,7,Under
+Baltimore vs. Washington,Heston Kjerstad,Batting - Home Run,0.5,0.39,0.3,0,3,7,Under
+Texas vs. A's,Josh Smith,Batting - Total Bases,2.5,1.94,2,2,4,6,Under
+Texas vs. A's,Jacob deGrom,Pitching - Earned Runs Allowed,2.5,1.94,2,2,2,2,Under
+Baltimore vs. Washington,Tyler O'Neill,Batting - Hits and Runs and RBIs,1.5,1.17,0.8,0,2,8,Under
+Tampa Bay vs. Arizona,Jake Mangum,Batting - Bases on Balls,0.5,0.39,0.4,0,4,6,Under
+Tampa Bay vs. Arizona,Jonathan Aranda,Batting - Strikeouts,0.5,0.39,0.4,0,4,6,Under
+Baltimore vs. Washington,MacKenzie Gore,Pitching - Hits Allowed,6.5,5.09,5.4,5,2,3,Under
+Baltimore vs. Washington,Ryan Mountcastle,Batting - Runs,0.5,0.61,0.5,0,3,7,Under
+Pittsburgh vs. LA Angels,Mike Trout,Batting - Hits,0.5,0.39,0.4,0,3,7,Under
+Baltimore vs. Washington,Cedric Mullins,Batting - Hits and Runs and RBIs,3.5,2.75,2.3,3,3,7,Under
+Tampa Bay vs. Arizona,Brandon Lowe,Batting - Strikeouts,1.5,1.19,1.2,1,3,7,Under
+Tampa Bay vs. Arizona,Pavin Smith,Batting - RBIs,0.5,0.4,0.5,0,3,7,Under
+Pittsburgh vs. LA Angels,Jo Adell,Batting - 1st Base,0.5,0.4,0.4,0,3,7,Under
+Pittsburgh vs. LA Angels,Isiah Kiner-Falefa,Batting - RBIs,0.5,0.4,0.3,0,2,8,Under
+Baltimore vs. Washington,Alex Call,Batting - Hits,0.5,0.6,0.5,0,4,6,Under
+Pittsburgh vs. LA Angels,Tyler Anderson,Pitching - Strikeouts,6.5,5.18,5.25,5.5,0,4,Under
+Pittsburgh vs. LA Angels,Mike Trout,Batting - Hits and Runs and RBIs,1.5,1.2,1.1,0,2,8,Under
+Pittsburgh vs. LA Angels,Andrew McCutchen,Batting - Hits and Runs and RBIs,1.5,1.2,1.7,1,4,6,Under
+Pittsburgh vs. LA Angels,Taylor Ward,Batting - Hits and Runs and RBIs,1.5,1.2,1.6,1,4,6,Under
+Tampa Bay vs. Arizona,Corbin Carroll,Batting - RBIs,1.5,1.2,1.4,1,3,7,Under
+Pittsburgh vs. LA Angels,Oneil Cruz,Batting - Hits,1.5,1.2,1.1,1,4,6,Under
+Baltimore vs. Washington,Alex Call,Batting - Hits and Runs and RBIs,1.5,1.2,1.2,1,3,7,Under
+Pittsburgh vs. LA Angels,Bryan Reynolds,Batting - Hits,1.5,1.2,1.4,1,4,6,Under
+Texas vs. A's,Jake Burger,Batting - Strikeouts,1.5,1.2,1.2,1,4,6,Under
+Pittsburgh vs. LA Angels,Zach Neto,Batting - Strikeouts,1.5,1.2,1.2,1,2,3,Under
+Texas vs. A's,Josh Jung,Batting - Strikeouts,1.5,1.2,1.2,1,4,6,Under
+Tampa Bay vs. Arizona,Jake Mangum,Batting - Hits,1.5,1.2,1.2,1,4,6,Under
+Pittsburgh vs. LA Angels,Isiah Kiner-Falefa,Batting - Total Bases,1.5,1.2,1.5,1,4,6,Under
+Baltimore vs. Washington,MacKenzie Gore,Pitching - Strikeouts,7,8.4,9,7,2,3,Over
+Pittsburgh vs. LA Angels,Tyler Anderson,Pitching - Earned Runs Allowed,1.5,1.2,1.25,1,2,2,Under
+Pittsburgh vs. LA Angels,Jorge Soler,Batting - Hits,1.5,1.2,0.9,1,2,8,Under
+Pittsburgh vs. LA Angels,Jorge Soler,Batting - Strikeouts,1.5,1.2,1.3,1,3,7,Under
+Baltimore vs. Washington,Jacob Young,Batting - Hits and Runs and RBIs,1.5,1.2,1.1,1,3,7,Under
+Baltimore vs. Washington,Cedric Mullins,Batting - Hits,1.5,1.2,1,1,2,8,Under
+Tampa Bay vs. Arizona,Geraldo Perdomo,Batting - Hits and Runs and RBIs,1.5,1.2,1.8,1,4,6,Under
+Baltimore vs. Washington,Keibert Ruiz,Batting - 1st Base,1.5,1.2,1.1,1,2,8,Under
+Baltimore vs. Washington,Nathaniel Lowe,Batting - Hits,1.5,1.2,1.3,1,3,7,Under
+Tampa Bay vs. Arizona,Kameron Misner,Batting - Hits,1.5,1.2,1.2,1,3,7,Under
+Baltimore vs. Washington,Keibert Ruiz,Batting - Hits,1.5,1.2,1.3,1,3,7,Under
+Texas vs. A's,Jake Burger,Batting - Hits and Runs and RBIs,1.5,1.2,1.4,1,4,6,Under
+Tampa Bay vs. Arizona,Lourdes Gurriel Jr.,Batting - Hits and Runs and RBIs,1.5,1.2,1.9,1,4,6,Under
+Pittsburgh vs. LA Angels,Bryan Reynolds,Batting - 1st Base,1.5,1.2,1.2,1,4,6,Under
+Texas vs. A's,Jonah Heim,Batting - Hits and Runs and RBIs,1.5,1.2,1.3,1,3,7,Under
+Tampa Bay vs. Arizona,Drew Rasmussen,Pitching - Bases on Balls,1.5,1.2,1.25,1,1,3,Under
+Tampa Bay vs. Arizona,Jake Mangum,Batting - Total Bases,1.5,1.2,1.4,1,4,6,Under
+Texas vs. A's,Josh Smith,Batting - Hits,1.5,1.2,1.4,1,4,6,Under
+Baltimore vs. Washington,CJ Abrams,Batting - Hits,1.5,1.2,1,1,3,7,Under
+Tampa Bay vs. Arizona,Corbin Carroll,Batting - Strikeouts,1.5,1.2,1.3,1,4,6,Under
+Tampa Bay vs. Arizona,Junior Caminero,Batting - Strikeouts,1.5,1.2,1,1,2,8,Under
+Texas vs. A's,Marcus Semien,Batting - Hits and Runs and RBIs,1.5,1.2,1.5,1,2,8,Under
+Pittsburgh vs. LA Angels,Carmen Mlodzinski,Pitching - Bases on Balls,2.5,2,2,2,0,4,Under
+Tampa Bay vs. Arizona,Corbin Carroll,Batting - Total Bases,2.5,3,3.2,2.5,5,5,Over
+Baltimore vs. Washington,Cade Povich,Pitching - Hits Allowed,6.5,7.8,7.75,6.5,2,2,Over
+Tampa Bay vs. Arizona,Corbin Burnes,Pitching - Strikeouts,4.5,3.6,4.25,3,1,3,Under
+Texas vs. A's,Jacob deGrom,Pitching - Hits Allowed,4.5,3.6,4,3,1,3,Under
+Tampa Bay vs. Arizona,Josh Naylor,Batting - Runs,0.5,0.6,0.7,0.5,5,5,Under
+Texas vs. A's,Josh Jung,Batting - Total Bases,0.5,0.6,0.9,0.5,5,5,Under
+Pittsburgh vs. LA Angels,Jo Adell,Batting - Total Bases,0.5,0.6,1,0.5,5,5,Under
+Baltimore vs. Washington,Jordan Westburg,Batting - Runs,0.5,0.4,0.5,0.5,5,5,Under
+Tampa Bay vs. Arizona,Chandler Simpson,Batting - Strikeouts,0.5,0.6,0.5,0.5,2,2,Under
+Tampa Bay vs. Arizona,Brandon Lowe,Batting - Total Bases,0.5,0.4,0.5,0.5,5,5,Under
+Baltimore vs. Washington,Gunnar Henderson,Batting - Hits and Runs and RBIs,0.5,0.6,2,0.5,5,5,Under
+Baltimore vs. Washington,Ryan Mountcastle,Batting - Hits and Runs and RBIs,0.5,0.6,1.3,0.5,5,5,Under
+Pittsburgh vs. LA Angels,Luis Rengifo,Batting - Total Bases,0.5,0.6,0.7,0.5,5,5,Under
+Baltimore vs. Washington,Ryan Mountcastle,Batting - Total Bases,0.5,0.6,1.1,0.5,5,5,Under
+Baltimore vs. Washington,Jacob Young,Batting - Bases on Balls,0.5,0.4,0.5,0.5,5,5,Under
+Baltimore vs. Washington,James Wood,Batting - Hits,0.5,0.6,0.9,0.5,5,5,Under
+Tampa Bay vs. Arizona,Chandler Simpson,Batting - Runs,0.5,0.4,0.5,0.5,2,2,Under
+Baltimore vs. Washington,Jordan Westburg,Batting - Hits and Runs and RBIs,0.5,0.6,1.1,0.5,5,5,Under
+Baltimore vs. Washington,Adley Rutschman,Batting - Hits and Runs and RBIs,0.5,0.6,1.3,0.5,5,5,Under
+Pittsburgh vs. LA Angels,Jared Triolo,Batting - Total Bases,0.5,0.6,0.7,0.5,5,5,Under
+Pittsburgh vs. LA Angels,Ke'Bryan Hayes,Batting - Total Bases,0.5,0.6,0.7,0.5,5,5,Under
+Tampa Bay vs. Arizona,Josh Naylor,Batting - 1st Base,0.5,0.6,1,0.5,5,5,Under
+Tampa Bay vs. Arizona,Tim Tawa,Batting - Strikeouts,0.5,0.6,0.7,0.5,5,5,Under
+Texas vs. A's,Josh Smith,Batting - Runs,0.5,0.6,0.8,0.5,5,5,Under
+Tampa Bay vs. Arizona,Geraldo Perdomo,Batting - Bases on Balls,0.5,0.6,1,0.5,5,5,Under
+Pittsburgh vs. LA Angels,Luis Rengifo,Batting - Hits,0.5,0.6,0.6,0.5,5,5,Under
+Pittsburgh vs. LA Angels,Jo Adell,Batting - Hits,0.5,0.6,0.7,0.5,5,5,Under
+Tampa Bay vs. Arizona,Danny Jansen,Batting - Hits and Runs and RBIs,0.5,0.6,1.5,0.5,5,5,Under
+Pittsburgh vs. LA Angels,Jo Adell,Batting - Hits and Runs and RBIs,0.5,0.6,1.2,0.5,5,5,Under
+Pittsburgh vs. LA Angels,Bryan Reynolds,Batting - Runs,0.5,0.6,0.6,0.5,5,5,Under
+Pittsburgh vs. LA Angels,Ke'Bryan Hayes,Batting - Hits,0.5,0.6,0.7,0.5,5,5,Under
+Pittsburgh vs. LA Angels,Ke'Bryan Hayes,Batting - 1st Base,0.5,0.6,0.7,0.5,5,5,Under
+Tampa Bay vs. Arizona,Jonathan Aranda,Batting - Bases on Balls,0.5,0.4,0.6,0.5,5,5,Under
+Texas vs. A's,Josh Jung,Batting - Hits and Runs and RBIs,0.5,0.6,0.8,0.5,5,5,Under
+Pittsburgh vs. LA Angels,Luis Rengifo,Batting - Hits and Runs and RBIs,0.5,0.6,1,0.5,5,5,Under
+Pittsburgh vs. LA Angels,Tommy Pham,Batting - 1st Base,0.5,0.6,0.7,0.5,5,5,Under
+Baltimore vs. Washington,Gunnar Henderson,Batting - Total Bases,0.5,0.6,2.1,0.5,5,5,Under
+Pittsburgh vs. LA Angels,Ke'Bryan Hayes,Batting - Hits and Runs and RBIs,0.5,0.6,1.3,0.5,5,5,Under
+Baltimore vs. Washington,Adley Rutschman,Batting - Bases on Balls,0.5,0.4,0.5,0.5,5,5,Under
+Baltimore vs. Washington,James Wood,Batting - Total Bases,0.5,0.6,2,0.5,5,5,Under
+Baltimore vs. Washington,Ryan Mountcastle,Batting - Hits,0.5,0.6,0.6,0.5,5,5,Under
+Baltimore vs. Washington,Gunnar Henderson,Batting - Hits,0.5,0.6,1,0.5,5,5,Under
+Baltimore vs. Washington,Cade Povich,Pitching - Bases on Balls,1.5,1.8,2,1.5,2,2,Over
+Pittsburgh vs. LA Angels,Jorge Soler,Batting - Hits and Runs and RBIs,1.5,1.2,1.4,1.5,5,5,Under
+Baltimore vs. Washington,James Wood,Batting - Hits and Runs and RBIs,1.5,1.8,2.3,1.5,5,5,Over
+Texas vs. A's,Jonah Heim,Batting - Strikeouts,1.5,1.2,1.2,1.5,5,5,Under
+Pittsburgh vs. LA Angels,Nolan Schanuel,Batting - Hits and Runs and RBIs,1.5,1.2,1.5,1.5,5,5,Under
+Baltimore vs. Washington,Heston Kjerstad,Batting - Hits and Runs and RBIs,1.5,1.8,2,1.5,5,5,Over
+Tampa Bay vs. Arizona,Kameron Misner,Batting - Hits and Runs and RBIs,1.5,1.8,2.6,1.5,5,5,Over
+Tampa Bay vs. Arizona,Alek Thomas,Batting - Hits and Runs and RBIs,1.5,1.8,1.7,1.5,5,5,Over
+Pittsburgh vs. LA Angels,Tommy Pham,Batting - Hits and Runs and RBIs,1.5,1.8,1.7,1.5,5,5,Over
+Pittsburgh vs. LA Angels,Isiah Kiner-Falefa,Batting - Hits and Runs and RBIs,1.5,1.8,1.8,1.5,5,5,Over
+Pittsburgh vs. LA Angels,Jo Adell,Batting - RBIs,0.5,0.6,0.5,0,3,7,Under
+Tampa Bay vs. Arizona,Chandler Simpson,Batting - Hits and Runs and RBIs,2.5,2.01,2.25,2.5,2,2,Under
+Tampa Bay vs. Arizona,Corbin Burnes,Pitching - Hits Allowed,6.5,5.23,5.25,5,1,3,Under
+Pittsburgh vs. LA Angels,Oneil Cruz,Batting - Stolen Bases,0.5,0.4,0.4,0,4,6,Under
+Pittsburgh vs. LA Angels,Tyler Anderson,Pitching - Bases on Balls,2.5,2.98,3,3,2,2,Over
+Pittsburgh vs. LA Angels,Oneil Cruz,Batting - 1st Base,0.5,0.6,0.5,0.5,5,5,Under
+Tampa Bay vs. Arizona,Gabriel Moreno,Batting - Total Bases,0.5,0.59,0.6,0.5,5,5,Under
+Tampa Bay vs. Arizona,Josh Naylor,Batting - Hits and Runs and RBIs,2.5,2.97,2.8,3.5,7,3,Over
+Pittsburgh vs. LA Angels,Oneil Cruz,Batting - Total Bases,3.5,2.84,2.5,3,4,6,Under
+Pittsburgh vs. LA Angels,Kyren Paris,Batting - Hits and Runs and RBIs,0.5,0.41,0.5,0,3,7,Under
+Texas vs. A's,Marcus Semien,Batting - Bases on Balls,0.5,0.41,0.4,0,4,6,Under
+Tampa Bay vs. Arizona,Josh Naylor,Batting - Bases on Balls,0.5,0.41,0.5,0.5,5,5,Under
+Baltimore vs. Washington,Heston Kjerstad,Batting - 1st Base,0.5,0.41,0.3,0,3,7,Under
+Texas vs. A's,Jake Burger,Batting - 1st Base,0.5,0.59,0.6,0,4,6,Under
+Baltimore vs. Washington,Cade Povich,Pitching - Earned Runs Allowed,4.5,3.71,4,3.5,1,3,Under
+Baltimore vs. Washington,Tyler O'Neill,Batting - Hits,0.5,0.41,0.3,0,3,7,Under
+Pittsburgh vs. LA Angels,Tommy Pham,Batting - Runs,0.5,0.58,0.5,0,4,6,Under
+Pittsburgh vs. LA Angels,Logan O'Hoppe,Batting - Strikeouts,1.5,1.75,1.4,1.5,5,5,Over
+Pittsburgh vs. LA Angels,Jorge Soler,Batting - 1st Base,0.5,0.58,0.5,0.5,5,5,Under
+Tampa Bay vs. Arizona,Chandler Simpson,Batting - RBIs,0.5,0.42,0.5,0.5,2,2,Under
+Texas vs. A's,Jacob deGrom,Pitching - Strikeouts,6,5,5,5,1,3,Under
+Pittsburgh vs. LA Angels,Nolan Schanuel,Batting - 1st Base,0.5,0.58,0.5,0.5,5,5,Under
+Baltimore vs. Washington,Alex Call,Batting - Runs,0.5,0.58,0.4,0,4,6,Under
+Tampa Bay vs. Arizona,Junior Caminero,Batting - Runs,0.5,0.58,0.7,0.5,5,5,Under
+Texas vs. A's,Wyatt Langford,Batting - Runs,0.5,0.58,0.6,0.5,5,5,Under
+Tampa Bay vs. Arizona,Corbin Burnes,Pitching - Hits Allowed,4.5,5.23,5.25,5,2,2,Over
+Pittsburgh vs. LA Angels,Mike Trout,Batting - Runs,0.5,0.42,0.3,0,2,8,Under
+Tampa Bay vs. Arizona,Pavin Smith,Batting - Hits and Runs and RBIs,1.5,1.74,2.1,1.5,5,5,Over
+Tampa Bay vs. Arizona,Drew Rasmussen,Pitching - Hits Allowed,3.5,2.95,3,3,1,3,Under
+Texas vs. A's,Josh Jung,Batting - Hits,0.5,0.58,0.6,0.5,5,5,Under
+Baltimore vs. Washington,Alex Call,Batting - RBIs,0.5,0.42,0.3,0,3,7,Under
+Tampa Bay vs. Arizona,Josh Naylor,Batting - Hits,1.5,1.73,1.4,1.5,5,5,Over
+Pittsburgh vs. LA Angels,Tyler Anderson,Pitching - Strikeouts,4.5,5.18,5.25,5.5,3,1,Over
+Tampa Bay vs. Arizona,Josh Naylor,Batting - Hits and Runs and RBIs,3.5,2.97,2.8,3.5,5,5,Under
+Tampa Bay vs. Arizona,Gabriel Moreno,Batting - Runs,0.5,0.43,0.4,0,4,6,Under
+Tampa Bay vs. Arizona,Drew Rasmussen,Pitching - Strikeouts,6.5,5.53,5.5,5.5,2,2,Under
+Pittsburgh vs. LA Angels,Tyler Anderson,Pitching - Bases on Balls,3.5,2.98,3,3,2,2,Under
+Tampa Bay vs. Arizona,Corbin Carroll,Batting - Total Bases,3.5,3,3.2,2.5,3,7,Under
+Pittsburgh vs. LA Angels,Kyren Paris,Batting - Hits,0.5,0.43,0.4,0,3,7,Under
+Tampa Bay vs. Arizona,Alek Thomas,Batting - RBIs,0.5,0.43,0.3,0,2,8,Under
+Tampa Bay vs. Arizona,Lourdes Gurriel Jr.,Batting - Strikeouts,0.5,0.43,0.4,0,3,7,Under
+Pittsburgh vs. LA Angels,Oneil Cruz,Batting - Total Bases,2.5,2.84,2.5,3,6,4,Over
+Baltimore vs. Washington,Tyler O'Neill,Batting - RBIs,0.5,0.43,0.3,0,3,7,Under
+Baltimore vs. Washington,CJ Abrams,Batting - Stolen Bases,0.5,0.57,0.4,0,4,6,Under
+Tampa Bay vs. Arizona,Jake Mangum,Batting - Hits and Runs and RBIs,2.5,2.17,1.9,2,3,7,Under
+Pittsburgh vs. LA Angels,Oneil Cruz,Batting - Home Run,0.5,0.43,0.4,0,4,6,Under
+Pittsburgh vs. LA Angels,Enmanuel Valdez,Batting - Runs,0.5,0.57,0.5,0.5,5,5,Under
+Texas vs. A's,Wyatt Langford,Batting - Stolen Bases,0.5,0.43,0.4,0,4,6,Under
+Baltimore vs. Washington,CJ Abrams,Batting - Home Run,0.5,0.56,0.4,0,4,6,Under
+Tampa Bay vs. Arizona,Lourdes Gurriel Jr.,Batting - 1st Base,0.5,0.44,0.5,0.5,5,5,Under
+Baltimore vs. Washington,Jackson Holliday,Batting - Total Bases,0.5,0.56,0.8,0,4,6,Under
+Tampa Bay vs. Arizona,Jonathan Aranda,Batting - RBIs,0.5,0.44,0.6,0,4,6,Under
+Tampa Bay vs. Arizona,Jonathan Aranda,Batting - 1st Base,0.5,0.44,0.4,0,4,6,Under
+Tampa Bay vs. Arizona,Gabriel Moreno,Batting - Hits,0.5,0.56,0.5,0.5,5,5,Under
+Pittsburgh vs. LA Angels,Enmanuel Valdez,Batting - Strikeouts,0.5,0.44,0.5,0,4,6,Under
+Baltimore vs. Washington,MacKenzie Gore,Pitching - Strikeouts,7.5,8.4,9,7,2,3,Over
+Tampa Bay vs. Arizona,Drew Rasmussen,Pitching - Outs,17.5,15.41,15.5,15,0,4,Under
+Pittsburgh vs. LA Angels,Henry Davis,Batting - Hits,0.5,0.44,0.43,0,3,4,Under
+Tampa Bay vs. Arizona,Brandon Lowe,Batting - Hits,0.5,0.44,0.5,0.5,5,5,Under
+Pittsburgh vs. LA Angels,Carmen Mlodzinski,Pitching - Outs,14.5,12.8,12.75,12.5,1,3,Under
+Tampa Bay vs. Arizona,Chandler Simpson,Batting - Stolen Bases,0.5,0.56,0.5,0.5,2,2,Under
+Pittsburgh vs. LA Angels,Kyren Paris,Batting - Strikeouts,1.5,1.33,1.6,1.5,5,5,Under
+Baltimore vs. Washington,MacKenzie Gore,Pitching - Strikeouts,9.5,8.4,9,7,2,3,Under
+Tampa Bay vs. Arizona,Corbin Carroll,Batting - Home Run,0.5,0.56,0.4,0,3,7,Under
+Baltimore vs. Washington,Gunnar Henderson,Batting - 1st Base,0.5,0.44,0.4,0,3,7,Under
+Pittsburgh vs. LA Angels,Carmen Mlodzinski,Pitching - Strikeouts,4.5,3.99,3.5,4,1,3,Under
+Baltimore vs. Washington,CJ Abrams,Batting - Total Bases,3.5,3.11,2.4,3,5,5,Under
+Baltimore vs. Washington,Cade Povich,Pitching - Outs,15.5,13.76,13.75,13.5,1,3,Under
+Baltimore vs. Washington,MacKenzie Gore,Pitching - Bases on Balls,1.5,1.67,1.6,2,3,2,Under
+Texas vs. A's,Jacob deGrom,Pitching - Strikeouts,4.5,5,5,5,2,2,Over
+Pittsburgh vs. LA Angels,Andrew McCutchen,Batting - 1st Base,0.5,0.44,0.5,0.5,5,5,Under
+Tampa Bay vs. Arizona,Brandon Lowe,Batting - 1st Base,0.5,0.56,0.5,0.5,5,5,Under
+Pittsburgh vs. LA Angels,Carmen Mlodzinski,Pitching - Hits Allowed,6.5,5.8,6.5,6,2,2,Under
+Baltimore vs. Washington,MacKenzie Gore,Pitching - Earned Runs Allowed,2.5,2.23,2.2,2,2,3,Under
+Tampa Bay vs. Arizona,Jake Mangum,Batting - Runs,0.5,0.55,0.4,0,3,7,Under
+Pittsburgh vs. LA Angels,Taylor Ward,Batting - Total Bases,2.5,2.23,2,2,3,7,Under
+Tampa Bay vs. Arizona,Christopher Morel,Batting - Hits,0.5,0.45,0.7,0,4,6,Under
+Pittsburgh vs. LA Angels,Oneil Cruz,Batting - Hits and Runs and RBIs,3.5,3.14,2.6,3,4,6,Under
+Pittsburgh vs. LA Angels,Oneil Cruz,Batting - Bases on Balls,0.5,0.45,0.4,0,4,6,Under
+Tampa Bay vs. Arizona,Kameron Misner,Batting - Strikeouts,0.5,0.45,0.4,0,4,6,Under
+Pittsburgh vs. LA Angels,Isiah Kiner-Falefa,Batting - Runs,0.5,0.55,0.4,0,4,6,Under
+Pittsburgh vs. LA Angels,Kyren Paris,Batting - Total Bases,0.5,0.45,0.5,0,3,7,Under
+Texas vs. A's,Jacob deGrom,Pitching - Strikeouts,5.5,5,5,5,2,2,Under
+Baltimore vs. Washington,Cade Povich,Pitching - Strikeouts,4,3.66,4.5,4,1,3,Under
+Baltimore vs. Washington,Cade Povich,Pitching - Hits Allowed,8.5,7.8,7.75,6.5,1,3,Under
+Tampa Bay vs. Arizona,Josh Naylor,Batting - Total Bases,2.5,2.29,2.4,2,4,6,Under
+Baltimore vs. Washington,Jordan Westburg,Batting - Hits,0.5,0.46,0.5,0,4,6,Under
+Texas vs. A's,Jonah Heim,Batting - Bases on Balls,0.5,0.46,0.4,0,4,6,Under
+Tampa Bay vs. Arizona,Corbin Carroll,Batting - Hits,1.5,1.62,1.6,2,6,4,Under
+Tampa Bay vs. Arizona,Geraldo Perdomo,Batting - Runs,0.5,0.46,0.5,0.5,5,5,Under
+Baltimore vs. Washington,Alex Call,Batting - 1st Base,0.5,0.46,0.4,0,4,6,Under
+Texas vs. A's,Jacob deGrom,Pitching - Outs,17.5,16.13,16.25,16,1,3,Under
+Tampa Bay vs. Arizona,Corbin Burnes,Pitching - Bases on Balls,2.5,2.31,2.25,2.5,2,2,Under
+Baltimore vs. Washington,MacKenzie Gore,Pitching - Hits Allowed,5.5,5.09,5.4,5,2,3,Under
+Tampa Bay vs. Arizona,Taylor Walls,Batting - 1st Base,0.5,0.46,0.5,0.5,5,5,Under
+Pittsburgh vs. LA Angels,Luis Rengifo,Batting - 1st Base,0.5,0.54,0.5,0.5,5,5,Under
+Pittsburgh vs. LA Angels,Tyler Anderson,Pitching - Outs,17.5,16.26,16.25,16,1,3,Under
+Baltimore vs. Washington,Cade Povich,Pitching - Strikeouts,4.5,4.19,4.5,4,1,3,Under
+Baltimore vs. Washington,Tyler O'Neill,Batting - Strikeouts,1.5,1.6,1.5,2,6,4,Under
+Baltimore vs. Washington,Josh Bell,Batting - Hits and Runs and RBIs,1.5,1.6,1.1,0,3,7,Under
+Baltimore vs. Washington,Adley Rutschman,Batting - Hits,0.5,0.53,0.6,0,4,6,Under
+Tampa Bay vs. Arizona,Corbin Carroll,Batting - Runs,1.5,1.41,1.2,1.5,5,5,Under
+Pittsburgh vs. LA Angels,Luis Rengifo,Batting - Strikeouts,0.5,0.47,0.6,0.5,5,5,Under
+Baltimore vs. Washington,Heston Kjerstad,Batting - Runs,0.5,0.47,0.5,0.5,5,5,Under
+Tampa Bay vs. Arizona,Corbin Carroll,Batting - Stolen Bases,0.5,0.47,0.4,0,2,8,Under
+Texas vs. A's,Marcus Semien,Batting - RBIs,0.5,0.47,0.5,0,2,8,Under
+Pittsburgh vs. LA Angels,Oneil Cruz,Batting - Strikeouts,1.5,1.59,1.4,1.5,5,5,Under
+Pittsburgh vs. LA Angels,Carmen Mlodzinski,Pitching - Strikeouts,3.5,3.7,3.5,4,3,1,Over
+Pittsburgh vs. LA Angels,Carmen Mlodzinski,Pitching - Hits Allowed,5.5,5.8,6.5,6,2,2,Over
+Baltimore vs. Washington,CJ Abrams,Batting - Hits and Runs and RBIs,2.5,2.63,2.2,2.5,5,5,Under
+Tampa Bay vs. Arizona,Pavin Smith,Batting - 2nd Base,0.5,0.53,0.4,0,4,6,Under
+Tampa Bay vs. Arizona,Alek Thomas,Batting - Runs,0.5,0.48,0.5,0,4,6,Under
+Pittsburgh vs. LA Angels,Mike Trout,Batting - RBIs,0.5,0.48,0.4,0,2,8,Under
+Baltimore vs. Washington,Heston Kjerstad,Batting - Strikeouts,0.5,0.48,0.5,0,4,6,Under
+Baltimore vs. Washington,Cade Povich,Pitching - Strikeouts,3.5,3.66,4.5,4,3,1,Under
+Pittsburgh vs. LA Angels,Tyler Anderson,Pitching - Strikeouts,5.5,5.26,5.25,5.5,2,2,Under
+Baltimore vs. Washington,Cedric Mullins,Batting - Total Bases,2.5,2.4,2.1,2,3,7,Under
+Baltimore vs. Washington,Keibert Ruiz,Batting - Hits and Runs and RBIs,2.5,2.4,2.2,2,3,7,Under
+Tampa Bay vs. Arizona,Pavin Smith,Batting - Total Bases,2.5,2.4,2.4,2,3,7,Under
+Pittsburgh vs. LA Angels,Tyler Anderson,Pitching - Strikeouts,5,5.18,5.25,5.5,2,2,Under
+Tampa Bay vs. Arizona,Corbin Carroll,Batting - Hits and Runs and RBIs,4.5,4.66,4.2,4,4,6,Under
+Pittsburgh vs. LA Angels,Andrew McCutchen,Batting - Runs,0.5,0.52,0.6,0,4,6,Under
+Tampa Bay vs. Arizona,Josh Naylor,Batting - Strikeouts,0.5,0.52,0.5,0,4,6,Under
+Texas vs. A's,Jacob deGrom,Pitching - Hits Allowed,3.5,3.6,4,3,1,3,Under
+Tampa Bay vs. Arizona,Corbin Burnes,Pitching - Strikeouts,3.5,3.6,4.25,3,1,3,Under
+Tampa Bay vs. Arizona,Danny Jansen,Batting - Runs,0.5,0.49,0.4,0,4,6,Under
+Texas vs. A's,Wyatt Langford,Batting - Home Run,0.5,0.51,0.5,0.5,5,5,Under
+Tampa Bay vs. Arizona,Tim Tawa,Batting - Home Run,0.5,0.49,0.3,0,3,7,Under
+Texas vs. A's,Marcus Semien,Batting - Strikeouts,0.5,0.51,0.5,0,3,7,Under
+Baltimore vs. Washington,Gunnar Henderson,Batting - Runs,0.5,0.51,0.7,0,4,6,Under
+Pittsburgh vs. LA Angels,Tyler Anderson,Pitching - Outs,16.5,16.29,16.25,16,2,2,Under
+Tampa Bay vs. Arizona,Tim Tawa,Batting - Hits and Runs and RBIs,2.5,2.53,2.1,3,6,4,Under
+Baltimore vs. Washington,MacKenzie Gore,Pitching - Strikeouts,8.5,8.4,9,7,2,3,Under
+Tampa Bay vs. Arizona,Corbin Burnes,Pitching - Hits Allowed,5.5,5.44,5.25,5,2,2,Under
+Tampa Bay vs. Arizona,Gabriel Moreno,Batting - 1st Base,0.5,0.51,0.4,0,4,6,Under
+Tampa Bay vs. Arizona,Pavin Smith,Batting - Runs,0.5,0.51,0.5,0,4,6,Under
+Texas vs. A's,Wyatt Langford,Batting - Total Bases,2.5,2.48,2.6,2.5,5,5,Under
+Tampa Bay vs. Arizona,Drew Rasmussen,Pitching - Strikeouts,5.5,5.53,5.5,5.5,2,2,Under
+Baltimore vs. Washington,Keibert Ruiz,Batting - RBIs,0.5,0.5,0.4,0,3,7,Under
+Pittsburgh vs. LA Angels,Jared Triolo,Batting - Hits,0.5,0.5,0.5,0.5,5,5,Under
+Pittsburgh vs. LA Angels,Carmen Mlodzinski,Pitching - Strikeouts,4,3.99,3.5,4,1,3,Under
+Baltimore vs. Washington,MacKenzie Gore,Pitching - Outs,17.5,17.47,17.4,18,4,1,Under
