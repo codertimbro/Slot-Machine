@@ -1,0 +1,264 @@
+# Baseball Productive Games Streak Analysis
+# This script analyzes streaks of 1+ in Runs, RBIs, or Hits in baseball statistics
+
+# Import the CSV file
+$csvData = Import-Csv -Path "pla.csv"
+
+# Function to convert American odds to decimal odds
+function Convert-AmericanToDecimal {
+    param (
+        [int]$americanOdds
+    )
+    
+    if ($americanOdds -gt 0) {
+        return [Math]::Round(($americanOdds / 100) + 1, 2)
+    } else {
+        return [Math]::Round((100 / [Math]::Abs($americanOdds)) + 1, 2)
+    }
+}
+
+# Generate a quick conversion chart for American to Decimal odds
+Write-Host "Quick American Odds to Decimal Odds Reference:" -ForegroundColor Cyan
+Write-Host "================================================" -ForegroundColor Cyan
+
+# Create a more focused chart with common betting odds
+$commonOdds = @(-300, -250, -210, -200, -175, -150, -125, -110, -100, +100, +110, +125, +150, +175, +200, +250, +300)
+foreach ($odds in $commonOdds) {
+    $decimalOdds = Convert-AmericanToDecimal -americanOdds $odds
+    $color = if ($odds -lt 0) { "Red" } else { "Green" }
+    
+    # Format the output with proper alignment
+    $formattedOdds = if ($odds -gt 0) { "+$odds" } else { "$odds" }
+    Write-Host ("{0,6} → {1,4}" -f $formattedOdds, $decimalOdds) -ForegroundColor $color
+}
+
+Write-Host "`n"
+
+# Sort the data by date (oldest to newest)
+$sortedData = $csvData | Sort-Object { [DateTime]::Parse($_."Game Date") }
+
+# Initialize variables for tracking
+$gamesList = @()
+$currentProductiveStreak = 0
+$allProductiveStreaks = @()
+$currentNonProductiveStreak = 0
+$allNonProductiveStreaks = @()
+
+# Initialize pattern counters
+$productiveThenNonProductiveCount = 0
+$nonProductiveThenProductiveCount = 0
+$threeOrMoreProductiveInRow = 0
+$threeOrMoreNonProductiveInRow = 0
+
+# Betting variables
+$betAmount = 1.5
+$betOdds = -210
+$totalBets = 0
+$winnings = 0
+
+# Calculate potential win amount for -210 odds
+$winAmount = if ($betOdds -lt 0) { $betAmount / [Math]::Abs($betOdds) * 100 } else { $betAmount * $betOdds / 100 }
+
+Write-Host "Analysis of Productive Games by Date (Oldest to Newest):`n" -ForegroundColor Cyan
+
+# Process each game
+foreach ($i in 0..($sortedData.Count-1)) {
+    $game = $sortedData[$i]
+    
+    # Convert relevant stats to integers
+    $runs = [int]$game.Runs
+    $rbi = [int]$game.RBI
+    $hits = [int]$game.Hits
+    
+    # Check if this is a productive game (1+ in runs, RBIs, or hits)
+    $isProductive = ($runs -ge 1) -or ($rbi -ge 1) -or ($hits -ge 1)
+    
+    # Add to the games list with productive status
+    $gamesList += [PSCustomObject]@{
+        GameDate = $game.'Game Date'
+        Runs = $runs
+        RBI = $rbi
+        Hits = $hits
+        IsProductive = $isProductive
+    }
+    
+    # Display game information
+    Write-Host "Game Date: $($game.'Game Date') | Runs: $runs | RBI: $rbi | Hits: $hits" -ForegroundColor Yellow
+    
+    # Track productive streaks
+    if ($isProductive) {
+        # If we had a non-productive streak and it just ended, record it
+        if ($currentNonProductiveStreak -gt 0) {
+            $allNonProductiveStreaks += $currentNonProductiveStreak
+            $currentNonProductiveStreak = 0
+        }
+        
+        $currentProductiveStreak++
+        $totalBets++
+        $winnings += $winAmount  # Win bet when player is productive
+        
+        Write-Host "  PRODUCTIVE GAME - Current productive streak: $currentProductiveStreak" -ForegroundColor Green
+        Write-Host "  Bet result: Won $winAmount (total winnings: $winnings)" -ForegroundColor Green
+    } else {
+        # If we had a productive streak and it just ended, record it
+        if ($currentProductiveStreak -gt 0) {
+            $allProductiveStreaks += $currentProductiveStreak
+            $currentProductiveStreak = 0
+        }
+        
+        $currentNonProductiveStreak++
+        $totalBets++
+        $winnings -= $betAmount  # Lose bet when player is not productive
+        
+        Write-Host "  NON-PRODUCTIVE GAME - Current non-productive streak: $currentNonProductiveStreak" -ForegroundColor Red
+        Write-Host "  Bet result: Lost $betAmount (total winnings: $winnings)" -ForegroundColor Red
+    }
+    
+    # Check for pattern: productive followed by non-productive
+    if ($i -gt 0) {
+        $prevIsProductive = ($sortedData[$i-1].Runs -ge 1) -or ($sortedData[$i-1].RBI -ge 1) -or ($sortedData[$i-1].Hits -ge 1)
+        
+        if ($prevIsProductive -and -not $isProductive) {
+            $productiveThenNonProductiveCount++
+            Write-Host "  Pattern: Productive game followed by non-productive game" -ForegroundColor Magenta
+        }
+        
+        if (-not $prevIsProductive -and $isProductive) {
+            $nonProductiveThenProductiveCount++
+            Write-Host "  Pattern: Non-productive game followed by productive game" -ForegroundColor Magenta
+        }
+    }
+    
+    # Check for 3+ consecutive productive or non-productive games
+    if ($i -ge 2) {
+        $prev1 = ($sortedData[$i-1].Runs -ge 1) -or ($sortedData[$i-1].RBI -ge 1) -or ($sortedData[$i-1].Hits -ge 1)
+        $prev2 = ($sortedData[$i-2].Runs -ge 1) -or ($sortedData[$i-2].RBI -ge 1) -or ($sortedData[$i-2].Hits -ge 1)
+        
+        if ($isProductive -and $prev1 -and $prev2) {
+            $threeOrMoreProductiveInRow++
+            Write-Host "  Pattern: 3+ productive games in a row" -ForegroundColor Green
+        }
+        
+        if (-not $isProductive -and -not $prev1 -and -not $prev2) {
+            $threeOrMoreNonProductiveInRow++
+            Write-Host "  Pattern: 3+ non-productive games in a row" -ForegroundColor Red
+        }
+    }
+    
+    Write-Host ""
+}
+
+# If there's an ongoing streak at the end, record it
+if ($currentProductiveStreak -gt 0) {
+    $allProductiveStreaks += $currentProductiveStreak
+}
+
+if ($currentNonProductiveStreak -gt 0) {
+    $allNonProductiveStreaks += $currentNonProductiveStreak
+}
+
+# Calculate statistics for productive streaks
+$avgProductiveStreakLength = if ($allProductiveStreaks.Count -gt 0) {
+    ($allProductiveStreaks | Measure-Object -Average).Average
+} else {
+    0
+}
+
+$avgNonProductiveStreakLength = if ($allNonProductiveStreaks.Count -gt 0) {
+    ($allNonProductiveStreaks | Measure-Object -Average).Average
+} else {
+    0
+}
+
+# Calculate percentage statistics
+$productiveGames = $gamesList | Where-Object { $_.IsProductive } | Measure-Object | Select-Object -ExpandProperty Count
+$totalGames = $gamesList.Count
+$productivePercentage = if ($totalGames -gt 0) {
+    [Math]::Round(($productiveGames / $totalGames) * 100, 1)
+} else {
+    0
+}
+
+# Calculate games in streaks
+$gamesInProductiveStreaks = $allProductiveStreaks | Measure-Object -Sum | Select-Object -ExpandProperty Sum
+$gamesInNonProductiveStreaks = $allNonProductiveStreaks | Measure-Object -Sum | Select-Object -ExpandProperty Sum
+
+$productiveStreakCoveragePercentage = if ($totalGames -gt 0) {
+    [Math]::Round(($gamesInProductiveStreaks / $totalGames) * 100, 1)
+} else {
+    0
+}
+
+$nonProductiveStreakCoveragePercentage = if ($totalGames -gt 0) {
+    [Math]::Round(($gamesInNonProductiveStreaks / $totalGames) * 100, 1)
+} else {
+    0
+}
+
+# Summary statistics
+Write-Host "Summary:" -ForegroundColor Cyan
+Write-Host "Current productive streak: $currentProductiveStreak" -ForegroundColor Green
+Write-Host "Current non-productive streak: $currentNonProductiveStreak" -ForegroundColor Red
+Write-Host "Total productive streaks observed: $($allProductiveStreaks.Count)" -ForegroundColor Green
+Write-Host "Total non-productive streaks observed: $($allNonProductiveStreaks.Count)" -ForegroundColor Red
+Write-Host "Average productive streak length: $([Math]::Round($avgProductiveStreakLength, 2))" -ForegroundColor Green
+Write-Host "Average non-productive streak length: $([Math]::Round($avgNonProductiveStreakLength, 2))" -ForegroundColor Red
+
+# Streak percentage statistics
+Write-Host "`nStreak Statistics:" -ForegroundColor Cyan
+Write-Host "Total games analyzed: $totalGames" -ForegroundColor White
+Write-Host "Productive games (1+ in Runs, RBIs, or Hits): $productiveGames ($productivePercentage%)" -ForegroundColor Green
+Write-Host "Games in productive streaks: $gamesInProductiveStreaks ($productiveStreakCoveragePercentage%)" -ForegroundColor Green
+Write-Host "Games in non-productive streaks: $gamesInNonProductiveStreaks ($nonProductiveStreakCoveragePercentage%)" -ForegroundColor Red
+
+# Show productive streak distribution
+if ($allProductiveStreaks.Count -gt 0) {
+    $streakDistribution = $allProductiveStreaks | Group-Object | Sort-Object -Property Name
+    Write-Host "`nProductive Streak Length Distribution:" -ForegroundColor Cyan
+    foreach ($group in $streakDistribution) {
+        $percentage = [Math]::Round(($group.Count / $allProductiveStreaks.Count) * 100, 1)
+        Write-Host "  $($group.Name)-game productive streaks: $($group.Count) occurrences ($percentage%)" -ForegroundColor Green
+    }
+}
+
+# Show non-productive streak distribution
+if ($allNonProductiveStreaks.Count -gt 0) {
+    $streakDistribution = $allNonProductiveStreaks | Group-Object | Sort-Object -Property Name
+    Write-Host "`nNon-Productive Streak Length Distribution:" -ForegroundColor Cyan
+    foreach ($group in $streakDistribution) {
+        $percentage = [Math]::Round(($group.Count / $allNonProductiveStreaks.Count) * 100, 1)
+        Write-Host "  $($group.Name)-game non-productive streaks: $($group.Count) occurrences ($percentage%)" -ForegroundColor Red
+    }
+}
+
+# Display longest streaks
+if ($allProductiveStreaks.Count -gt 0) {
+    $longestProductiveStreak = ($allProductiveStreaks | Measure-Object -Maximum).Maximum
+    Write-Host "Longest productive streak: $longestProductiveStreak games" -ForegroundColor Green
+}
+
+if ($allNonProductiveStreaks.Count -gt 0) {
+    $longestNonProductiveStreak = ($allNonProductiveStreaks | Measure-Object -Maximum).Maximum
+    Write-Host "Longest non-productive streak: $longestNonProductiveStreak games" -ForegroundColor Red
+}
+
+# Pattern summary
+Write-Host "`nPattern Analysis:" -ForegroundColor Cyan
+Write-Host "Productive game followed by non-productive: $productiveThenNonProductiveCount times" -ForegroundColor Magenta
+Write-Host "Non-productive game followed by productive: $nonProductiveThenProductiveCount times" -ForegroundColor Magenta
+Write-Host "3+ productive games in a row: $threeOrMoreProductiveInRow times" -ForegroundColor Green
+Write-Host "3+ non-productive games in a row: $threeOrMoreNonProductiveInRow times" -ForegroundColor Red
+
+# Betting summary
+Write-Host "`nBetting Summary:" -ForegroundColor Cyan
+Write-Host "Total bets placed: $totalBets" -ForegroundColor White
+Write-Host "Bet amount per game: $betAmount at $betOdds odds" -ForegroundColor White
+Write-Host "Final betting balance: $([Math]::Round($winnings, 2))" -ForegroundColor $(if ($winnings -ge 0) { "Green" } else { "Red" })
+
+# List all games with their productive status for verification
+Write-Host "`nDetailed Game List:" -ForegroundColor Cyan
+foreach ($game in $gamesList) {
+    $status = if ($game.IsProductive) { "PRODUCTIVE" } else { "NON-PRODUCTIVE" }
+    $color = if ($game.IsProductive) { "Green" } else { "Red" }
+    Write-Host ("{0} | Runs: {1} | RBI: {2} | Hits: {3} | Status: {4}" -f $game.GameDate, $game.Runs, $game.RBI, $game.Hits, $status) -ForegroundColor $color
+}
