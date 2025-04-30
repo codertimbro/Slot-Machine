@@ -1,0 +1,267 @@
+# Baseball Runs Streak Analysis
+# This script analyzes runs data from a CSV file, looking for streaks of 0 runs
+# and calculates betting outcomes at -210 odds
+
+# Import the CSV file
+$csvData = Import-Csv -Path "pla.csv"
+
+# Function to convert American odds to decimal odds
+function Convert-AmericanToDecimal {
+    param (
+        [int]$americanOdds
+    )
+    
+    if ($americanOdds -gt 0) {
+        return [Math]::Round(($americanOdds / 100) + 1, 2)
+    } else {
+        return [Math]::Round((100 / [Math]::Abs($americanOdds)) + 1, 2)
+    }
+}
+
+# Generate conversion chart for American to Decimal odds
+Write-Host "American Odds to Decimal Odds Conversion Chart:" -ForegroundColor Cyan
+Write-Host "================================================" -ForegroundColor Cyan
+
+$chart = @()
+for ($odds = -300; $odds -le 300; $odds += 10) {
+    if ($odds -eq 0) { continue } # Skip 0 as it's not valid American odds
+    
+    $decimalOdds = Convert-AmericanToDecimal -americanOdds $odds
+    $color = if ($odds -lt 0) { "Red" } else { "Green" }
+    
+    # Format the output with proper alignment
+    $formattedOdds = if ($odds -gt 0) { "+$odds" } else { "$odds" }
+    Write-Host ("{0,6} → {1,4}" -f $formattedOdds, $decimalOdds) -ForegroundColor $color
+}
+
+Write-Host "`n"
+
+# Sort the data by date (oldest to newest)
+$sortedData = $csvData | Sort-Object { [DateTime]::Parse($_."Game Date") }
+
+# Initialize variables for tracking
+$runsList = @()
+$currentZeroStreak = 0
+$allZeroStreaks = @()
+
+# Initialize pattern counters
+$zeroThenOneCount = 0
+$oneThenZeroCount = 0
+$zeroThenZeroCount = 0
+$oneThenOneCount = 0
+$twoOrMoreCount = 0
+$zeroThreePlusTimesInRow = 0
+$alternatingPattern = 0  # 0,1,0,1 pattern
+$increasingPattern = 0   # 0,1,2 pattern
+$decreasingPattern = 0   # 2,1,0 pattern
+
+$betAmount = 1.5
+$betOdds = -210
+$totalBets = 0
+$winnings = 0
+
+# Calculate potential win amount for -210 odds
+$winAmount = if ($betOdds -lt 0) { $betAmount / [Math]::Abs($betOdds) * 100 } else { $betAmount * $betOdds / 100 }
+
+Write-Host "Analysis of Runs Data by Game Date (Oldest to Newest):`n" -ForegroundColor Cyan
+
+# Process each game
+foreach ($i in 0..($sortedData.Count-1)) {
+    $game = $sortedData[$i]
+    $runs = [int]$game.Runs
+    $runsList += $runs
+    
+    # Display game information
+    Write-Host "Game Date: $($game.'Game Date') | Runs: $runs" -ForegroundColor Yellow
+    
+    # Track zero streaks
+    if ($runs -eq 0) {
+        $currentZeroStreak++
+        $totalBets++
+        $winnings -= $betAmount  # Lose bet when runs = 0
+        
+        Write-Host "  Current 0-run streak: $currentZeroStreak" -ForegroundColor Red
+        Write-Host "  Bet result: Lost $betAmount (total winnings: $winnings)" -ForegroundColor Red
+    } else {
+        # If we had a streak and it just ended, record it
+        if ($currentZeroStreak -gt 0) {
+            $allZeroStreaks += $currentZeroStreak
+            $currentZeroStreak = 0
+        }
+        
+        $totalBets++
+        $winnings += $winAmount  # Win bet when runs > 0
+        Write-Host "  Current 0-run streak: 0" -ForegroundColor Green
+        Write-Host "  Bet result: Won $winAmount (total winnings: $winnings)" -ForegroundColor Green
+    }
+    
+    # Check for various patterns with the next game
+    if ($i -lt ($sortedData.Count-1)) {
+        $nextRuns = [int]$sortedData[$i+1].Runs
+        
+        # Check for 0 followed by 1 pattern
+        if ($runs -eq 0 -and $nextRuns -eq 1) {
+            $zeroThenOneCount++
+            Write-Host "  Pattern detected: 0 followed by 1" -ForegroundColor Magenta
+        }
+        
+        # Check for 1 followed by 0 pattern
+        if ($runs -eq 1 -and $nextRuns -eq 0) {
+            $oneThenZeroCount++
+            Write-Host "  Pattern detected: 1 followed by 0" -ForegroundColor Magenta
+        }
+        
+        # Check for 0 followed by 0 pattern
+        if ($runs -eq 0 -and $nextRuns -eq 0) {
+            $zeroThenZeroCount++
+            Write-Host "  Pattern detected: 0 followed by 0" -ForegroundColor Magenta
+        }
+        
+        # Check for 1 followed by 1 pattern
+        if ($runs -eq 1 -and $nextRuns -eq 1) {
+            $oneThenOneCount++
+            Write-Host "  Pattern detected: 1 followed by 1" -ForegroundColor Magenta
+        }
+        
+        # Check for any run value of 2 or more
+        if ($runs -ge 2) {
+            $twoOrMoreCount++
+            Write-Host "  Pattern detected: 2 or more runs" -ForegroundColor Magenta
+        }
+    }
+    
+    # Check for 3 or more consecutive zeros (need at least 3 games of history)
+    if ($i -ge 2) {
+        $prevRuns1 = [int]$sortedData[$i-1].Runs
+        $prevRuns2 = [int]$sortedData[$i-2].Runs
+        if ($runs -eq 0 -and $prevRuns1 -eq 0 -and $prevRuns2 -eq 0) {
+            $zeroThreePlusTimesInRow++
+            Write-Host "  Pattern detected: 0 runs three or more times in a row" -ForegroundColor Red
+        }
+    }
+    
+    # Check for alternating pattern (0,1,0,1)
+    if ($i -ge 3) {
+        $prevRuns1 = [int]$sortedData[$i-1].Runs
+        $prevRuns2 = [int]$sortedData[$i-2].Runs
+        $prevRuns3 = [int]$sortedData[$i-3].Runs
+        if (
+            ($runs -eq 0 -and $prevRuns1 -eq 1 -and $prevRuns2 -eq 0 -and $prevRuns3 -eq 1) -or
+            ($runs -eq 1 -and $prevRuns1 -eq 0 -and $prevRuns2 -eq 1 -and $prevRuns3 -eq 0)
+        ) {
+            $alternatingPattern++
+            Write-Host "  Pattern detected: Alternating 0,1,0,1" -ForegroundColor Magenta
+        }
+    }
+    
+    # Check for increasing pattern (0,1,2)
+    if ($i -ge 2) {
+        $prevRuns1 = [int]$sortedData[$i-1].Runs
+        $prevRuns2 = [int]$sortedData[$i-2].Runs
+        if ($prevRuns2 -eq 0 -and $prevRuns1 -eq 1 -and $runs -eq 2) {
+            $increasingPattern++
+            Write-Host "  Pattern detected: Increasing 0,1,2" -ForegroundColor Green
+        }
+    }
+    
+    # Check for decreasing pattern (2,1,0)
+    if ($i -ge 2) {
+        $prevRuns1 = [int]$sortedData[$i-1].Runs
+        $prevRuns2 = [int]$sortedData[$i-2].Runs
+        if ($prevRuns2 -eq 2 -and $prevRuns1 -eq 1 -and $runs -eq 0) {
+            $decreasingPattern++
+            Write-Host "  Pattern detected: Decreasing 2,1,0" -ForegroundColor Yellow
+        }
+    }
+    
+    Write-Host ""
+}
+
+# If there's an ongoing streak at the end, record it
+if ($currentZeroStreak -gt 0) {
+    $allZeroStreaks += $currentZeroStreak
+}
+
+# Calculate average streak length if there were any streaks
+$avgStreakLength = if ($allZeroStreaks.Count -gt 0) {
+    ($allZeroStreaks | Measure-Object -Average).Average
+} else {
+    0
+}
+
+# Calculate percentage of games with 0 runs
+$zeroRunGames = $runsList | Where-Object { $_ -eq 0 } | Measure-Object | Select-Object -ExpandProperty Count
+$totalGames = $runsList.Count
+$zeroRunPercentage = if ($totalGames -gt 0) {
+    [Math]::Round(($zeroRunGames / $totalGames) * 100, 1)
+} else {
+    0
+}
+
+# Calculate streak frequency
+$streakFrequency = if ($allZeroStreaks.Count -gt 0 -and $totalGames -gt 0) {
+    [Math]::Round(($allZeroStreaks.Count / $totalGames) * 100, 1)
+} else {
+    0
+}
+
+# Calculate percentage of games that are part of a streak
+$gamesInStreaks = $allZeroStreaks | Measure-Object -Sum | Select-Object -ExpandProperty Sum
+$streakCoveragePercentage = if ($totalGames -gt 0) {
+    [Math]::Round(($gamesInStreaks / $totalGames) * 100, 1)
+} else {
+    0
+}
+
+# Summary statistics
+Write-Host "Summary:" -ForegroundColor Cyan
+Write-Host "Current 0-run streak: $currentZeroStreak" -ForegroundColor Yellow
+Write-Host "Total 0-run streaks observed: $($allZeroStreaks.Count)" -ForegroundColor Yellow
+Write-Host "Average 0-run streak length: $([Math]::Round($avgStreakLength, 2))" -ForegroundColor Yellow
+
+# Streak percentage statistics
+Write-Host "`nStreak Statistics:" -ForegroundColor Cyan
+Write-Host "Total games analyzed: $totalGames" -ForegroundColor White
+Write-Host "Games with 0 runs: $zeroRunGames ($zeroRunPercentage%)" -ForegroundColor Yellow
+Write-Host "Number of distinct 0-run streaks: $($allZeroStreaks.Count)" -ForegroundColor Yellow
+Write-Host "Games that are part of a 0-run streak: $gamesInStreaks ($streakCoveragePercentage%)" -ForegroundColor Yellow
+Write-Host "Streak frequency (streaks per game): $streakFrequency%" -ForegroundColor Yellow
+
+# Show streak distribution
+if ($allZeroStreaks.Count -gt 0) {
+    $streakDistribution = $allZeroStreaks | Group-Object | Sort-Object -Property Name
+    Write-Host "`nStreak Length Distribution:" -ForegroundColor Cyan
+    foreach ($group in $streakDistribution) {
+        $percentage = [Math]::Round(($group.Count / $allZeroStreaks.Count) * 100, 1)
+        Write-Host "  $($group.Name)-game streaks: $($group.Count) occurrences ($percentage%)" -ForegroundColor Yellow
+    }
+}
+
+# Display longest streak
+if ($allZeroStreaks.Count -gt 0) {
+    $longestStreak = ($allZeroStreaks | Measure-Object -Maximum).Maximum
+    Write-Host "Longest 0-run streak: $longestStreak games" -ForegroundColor Red
+}
+
+# Pattern summary
+Write-Host "`nPattern Analysis:" -ForegroundColor Cyan
+Write-Host "0 followed by 1: $zeroThenOneCount times" -ForegroundColor Magenta
+Write-Host "1 followed by 0: $oneThenZeroCount times" -ForegroundColor Magenta
+Write-Host "0 followed by 0: $zeroThenZeroCount times" -ForegroundColor Magenta
+Write-Host "1 followed by 1: $oneThenOneCount times" -ForegroundColor Magenta
+Write-Host "Games with 2 or more runs: $twoOrMoreCount times" -ForegroundColor Magenta
+Write-Host "0 runs three or more times in a row: $zeroThreePlusTimesInRow times" -ForegroundColor Red
+Write-Host "Alternating pattern (0,1,0,1): $alternatingPattern times" -ForegroundColor Magenta
+Write-Host "Increasing pattern (0,1,2): $increasingPattern times" -ForegroundColor Green
+Write-Host "Decreasing pattern (2,1,0): $decreasingPattern times" -ForegroundColor Yellow
+
+# Betting summary
+Write-Host "`nBetting Summary:" -ForegroundColor Cyan
+Write-Host "Total bets placed: $totalBets" -ForegroundColor Green
+Write-Host "Final betting balance: $([Math]::Round($winnings, 2))" -ForegroundColor $(if ($winnings -ge 0) { "Green" } else { "Red" })
+
+# Display all streaks
+Write-Host "`nAll 0-run streak lengths: $($allZeroStreaks -join ', ')" -ForegroundColor Yellow
+
+# List all runs for verification
+Write-Host "`nComplete runs sequence: $($runsList -join ', ')" -ForegroundColor Gray
