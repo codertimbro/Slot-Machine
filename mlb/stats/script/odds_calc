@@ -1,0 +1,90 @@
+# American to Decimal Odds Conversion Chart
+
+# Function to convert American odds to decimal odds
+function Convert-AmericanToDecimal {
+    param (
+        [int]$americanOdds
+    )
+    
+    if ($americanOdds -gt 0) {
+        return [Math]::Round(($americanOdds / 100) + 1, 2)
+    } else {
+        return [Math]::Round((100 / [Math]::Abs($americanOdds)) + 1, 2)
+    }
+}
+
+# Create a nicely formatted table
+$odds = @()
+for ($i = -300; $i -le 300; $i += 10) {
+    if ($i -eq 0) { continue } # Skip 0 as it's not valid American odds
+    
+    $americanOdds = $i
+    $decimalOdds = Convert-AmericanToDecimal -americanOdds $americanOdds
+    
+    # Calculate implied probability
+    $impliedProb = if ($americanOdds -gt 0) {
+        100 / ($americanOdds + 100) * 100
+    } else {
+        [Math]::Abs($americanOdds) / ([Math]::Abs($americanOdds) + 100) * 100
+    }
+    
+    $odds += [PSCustomObject]@{
+        AmericanOdds = if ($americanOdds -gt 0) { "+$americanOdds" } else { "$americanOdds" }
+        DecimalOdds = $decimalOdds
+        ImpliedProbability = "$([Math]::Round($impliedProb, 1))%"
+        Payout = if ($americanOdds -gt 0) { 
+            "$${americanOdds} for every $100 wagered" 
+        } else { 
+            "$100 for every $${[Math]::Abs($americanOdds)} wagered" 
+        }
+    }
+}
+
+# Display the odds in a table format
+$odds | Format-Table -Property AmericanOdds, DecimalOdds, ImpliedProbability -AutoSize
+
+# Display the full conversion chart with example payouts
+Write-Host "Full American/Decimal Odds Conversion Reference" -ForegroundColor Cyan
+Write-Host "==============================================" -ForegroundColor Cyan
+Write-Host ""
+Write-Host "American | Decimal | Implied Prob | Example Payout" -ForegroundColor Yellow
+Write-Host "--------|---------|-------------|----------------" -ForegroundColor Yellow
+
+# Display selected values from the range (to avoid overwhelming output)
+$selectedOdds = @(-300, -250, -200, -175, -150, -125, -110, -100, +100, +110, +125, +150, +175, +200, +250, +300)
+foreach ($americanOdds in $selectedOdds) {
+    $decimalOdds = Convert-AmericanToDecimal -americanOdds $americanOdds
+    
+    # Calculate implied probability
+    $impliedProb = if ($americanOdds -gt 0) {
+        100 / ($americanOdds + 100) * 100
+    } else {
+        [Math]::Abs($americanOdds) / ([Math]::Abs($americanOdds) + 100) * 100
+    }
+    
+    $payout = if ($americanOdds -gt 0) { 
+        "Win $${americanOdds} on $100 bet" 
+    } else { 
+        "Win $100 on $${[Math]::Abs($americanOdds)} bet" 
+    }
+    
+    $formattedOdds = if ($americanOdds -gt 0) { "+$americanOdds" } else { "$americanOdds" }
+    Write-Host ("{0,7} | {1,7} | {2,11} | {3}" -f 
+        $formattedOdds, 
+        $decimalOdds, 
+        "$([Math]::Round($impliedProb, 1))%", 
+        $payout
+    ) -ForegroundColor $(if ($americanOdds -lt 0) { "Red" } else { "Green" })
+}
+
+# Display common -210 odds specifically
+$odds210 = -210
+$decimal210 = Convert-AmericanToDecimal -americanOdds $odds210
+$impliedProb210 = [Math]::Abs($odds210) / ([Math]::Abs($odds210) + 100) * 100
+
+Write-Host ""
+Write-Host "Special Focus on -210 Odds:" -ForegroundColor Cyan
+Write-Host "-210 American Odds = $decimal210 Decimal Odds" -ForegroundColor Yellow
+Write-Host "Implied Probability: $([Math]::Round($impliedProb210, 1))%" -ForegroundColor Yellow
+Write-Host "To win $100, you must wager $210" -ForegroundColor Yellow
+Write-Host "A $1.50 wager at -210 odds would win approximately $0.71" -ForegroundColor Yellow
