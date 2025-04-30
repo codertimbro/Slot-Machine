@@ -37,7 +37,7 @@ Write-Host "Analysis of Runs Data by Game Date (Oldest to Newest):`n" -Foregroun
 # Process each game
 foreach ($i in 0..($sortedData.Count-1)) {
     $game = $sortedData[$i]
-    $runs = [int]$game.Runs
+    $runs = [int]$game.k
     $runsList += $runs
     
     # Display game information
@@ -66,7 +66,7 @@ foreach ($i in 0..($sortedData.Count-1)) {
     
     # Check for various patterns with the next game
     if ($i -lt ($sortedData.Count-1)) {
-        $nextRuns = [int]$sortedData[$i+1].Runs
+        $nextRuns = [int]$sortedData[$i+1].k
         
         # Check for 0 followed by 1 pattern
         if ($runs -eq 0 -and $nextRuns -eq 1) {
@@ -101,8 +101,8 @@ foreach ($i in 0..($sortedData.Count-1)) {
     
     # Check for 3 or more consecutive zeros (need at least 3 games of history)
     if ($i -ge 2) {
-        $prevRuns1 = [int]$sortedData[$i-1].Runs
-        $prevRuns2 = [int]$sortedData[$i-2].Runs
+        $prevRuns1 = [int]$sortedData[$i-1].k
+        $prevRuns2 = [int]$sortedData[$i-2].k
         if ($runs -eq 0 -and $prevRuns1 -eq 0 -and $prevRuns2 -eq 0) {
             $zeroThreePlusTimesInRow++
             Write-Host "  Pattern detected: 0 runs three or more times in a row" -ForegroundColor Red
@@ -111,9 +111,9 @@ foreach ($i in 0..($sortedData.Count-1)) {
     
     # Check for alternating pattern (0,1,0,1)
     if ($i -ge 3) {
-        $prevRuns1 = [int]$sortedData[$i-1].Runs
-        $prevRuns2 = [int]$sortedData[$i-2].Runs
-        $prevRuns3 = [int]$sortedData[$i-3].Runs
+        $prevRuns1 = [int]$sortedData[$i-1].k
+        $prevRuns2 = [int]$sortedData[$i-2].k
+        $prevRuns3 = [int]$sortedData[$i-3].k
         if (
             ($runs -eq 0 -and $prevRuns1 -eq 1 -and $prevRuns2 -eq 0 -and $prevRuns3 -eq 1) -or
             ($runs -eq 1 -and $prevRuns1 -eq 0 -and $prevRuns2 -eq 1 -and $prevRuns3 -eq 0)
@@ -125,8 +125,8 @@ foreach ($i in 0..($sortedData.Count-1)) {
     
     # Check for increasing pattern (0,1,2)
     if ($i -ge 2) {
-        $prevRuns1 = [int]$sortedData[$i-1].Runs
-        $prevRuns2 = [int]$sortedData[$i-2].Runs
+        $prevRuns1 = [int]$sortedData[$i-1].k
+        $prevRuns2 = [int]$sortedData[$i-2].k
         if ($prevRuns2 -eq 0 -and $prevRuns1 -eq 1 -and $runs -eq 2) {
             $increasingPattern++
             Write-Host "  Pattern detected: Increasing 0,1,2" -ForegroundColor Green
@@ -135,8 +135,8 @@ foreach ($i in 0..($sortedData.Count-1)) {
     
     # Check for decreasing pattern (2,1,0)
     if ($i -ge 2) {
-        $prevRuns1 = [int]$sortedData[$i-1].Runs
-        $prevRuns2 = [int]$sortedData[$i-2].Runs
+        $prevRuns1 = [int]$sortedData[$i-1].k
+        $prevRuns2 = [int]$sortedData[$i-2].k
         if ($prevRuns2 -eq 2 -and $prevRuns1 -eq 1 -and $runs -eq 0) {
             $decreasingPattern++
             Write-Host "  Pattern detected: Decreasing 2,1,0" -ForegroundColor Yellow
